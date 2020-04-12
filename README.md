@@ -27,7 +27,7 @@ MacOS will warn about the downloaded file as it's not a signed version, this is 
 
 Once the app runs go to Images on the menu to spin up a new stack.
 
-Creating your own custom images by editing
+Create your own custom images and unleash the power of Laradock and DockerStacks by editing
 
 ```
 .docker-stacks/storage/images.json
