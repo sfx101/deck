@@ -22,3 +22,13 @@ cd ~ && mkdir .docker-stacks && cd .docker-stacks && git clone https://github.co
 ```
 
 Next download the app here: https://drive.google.com/file/d/1J04jNNohSED-4H38kFtNek0AeSVesUpJ/view?usp=sharing
+
+MacOS will warn about the downloaded file as it's not a signed version, this is a developer preview. Before starting the app make sure you've docker running and have docker-compose is installed
+
+Once the app runs go to Images on the menu to spin up a new stack.
+
+Creating your own custom images by editing
+
+```
+.docker-stacks/storage/images.json
+```
