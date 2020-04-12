@@ -12,3 +12,13 @@ Docker Stacks is a laradock GUI build on top of docker, electron.js, node-pty, x
 
 ![Image description](https://github.com/softwarefreak/docker-stacks/blob/master/Screenshot%202020-04-12%20at%2011.33.41%20AM.png?raw=true)
 
+####Installation (MacOS)
+
+Run in terminal, it will create a hidden data directory and pull docker images and other settings (review source by going to the GitHub page)
+
+```
+cd ~ && mkdir .docker-stacks && cd .docker-stacks && git clone https://github.com/softwarefreak/docker-stacks-data.git .
+
+```
+
+Next download the app here: https://drive.google.com/file/d/1J04jNNohSED-4H38kFtNek0AeSVesUpJ/view?usp=sharing
