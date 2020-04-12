@@ -3,7 +3,7 @@ Docker Stacks is a laradock GUI build on top of docker, electron.js, node-pty, x
 
 ### Why a GUI?
 
-- Starting, stopping, re-building is pretty painful in Laradock when you're working on a number of projects
+- Starting, stopping, re-building is pretty painful when you're working on a number of projects
 - Setting up more than one project requires a bit of expert knowledge in Laradock, especially when someone is getting started, the desktop app solves this problem by using random open ports without editing any server config
 - Takes away the learning curve on knowing Laradock / Docker commands so that things can be done at the click of a button
 - Developers who still rely on XAMPP / WAMP gets a look how powerful Docker is as a development environment
