@@ -10,7 +10,7 @@ Docker Stacks is a laradock GUI build on top of docker, electron.js, node-pty, x
 - Supports pre-build images for running Laravel or any PHP frameworks, Wordpress or any CMS in few mins
 
 
-![Image description](https://github.com/softwarefreak/docker-stacks/blob/master/Screenshot%202020-04-12%20at%2011.33.41%20AM.png?raw=true)
+![Image description](https://raw.githubusercontent.com/sfx101/docker-stacks/master/Docker%20Stacks%20Screenshot.png?raw=true)
 
 #### Installation (MacOS)
 
