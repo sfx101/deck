@@ -1,5 +1,5 @@
 # DockerStacks
-Docker Stacks is a laradock GUI build on top of docker, electron.js, node-pty, xterm.js and the awesome laradock
+DockerStacks is a laradock GUI build on top of docker, electron.js, node-pty, xterm.js and the awesome laradock
 
 ### Why a GUI?
 
