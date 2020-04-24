@@ -1,4 +1,4 @@
-# Docker Stacks
+# DockerStacks
 Docker Stacks is a laradock GUI build on top of docker, electron.js, node-pty, xterm.js and the awesome laradock
 
 ### Why a GUI?
@@ -14,7 +14,7 @@ Docker Stacks is a laradock GUI build on top of docker, electron.js, node-pty, x
 
 #### Installation
 
-Download the app here: https://github.com/sfx101/docker-stacks/releases/latest (Follow the instructions on the Release page)
+Download the app here: https://github.com/sfx101/docker-stacks/releases (Follow the instructions on the Release page)
 
 Once the app runs go to Images on the menu to spin up a new stack.
 
