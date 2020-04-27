@@ -9,6 +9,7 @@ DockerStacks is a laradock GUI build on top of docker, electron.js, node-pty, xt
 - Developers who still rely on XAMPP / WAMP gets a look how powerful Docker is as a development environment
 - Supports pre-build images for running Laravel or any PHP frameworks, Wordpress or any CMS in few mins
 - Built-in support for HTTPS with SSL certificates, zero configuration needed
+- Advanced networking features to connect multiple stack containers
 
 ![Image description](http://g.recordit.co/9wmV5oPfRe.gif)
 ![Image description](http://g.recordit.co/EKvYKtpchx.gif)
