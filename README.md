@@ -11,14 +11,22 @@ DockerStacks is a laradock GUI build on top of docker, electron.js, node-pty, xt
 - Built-in support for HTTPS with SSL certificates, zero configuration needed
 - Advanced networking features to connect multiple stack containers
 
-![Image description](http://g.recordit.co/9wmV5oPfRe.gif)
-![Image description](http://g.recordit.co/EKvYKtpchx.gif)
 
-#### Installation
+
+![Image description](http://g.recordit.co/9wmV5oPfRe.gif)
+
+![Image description](http://g.recordit.co/EKvYKtpchx.gif)
 
 Download the app here: https://github.com/sfx101/docker-stacks/releases (Follow the instructions on the Release page)
 
-Once the app runs go to Images on the menu to spin up a new stack.
+#### Installation
+
+https://github.com/sfx101/docker-stacks/wiki/Installation
+
+#### Creating and starting stacks
+
+https://github.com/sfx101/docker-stacks/wiki/Creating-and-starting-stacks
+
 
 Create your own custom images and unleash the power of Laradock and DockerStacks by editing
 
