@@ -13,9 +13,7 @@ DockerStacks is a laradock GUI build on top of docker, electron.js, node-pty, xt
 
 
 
-![Image description](http://g.recordit.co/9wmV5oPfRe.gif)
-
-![Image description](http://g.recordit.co/EKvYKtpchx.gif)
+![Image description](https://github.com/sfx101/docker-stacks/blob/master/Kapture%202020-05-09%20at%2022.31.46.gif)
 
 Download the app here: https://github.com/sfx101/docker-stacks/releases (Follow the instructions on the Release page)
 
