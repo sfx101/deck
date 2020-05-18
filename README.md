@@ -19,11 +19,15 @@ Download the app here: https://github.com/sfx101/docker-stacks/releases (Follow 
 
 #### Installation
 
-https://github.com/sfx101/docker-stacks/wiki/Installation
+https://docker-stacks.com/getting-started/installation/
 
 #### Creating and starting stacks
 
-https://github.com/sfx101/docker-stacks/wiki/Creating-and-starting-stacks
+https://docker-stacks.com/getting-started/creating-and-starting-stacks/
+
+#### Opening codes and connecting to a stack
+
+https://docker-stacks.com/getting-started/opening-codes-and-connecting-to-a-stack/
 
 
 Create your own custom images and unleash the power of Laradock and DockerStacks by editing
