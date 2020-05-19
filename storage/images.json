@@ -1,0 +1,75 @@
+{
+  "images": [
+    {
+      "name": "LEMP",
+      "tags": ["php", "nginx", "mysql", "phpmyadmin"],
+      "containers": [
+        "php-fpm",
+        "nginx",
+        "mysql",
+        "workspace",
+        "phpmyadmin"
+      ],
+      "notes": "LEMP Stack powered with Nginx, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
+      "dependencies": ["nginx", "mysql", "phpmyadmin"]
+    },
+    {
+      "name": "LAMP",
+      "tags": ["php", "apache", "mysql", "phpmyadmin"],
+      "containers": [
+        "php-fpm",
+        "apache2",
+        "mysql",
+        "workspace",
+        "phpmyadmin"
+      ],
+      "notes": "LAMP Stack powered with Apache2, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
+      "dependencies": ["apache2", "mysql", "phpmyadmin"]
+    },
+    {
+      "name": "Apache_PHP",
+      "tags": ["php", "apache"],
+      "containers": [
+        "php-fpm",
+        "apache2",
+        "workspace"
+      ],
+      "notes": "Basic PHP stack running on Apache2 and php-fpm",
+      "dependencies": ["apache2"]
+    },
+    {
+      "name": "Nginx_PHP",
+      "tags": ["php", "nginx"],
+      "containers": [
+        "php-fpm",
+        "nginx",
+        "workspace"
+      ],
+      "notes": "Basic PHP stack running on Nginx and php-fpm",
+      "dependencies": ["nginx"]
+    },
+    {
+      "name": "Mysql",
+      "tags": ["mysql", "phpmyadmin"],
+      "containers": ["mysql", "phpmyadmin"],
+      "notes": "Mysql with PhpMyAdmin",
+      "dependencies": ["mysql", "phpmyadmin"]
+    },
+    {
+      "name": "MongoDB",
+      "tags": ["mongodb"],
+      "containers": ["mongo"],
+      "notes": "Standalone MongoDB instance",
+      "dependencies": ["mongo"]
+    },
+    {
+      "name": "Caddy",
+      "tags": ["caddy"],
+      "containers": [
+        "caddy"
+      ],
+      "notes": "Caddy web server",
+      "dependencies": ["caddy"]
+    }
+  ]
+}
