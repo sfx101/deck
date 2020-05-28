@@ -206,8 +206,6 @@ services:
         - DOCKER_TLS_CERTDIR=/certs
         - DOCKER_CERT_PATH=/certs/client
         - FAKETIME=${PHP_FPM_FAKETIME}
-      depends_on:
-        - workspace
       networks:
         - backend
 
@@ -1129,7 +1127,7 @@ services:
       extra_hosts:
         - "dockerhost:${DOCKER_HOST_IP}"
       ports:
-        - 9010:9000
+        - ${PORTAINER_PORT}:9000
       networks:
         - backend
 
@@ -1635,6 +1633,35 @@ services:
       volumes:
         - ${DATA_PATH_HOST}/Confluence:/var/atlassian/application-data
 
+### GHOST #####################################################
+    ghost:
+      image: ghost:latest
+      restart: always
+      ports: 
+        - "${GHOST_HTTP_PORT}:2368"
+      environment:
+        - url=https://${COMPOSE_PROJECT_NAME}.stacks.run
+      networks:
+        - frontend
+        - backend
+      volumes: 
+        - ${APP_CODE_PATH_HOST}:/var/lib/ghost/content
+
+    wordpress:
+      image: wordpress
+      restart: always
+      ports:
+        - ${WP_HTTP_PORT}:80
+      environment:
+        - WORDPRESS_DB_NAME=${MYSQL_DATABASE}
+        - WORDPRESS_DB_USER=${MYSQL_USER}
+        - WORDPRESS_DB_PASSWORD=${MYSQL_PASSWORD}
+        - WORDPRESS_DB_HOST=mysql
+      volumes:
+        - ${APP_CODE_PATH_HOST}:/var/www/html
+      networks:
+        - frontend
+        - backend
 ### tomcat ####################################################
     tomcat:
       container_name: tomcat
