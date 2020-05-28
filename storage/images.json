@@ -3,48 +3,70 @@
     {
       "name": "LEMP",
       "tags": ["php", "nginx", "mysql", "phpmyadmin"],
-      "containers": [
-        "php-fpm",
-        "nginx",
-        "mysql",
-        "workspace",
-        "phpmyadmin"
-      ],
+      "containers": ["php-fpm", "nginx", "mysql", "workspace", "phpmyadmin"],
       "notes": "LEMP Stack powered with Nginx, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
-      "dependencies": ["nginx", "mysql", "phpmyadmin"]
+      "dependencies": ["nginx", "mysql", "phpmyadmin", "workspace"]
     },
     {
       "name": "LAMP",
       "tags": ["php", "apache", "mysql", "phpmyadmin"],
-      "containers": [
-        "php-fpm",
-        "apache2",
-        "mysql",
-        "workspace",
-        "phpmyadmin"
-      ],
+      "containers": ["php-fpm", "apache2", "mysql", "workspace", "phpmyadmin"],
       "notes": "LAMP Stack powered with Apache2, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
-      "dependencies": ["apache2", "mysql", "phpmyadmin"]
+      "dependencies": ["apache2", "mysql", "phpmyadmin", "workspace"]
+    },
+    {
+      "name": "Phalcon",
+      "tags": ["php", "nginx", "mysql", "phpmyadmin"],
+      "containers": ["php-fpm", "nginx", "mysql", "workspace", "phpmyadmin"],
+      "notes": "Phalcon",
+      "dependencies": ["nginx", "mysql", "phpmyadmin", "workspace"],
+      "settings": {
+        "SERVER_ROOT": "/var/www",
+        "WORKSPACE_INSTALL_PHALCON": true,
+        "PHP_FPM_INSTALL_PHALCON": true,
+        "LARADOCK_PHALCON_VERSION": "3.4.5"
+      }
+    },
+    {
+      "name": "WordPress",
+      "tags": ["wordpress", "mysql", "phpmyadmin"],
+      "containers": ["wordpress", "mysql", "phpmyadmin"],
+      "notes": "WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database. Features include a plugin architecture and a template system, referred to within WordPress as Themes.",
+      "dependencies": ["wordpress", "mysql", "phpmyadmin"],
+      "ports": [
+        {
+          "env": "WP_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "required": ["localPath"]
+    },
+
+    {
+      "name": "Ghost",
+      "tags": ["ghost"],
+      "containers": ["ghost"],
+      "notes": "Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.",
+      "dependencies": ["ghost"],
+      "ports": [
+        {
+          "env": "GHOST_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "required": ["localPath"]
     },
     {
       "name": "Apache_PHP",
       "tags": ["php", "apache"],
-      "containers": [
-        "php-fpm",
-        "apache2",
-        "workspace"
-      ],
+      "containers": ["php-fpm", "apache2", "workspace"],
       "notes": "Basic PHP stack running on Apache2 and php-fpm",
       "dependencies": ["apache2"]
     },
     {
       "name": "Nginx_PHP",
       "tags": ["php", "nginx"],
-      "containers": [
-        "php-fpm",
-        "nginx",
-        "workspace"
-      ],
+      "containers": ["php-fpm", "nginx", "workspace"],
       "notes": "Basic PHP stack running on Nginx and php-fpm",
       "dependencies": ["nginx"]
     },
@@ -64,12 +86,69 @@
     },
     {
       "name": "Caddy",
-      "tags": ["caddy"],
-      "containers": [
-        "caddy"
-      ],
-      "notes": "Caddy web server",
+      "tags": ["caddy", "php"],
+      "containers": ["caddy", "php-fpm"],
+      "notes": "Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go",
       "dependencies": ["caddy"]
+    },
+    {
+      "name": "Adminer",
+      "tags": ["adminer"],
+      "containers": ["adminer", "php-fpm"],
+      "notes": "Database management in a single PHP file",
+      "dependencies": ["adminer"],
+      "ports": [
+        {
+          "env": "ADM_PORT",
+          "http": true
+        }
+      ],
+      "required": ["localPath"]
+    },
+    {
+      "name": "Confluence",
+      "tags": ["confluence"],
+      "containers": ["postgres"],
+      "notes": "Confluence is your team workspace where knowledge and collaboration meet to achieve great things.",
+      "dependencies": ["confluence"],
+      "ports": [
+        {
+          "env": "CONFLUENCE_HOST_HTTP_PORT",
+          "http": true
+        }
+      ]
+    },
+    {
+      "name": "Portainer",
+      "tags": ["portainer"],
+      "containers": ["portainer"],
+      "notes": "Build and manage your Docker environments with ease.",
+      "dependencies": ["portainer"],
+      "ports": [
+        {
+          "env": "PORTAINER_PORT",
+          "http": true
+        }
+      ]
+    },
+    {
+      "name": "Gitlab",
+      "tags": ["gitlab"],
+      "containers": ["gitlab", "redis", "postgres"],
+      "notes": "Build and manage your Docker environments with ease.",
+      "dependencies": ["gitlab"],
+      "ports": [
+        {
+          "env": "GITLAB_HOST_HTTP_PORT",
+          "http": true
+        },
+        {
+          "env": "GITLAB_HOST_HTTPS_PORT"
+        },
+        {
+          "env": "GITLAB_HOST_SSH_PORT"
+        }
+      ]
     }
   ]
 }
