@@ -25,7 +25,8 @@
         "WORKSPACE_INSTALL_PHALCON": true,
         "PHP_FPM_INSTALL_PHALCON": true,
         "LARADOCK_PHALCON_VERSION": "3.4.5"
-      }
+      },
+      "icon": "https://commons.wikimedia.org/wiki/File:Phalcon_logo.png"
     },
     {
       "name": "WordPress",
