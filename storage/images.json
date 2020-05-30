@@ -16,9 +16,9 @@
     },
     {
       "name": "Phalcon",
-      "tags": ["php", "nginx", "mysql", "phpmyadmin"],
+      "tags": ["phalcon", "php", "nginx", "mysql", "phpmyadmin"],
       "containers": ["php-fpm", "nginx", "mysql", "workspace", "phpmyadmin"],
-      "notes": "Phalcon",
+      "notes": "Phalcon is a PHP web framework based on the model–view–controller pattern. Originally released in 2012, it is an open-source framework licensed under the terms of the BSD License.",
       "dependencies": ["nginx", "mysql", "phpmyadmin", "workspace"],
       "settings": {
         "SERVER_ROOT": "/var/www",
