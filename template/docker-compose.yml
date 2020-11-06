@@ -1675,3 +1675,25 @@ services:
         - ${DATA_PATH_HOST}/tomcat/webapps:/usr/local/tomcat/webapps
         - ${DATA_PATH_HOST}/tomcat/logs:/usr/local/tomcat/logs
       # restart: always
+
+###### Apache2 / PHP-FPM ################################################
+    alpine_apache:
+      image: 'deckapp/apache_php:v${PHP_VERSION}'
+      volumes:
+        - ${APP_CODE_PATH_HOST}:/var/www/localhost/htdocs
+      ports:
+        - "${NGINX_HOST_HTTP_PORT}:80"
+      networks:
+        - frontend
+        - backend
+
+###### Nginx / PHP-FPM ################################################
+    alpine_nginx:
+      image: 'deckapp/nginx_php:v${PHP_VERSION}'
+      volumes:
+        - ${APP_CODE_PATH_HOST}:/var/www/html
+      ports:
+        - "${NGINX_HOST_HTTP_PORT}:80"
+      networks:
+        - frontend
+        - backend
