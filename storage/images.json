@@ -544,66 +544,6 @@
         }
       ]
     },
-
-    {
-      "name": "Grav CMS",
-      "tags": ["grav", "cms"],
-      "containers": ["grav"],
-      "notes": "Grav is a modern open source flat-file CMS",
-      "dependencies": ["grav"],
-      "ports": [
-        {
-          "env": "GRAV_HOST_HTTP_PORT",
-          "http": true
-        }
-      ],
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Grav_logo.png"
-    },
-    {
-      "name": "Codeigniter",
-      "tags": ["codeigniter","mysql"],
-      "containers": ["codeigniter","mysql"],
-      "notes": "CodeIgniter is an open-source software rapid development web framework",
-      "dependencies": ["codeigniter","mysql"],
-      "ports": [
-        {
-          "env": "CI_HTTP_PORT",
-          "http": true
-        }
-      ],
-      "required": ["localPath"],
-      "icon": "https://cdn.freebiesupply.com/logos/large/2x/codeigniter-logo-png-transparent.png"
-    },
-    {
-      "name": "Docktober",
-      "tags": ["docktober"],
-      "containers": ["docktober"],
-      "notes": "October is a free, open-source and self-hosted content management system (CMS) based on the PHP programming language and Laravel web application framework. Default backend username:- admin password:-admin",
-      "dependencies": ["docktober"],
-      "ports": [
-        {
-          "env": "DO_HTTP_PORT",
-          "http": true
-        }
-      ],
-      "required": ["localPath"],
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/OctoberCMS.png/220px-OctoberCMS.png"
-    },
-    {
-      "name": "GO",
-      "tags": ["go","redis"],
-      "containers": ["go","redis"],
-      "notes": "Go is a statically typed, compiled programming language designed at Google by Robert Griesemer",
-      "dependencies": ["go","redis"],
-      "ports": [
-        {
-          "env": "GO_HTTP_PORT",
-          "http": true
-        }
-      ],
-      "required": ["localPath"],
-      "icon": "https://www.smartsight.in/wp-content/uploads/2019/10/golang-300x200.png"
-    },
     {
       "name": "LAMP_redency",
       "tags": ["Web", "mysql", "phpmyadmin"],

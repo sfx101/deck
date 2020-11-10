@@ -1887,45 +1887,7 @@ services:
       - ${DATA_PATH_HOST}/tomcat/webapps:/usr/local/tomcat/webapps
       - ${DATA_PATH_HOST}/tomcat/logs:/usr/local/tomcat/logs
     # restart: always
- ### Codeigniter ####################################################
-  codeigniter:
-    build:
-      context: ./codeigniter
-    ports:
-      - "${CI_HTTP_PORT}:80"
-    networks:
-      - frontend
-      - backend
-    volumes:
-      - ${APP_CODE_PATH_HOST}:/var/www/html/
   
-  ### docktober ####################################################
-  docktober:
-    container_name: docktober
-    image: nabad600/octobercms:v1.8.24.2020
-    ports:
-      - "${DO_HTTP_PORT}:80"
-    networks:
-      - frontend
-      - backend
-    volumes:
-      - ${APP_CODE_PATH_HOST}:/var/www/html
-
-### GO language ####################################################
-  go:
-    build:
-     context: ./go
-    ports:
-      - "${GO_HTTP_PORT}:8080"
-    depends_on:
-      - redis
-    volumes:
-      - ${APP_CODE_PATH_HOST}:/go
-    environment:
-      REDIS_URL: redis:6379
-    networks:
-      - backend
- 
 ###### Apache2 / PHP-FPM ################################################
   alpine_apache:
     image: 'deckapp/apache_php:v${PHP_VERSION}'
