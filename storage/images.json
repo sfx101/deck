@@ -2,7 +2,7 @@
   "images": [
     {
       "name": "Apache_PHP 5.6",
-      "tags": ["apache", "php-fpm"],
+      "tags": ["apache", "php"],
       "containers": ["alpine_apache"],
       "notes": "Basic PHP stack running on Apache2 and php 5.6-fpm.",
       "dependencies": ["alpine_apache"],
@@ -13,13 +13,14 @@
         }
       ],
       "settings": {
+        "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 5.6
       },
-      "required": ["localPath"]
+      "required": ["localPath","serverPath"]
     },
     {
       "name": "Apache_PHP 7.0",
-      "tags": ["apache","php-fpm"],
+      "tags": ["apache","php"],
       "containers": ["alpine_apache"],
       "notes": "Basic PHP stack running on Apache2 and php 7.0-fpm.",
       "dependencies": ["alpine_apache"],
@@ -30,13 +31,14 @@
         }
       ],
       "settings": {
+        "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 7.0
       },
-      "required": ["localPath"]
+      "required": ["localPath","serverPath"]
     },
     {
       "name": "Apache_PHP 7.1",
-      "tags": ["apache","php-fpm"],
+      "tags": ["apache","php"],
       "containers": ["alpine_apache"],
       "notes": "Basic PHP stack running on Apache2 and php 7.1-fpm.",
       "dependencies": ["alpine_apache"],
@@ -47,13 +49,14 @@
         }
       ],
       "settings": {
+        "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 7.1
       },
-      "required": ["localPath"]
+      "required": ["localPath","serverPath"]
     },
     {
       "name": "Apache_PHP 7.2",
-      "tags": ["apache","php-fpm"],
+      "tags": ["apache","php"],
       "containers": ["alpine_apache"],
       "notes": "Basic PHP stack running on Apache2 and php 7.2-fpm.",
       "dependencies": ["alpine_apache"],
@@ -64,13 +67,14 @@
         }
       ],
       "settings": {
+        "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 7.2
       },
-      "required": ["localPath"]
+      "required": ["localPath","serverPath"]
     },
     {
       "name": "Apache_PHP 7.3",
-      "tags": ["apache", "php-fpm"],
+      "tags": ["apache", "php"],
       "containers": ["alpine_apache"],
       "notes": "Basic PHP stack running on Apache2 and php 7.3-fpm.",
       "dependencies": ["alpine_apache"],
@@ -81,13 +85,14 @@
         }
       ],
       "settings": {
+        "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 7.3
       },
-      "required": ["localPath"]
+      "required": ["localPath","serverPath"]
     },
     {
       "name": "Apache_PHP 7.4",
-      "tags": ["apache", "php-fpm"],
+      "tags": ["apache", "php"],
       "containers": ["alpine_apache"],
       "notes": "Basic PHP stack running on Apache2 and php 7.4-fpm.",
       "dependencies": ["alpine_apache"],
@@ -98,13 +103,14 @@
         }
       ],
       "settings": {
+        "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 7.4
       },
-      "required": ["localPath"]
+      "required": ["localPath","serverPath"]
     },
     {
       "name": "Nginx_PHP 7.0",
-      "tags": ["nginx", "php-fpm"],
+      "tags": ["nginx", "php"],
       "containers": ["alpine_nginx"],
       "notes": "Basic PHP stack running on Nginx and php 7.0-fpm.",
       "dependencies": ["alpine_nginx"],
@@ -115,14 +121,15 @@
         }
       ],
       "settings": {
+        "SERVER_ROOT": "/var/www/html",
         "PHP_VERSION": 7.0
       },
-      "required": ["localPath"],
-      "icon": "https://myjeeva.com/content/blog/php-fpm-nginx.png"
+      "required": ["localPath","serverPath"],
+      "icon": "https://img.icons8.com/color/452/nginx.png"
     },
     {
       "name": "Nginx_PHP 7.1",
-      "tags": ["nginx", "php-fpm"],
+      "tags": ["nginx", "php"],
       "containers": ["alpine_nginx"],
       "notes": "Basic PHP stack running on Nginx and php 7.1-fpm.",
       "dependencies": ["alpine_nginx"],
@@ -133,14 +140,15 @@
         }
       ],
       "settings": {
+        "SERVER_ROOT": "/var/www/html",
         "PHP_VERSION": 7.1
       },
-      "required": ["localPath"],
-      "icon": "https://myjeeva.com/content/blog/php-fpm-nginx.png"
+      "required": ["localPath","serverPath"],
+      "icon": "https://img.icons8.com/color/452/nginx.png"
     },
     {
       "name": "Nginx_PHP 7.2",
-      "tags": ["nginx","php-fpm"],
+      "tags": ["nginx","php"],
       "containers": ["alpine_nginx"],
       "notes": "Basic PHP stack running on Nginx and php 7.2-fpm.",
       "dependencies": ["alpine_nginx"],
@@ -151,14 +159,15 @@
         }
       ],
       "settings": {
+        "SERVER_ROOT": "/var/www/html",
         "PHP_VERSION": 7.2
       },
-      "required": ["localPath"],
-      "icon": "https://myjeeva.com/content/blog/php-fpm-nginx.png"
+      "required": ["localPath","serverPath"],
+      "icon": "https://img.icons8.com/color/452/nginx.png"
     },
     {
       "name": "Nginx_PHP 7.3",
-      "tags": ["nginx", "php-fpm"],
+      "tags": ["nginx", "php"],
       "containers": ["alpine_nginx"],
       "notes": "Basic PHP stack running on Nginx and php 7.3-fpm.",
       "dependencies": ["alpine_nginx"],
@@ -169,14 +178,15 @@
         }
       ],
       "settings": {
+        "SERVER_ROOT": "/var/www/html",
         "PHP_VERSION": 7.3
       },
-      "required": ["localPath"],
-      "icon": "https://myjeeva.com/content/blog/php-fpm-nginx.png"
+      "required": ["localPath","serverPath"],
+      "icon": "https://img.icons8.com/color/452/nginx.png"
     },
     {
       "name": "Nginx_PHP 7.4",
-      "tags": ["nginx","php-fpm"],
+      "tags": ["nginx","php"],
       "containers": ["alpine_nginx"],
       "notes": "Basic PHP stack running on Nginx and php 7.4-fpm.",
       "dependencies": ["alpine_nginx"],
@@ -187,10 +197,11 @@
         }
       ],
       "settings": {
+        "SERVER_ROOT": "/var/www/html",
         "PHP_VERSION": 7.4
       },
-      "required": ["localPath"],
-      "icon": "https://myjeeva.com/content/blog/php-fpm-nginx.png"
+      "required": ["localPath","serverPath"],
+      "icon": "https://img.icons8.com/color/452/nginx.png"
     },
     {
       "name": "LEMP",
@@ -543,22 +554,6 @@
           "env": "GITLAB_HOST_SSH_PORT"
         }
       ]
-    },
-    {
-      "name": "LAMP_redency",
-      "tags": ["Web", "mysql", "phpmyadmin"],
-      "containers": ["web", "mysql", "phpmyadmin"],
-      "notes": "Drupal",
-      "dependencies": ["web", "mysql", "phpmyadmin"],
-      "ports": [
-        {
-          "env": "NGINX_HOST_HTTP_PORT",
-          "http": true
-        }
-      ],
-
-      "required": ["localPath"],
-      "icon": ["https://www.zippixel.com/images/hire-drupal.png"]
     }
   ]
 }
