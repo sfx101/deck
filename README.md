@@ -1,5 +1,5 @@
-# DockerStacks
-DockerStacks is a laradock GUI build on top of docker, electron.js, node-pty, xterm.js and the awesome laradock
+# DECK
+DECK (formerly Dockerstacks) is a laradock GUI build on top of docker, electron.js, node-pty, xterm.js and the awesome laradock
 
 ### Why a GUI?
 
@@ -19,18 +19,18 @@ Download the app here: https://github.com/sfx101/docker-stacks/releases (Follow 
 
 #### Installation
 
-https://docker-stacks.com/getting-started/installation/
+https://get-deck.com/getting-started/installation/
 
 #### Creating and starting stacks
 
-https://docker-stacks.com/getting-started/creating-and-starting-stacks/
+https://get-deck.com/getting-started/creating-and-starting-stacks/
 
 #### Opening codes and connecting to a stack
 
-https://docker-stacks.com/getting-started/opening-codes-and-connecting-to-a-stack/
+https://get-deck.com/getting-started/opening-codes-and-connecting-to-a-stack/
 
 
-Create your own custom images and unleash the power of Laradock and DockerStacks by editing
+Create your own custom images and unleash the power of Laradock and DECK by editing
 
 ```
 ~/.docker-stacks/storage/images.json
