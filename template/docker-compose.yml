@@ -714,7 +714,7 @@ services:
 
   ### phpMyAdmin ###########################################
   phpmyadmin:
-    image: 'mhzawadi/phpmyadmin:latest'
+    build: ./phpmyadmin
     environment:
       - PMA_ARBITRARY=1
       - MYSQL_USER=${PMA_USER}
