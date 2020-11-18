@@ -16,7 +16,8 @@
         "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 5.6
       },
-      "required": ["localPath","serverPath"]
+      "required": ["localPath","serverPath"],
+      "icon": "https://get-deck.com/wp-content/uploads/2020/11/apache-php-21.png"
     },
     {
       "name": "Apache_PHP 7.0",
@@ -34,7 +35,8 @@
         "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 7.0
       },
-      "required": ["localPath","serverPath"]
+      "required": ["localPath","serverPath"],
+      "icon": "https://get-deck.com/wp-content/uploads/2020/11/apache-php-21.png"
     },
     {
       "name": "Apache_PHP 7.1",
@@ -52,7 +54,8 @@
         "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 7.1
       },
-      "required": ["localPath","serverPath"]
+      "required": ["localPath","serverPath"],
+      "icon": "https://get-deck.com/wp-content/uploads/2020/11/apache-php-21.png"
     },
     {
       "name": "Apache_PHP 7.2",
@@ -70,7 +73,8 @@
         "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 7.2
       },
-      "required": ["localPath","serverPath"]
+      "required": ["localPath","serverPath"],
+      "icon": "https://get-deck.com/wp-content/uploads/2020/11/apache-php-21.png"
     },
     {
       "name": "Apache_PHP 7.3",
@@ -88,7 +92,8 @@
         "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 7.3
       },
-      "required": ["localPath","serverPath"]
+      "required": ["localPath","serverPath"],
+      "icon": "https://get-deck.com/wp-content/uploads/2020/11/apache-php-21.png"
     },
     {
       "name": "Apache_PHP 7.4",
@@ -106,7 +111,8 @@
         "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 7.4
       },
-      "required": ["localPath","serverPath"]
+      "required": ["localPath","serverPath"],
+      "icon": "https://get-deck.com/wp-content/uploads/2020/11/apache-php-21.png"
     },
     {
       "name": "Nginx_PHP 7.0",
@@ -125,7 +131,7 @@
         "PHP_VERSION": 7.0
       },
       "required": ["localPath","serverPath"],
-      "icon": "https://img.icons8.com/color/452/nginx.png"
+      "icon": "https://get-deck.com/wp-content/uploads/2020/11/ngix-php.png"
     },
     {
       "name": "Nginx_PHP 7.1",
@@ -144,7 +150,7 @@
         "PHP_VERSION": 7.1
       },
       "required": ["localPath","serverPath"],
-      "icon": "https://img.icons8.com/color/452/nginx.png"
+      "icon": "https://get-deck.com/wp-content/uploads/2020/11/ngix-php.png"
     },
     {
       "name": "Nginx_PHP 7.2",
@@ -163,7 +169,7 @@
         "PHP_VERSION": 7.2
       },
       "required": ["localPath","serverPath"],
-      "icon": "https://img.icons8.com/color/452/nginx.png"
+      "icon": "https://get-deck.com/wp-content/uploads/2020/11/ngix-php.png"
     },
     {
       "name": "Nginx_PHP 7.3",
@@ -182,7 +188,7 @@
         "PHP_VERSION": 7.3
       },
       "required": ["localPath","serverPath"],
-      "icon": "https://img.icons8.com/color/452/nginx.png"
+      "icon": "https://get-deck.com/wp-content/uploads/2020/11/ngix-php.png"
     },
     {
       "name": "Nginx_PHP 7.4",
@@ -201,7 +207,7 @@
         "PHP_VERSION": 7.4
       },
       "required": ["localPath","serverPath"],
-      "icon": "https://img.icons8.com/color/452/nginx.png"
+      "icon": "https://get-deck.com/wp-content/uploads/2020/11/ngix-php.png"
     },
     {
       "name": "LEMP",
