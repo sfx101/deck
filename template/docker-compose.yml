@@ -367,7 +367,6 @@ services:
     ports:
       - "${MYSQL_PORT}:3306"
 
-
   ### Percona ################################################
   percona:
     build:
