@@ -2,10 +2,10 @@
   "images": [
     {
       "name": "LEMP",
-      "tags": ["nginx", "php", "mysql","phpmyadmin"],
-      "containers": ["alpine_nginx","mysql","phpmyadmin"],
+      "tags": ["apache", "php", "mysql","phpmyadmin"],
+      "containers": ["alpine_nginx","alpine_mysql","phpmyadmin"],
       "notes": "LEMP Stack powered with Nginx, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
-      "dependencies": ["alpine_nginx","mysql","phpmyadmin"],
+      "dependencies": ["alpine_nginx","alpine_mysql","phpmyadmin"],
       "ports": [
         {
           "env": "NGINX_HOST_HTTP_PORT",
@@ -21,9 +21,9 @@
     {
       "name": "LAMP",
       "tags": ["apache", "php", "mysql","phpmyadmin"],
-      "containers": ["alpine_apache","mysql","phpmyadmin"],
+      "containers": ["alpine_apache","alpine_mysql","phpmyadmin"],
       "notes": "LAMP Stack powered with Apache2, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
-      "dependencies": ["alpine_apache","mysql","phpmyadmin"],
+      "dependencies": ["alpine_apache","alpine_mysql","phpmyadmin"],
       "ports": [
         {
           "env": "NGINX_HOST_HTTP_PORT",
@@ -238,6 +238,20 @@
       },
       "required": ["localPath","serverPath"],
       "icon": "https://img.icons8.com/color/452/nginx.png"
+    },
+    {
+      "name": "LARADOCK_LEMP",
+      "tags": ["php", "nginx", "mysql", "phpmyadmin"],
+      "containers": ["php-fpm", "nginx", "mysql", "workspace", "phpmyadmin"],
+      "notes": "LEMP Stack powered with Nginx, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
+      "dependencies": ["nginx", "mysql", "phpmyadmin", "workspace"]
+    },
+    {
+      "name": "LARADOCK_LAMP",
+      "tags": ["php", "apache", "mysql", "phpmyadmin"],
+      "containers": ["php-fpm", "apache2", "mysql", "workspace", "phpmyadmin"],
+      "notes": "LAMP Stack powered with Apache2, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
+      "dependencies": ["apache2", "mysql", "phpmyadmin", "workspace"]
     },
     {
       "name": "Laravel 7",

@@ -12,8 +12,6 @@ volumes:
     driver: ${VOLUMES_DRIVER}
   codeigniter:
     driver: ${VOLUMES_DRIVER}
-  moni_mysql:
-    driver: ${VOLUMES_DRIVER}
 
 services:
   ### Workspace Utilities ##################################
@@ -353,15 +351,19 @@ services:
 
   ### MySQL ################################################
   mysql:
-    image: 'wangxian/alpine-mysql'
+    build:
+      context: "./mysql"
+      args:
+        - "MYSQL_VERSION=${MYSQL_VERSION}"
     environment:
       - "MYSQL_DATABASE=${MYSQL_DATABASE}"
       - "MYSQL_USER=${MYSQL_USER}"
       - "MYSQL_PASSWORD=${MYSQL_PASSWORD}"
       - "MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}"
+      - "TZ=${WORKSPACE_TIMEZONE}"
     volumes:
       - "${DATA_PATH_HOST}/mysql:/var/lib/mysql"
-      - ${MYSQL_PATH}:/etc/mysql/
+      - "${MYSQL_ENTRYPOINT_INITDB}:/docker-entrypoint-initdb.d"
     ports:
       - "${MYSQL_PORT}:3306"
 
@@ -1755,6 +1757,7 @@ services:
 ###### Apache2 / PHP-FPM ################################################
   alpine_apache:
     image: 'deckapp/apache_php:v${PHP_VERSION}'
+    container_name: "apache2"
     volumes:
       - ${APP_CODE_PATH_HOST}:/var/www/localhost/htdocs
     ports:
@@ -1763,7 +1766,23 @@ services:
 ###### Nginx / PHP-FPM ################################################
   alpine_nginx:
     image: 'deckapp/nginx_php:v${PHP_VERSION}'
+    container_name: "nginx"
     volumes:
       - ${APP_CODE_PATH_HOST}:/var/www/html
     ports:
       - "${NGINX_HOST_HTTP_PORT}:80"
+
+###### Nginx / PHP-FPM ################################################
+  alpine_mysql:
+    image: 'wangxian/alpine-mysql'
+    container_name: "mysql"
+    environment:
+      - "MYSQL_DATABASE=${MYSQL_DATABASE}"
+      - "MYSQL_USER=${MYSQL_USER}"
+      - "MYSQL_PASSWORD=${MYSQL_PASSWORD}"
+      - "MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}"
+    volumes:
+      - "${DATA_PATH_HOST}/mysql:/var/lib/mysql"
+      - ${MYSQL_PATH}:/etc/mysql/
+    ports:
+      - "${MYSQL_PORT}:3306"
