@@ -13,10 +13,9 @@
         }
       ],
       "settings": {
-        "SERVER_ROOT": "/var/www/html",
         "PHP_VERSION": 7.3
       },
-      "required": ["localPath","serverPath"]
+      "required": ["localPath"]
     },
     {
       "name": "LAMP",
@@ -31,17 +30,16 @@
         }
       ],
       "settings": {
-        "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 7.3
       },
-      "required": ["localPath","serverPath"]
+      "required": ["localPath"]
     },
     {
       "name": "Apache_PHP 5.6",
       "tags": ["apache", "php"],
-      "containers": ["alpine_apache"],
+      "containers": ["apache_5"],
       "notes": "Basic PHP stack running on Apache2 and php 5.6-fpm.",
-      "dependencies": ["alpine_apache"],
+      "dependencies": ["apache_5"],
       "ports": [
         {
           "env": "NGINX_HOST_HTTP_PORT",
@@ -49,10 +47,9 @@
         }
       ],
       "settings": {
-        "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 5.6
       },
-      "required": ["localPath","serverPath"]
+      "required": ["localPath"]
     },
     {
       "name": "Apache_PHP 7.0",
@@ -67,10 +64,9 @@
         }
       ],
       "settings": {
-        "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 7.0
       },
-      "required": ["localPath","serverPath"]
+      "required": ["localPath"]
     },
     {
       "name": "Apache_PHP 7.1",
@@ -85,10 +81,9 @@
         }
       ],
       "settings": {
-        "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 7.1
       },
-      "required": ["localPath","serverPath"]
+      "required": ["localPath"]
     },
     {
       "name": "Apache_PHP 7.2",
@@ -103,10 +98,9 @@
         }
       ],
       "settings": {
-        "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 7.2
       },
-      "required": ["localPath","serverPath"]
+      "required": ["localPath"]
     },
     {
       "name": "Apache_PHP 7.3",
@@ -121,10 +115,9 @@
         }
       ],
       "settings": {
-        "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 7.3
       },
-      "required": ["localPath","serverPath"]
+      "required": ["localPath"]
     },
     {
       "name": "Apache_PHP 7.4",
@@ -139,10 +132,9 @@
         }
       ],
       "settings": {
-        "SERVER_ROOT": "/var/www/localhost/htdocs",
         "PHP_VERSION": 7.4
       },
-      "required": ["localPath","serverPath"]
+      "required": ["localPath"]
     },
     {
       "name": "Nginx_PHP 7.0",
@@ -157,10 +149,9 @@
         }
       ],
       "settings": {
-        "SERVER_ROOT": "/var/www/html",
         "PHP_VERSION": 7.0
       },
-      "required": ["localPath","serverPath"],
+      "required": ["localPath"],
       "icon": "https://img.icons8.com/color/452/nginx.png"
     },
     {
@@ -176,10 +167,9 @@
         }
       ],
       "settings": {
-        "SERVER_ROOT": "/var/www/html",
         "PHP_VERSION": 7.1
       },
-      "required": ["localPath","serverPath"],
+      "required": ["localPath"],
       "icon": "https://img.icons8.com/color/452/nginx.png"
     },
     {
@@ -195,10 +185,9 @@
         }
       ],
       "settings": {
-        "SERVER_ROOT": "/var/www/html",
         "PHP_VERSION": 7.2
       },
-      "required": ["localPath","serverPath"],
+      "required": ["localPath"],
       "icon": "https://img.icons8.com/color/452/nginx.png"
     },
     {
@@ -214,10 +203,9 @@
         }
       ],
       "settings": {
-        "SERVER_ROOT": "/var/www/html",
         "PHP_VERSION": 7.3
       },
-      "required": ["localPath","serverPath"],
+      "required": ["localPath"],
       "icon": "https://img.icons8.com/color/452/nginx.png"
     },
     {
@@ -233,21 +221,20 @@
         }
       ],
       "settings": {
-        "SERVER_ROOT": "/var/www/html",
         "PHP_VERSION": 7.4
       },
-      "required": ["localPath","serverPath"],
+      "required": ["localPath"],
       "icon": "https://img.icons8.com/color/452/nginx.png"
     },
     {
-      "name": "LARADOCK_LEMP",
+      "name": "Laradock_LEMP",
       "tags": ["php", "nginx", "mysql", "phpmyadmin"],
       "containers": ["php-fpm", "nginx", "mysql", "workspace", "phpmyadmin"],
       "notes": "LEMP Stack powered with Nginx, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
       "dependencies": ["nginx", "mysql", "phpmyadmin", "workspace"]
     },
     {
-      "name": "LARADOCK_LAMP",
+      "name": "Laradock_LAMP",
       "tags": ["php", "apache", "mysql", "phpmyadmin"],
       "containers": ["php-fpm", "apache2", "mysql", "workspace", "phpmyadmin"],
       "notes": "LAMP Stack powered with Apache2, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
