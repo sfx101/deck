@@ -1,28 +1,28 @@
 <img src="https://get-deck.com/wp-content/themes/sinatra/assets/images/d-logo-h5.jpg" alt="Deck logo" height="100"/>
 
-#### Modern & extendable web development studio
+### Modern & extendable web development studio
 
 DECK (formerly Dockerstacks) is powerful and high performant local web development studio unlike any other.
 
-### Automatic HTTPS
+#### Automatic HTTPS
 
 DECK's inbuilt SSL engine powered by LetsEncrypt and a supercharged proxy layer enables full HTTPS on localhost apps.
 
-### Unlimited projects, multiple server configurations
+#### Unlimited projects, multiple server configurations
 
 Easily spin-up Laravel, Codeigniter, Node JS, Django, Wordpress, Magento
 and many more apps right on your localhost with the click of a button
 and let DECK do the heavy lifting for you.
 
-### Built-in terminal
+#### Built-in terminal
 
 Get shell access to your apps and run commands to make changes in file permissions, server configurations, etc
 
-### DECK Flights
+#### DECK Flights
 
 Easily share your local app with co-workers remotely by using Flights
 
-### Ready to go configurations
+#### Ready to go configurations
 
 Focus on your web app and let DECK handle the server configurations for you.
 
