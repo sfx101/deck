@@ -2,32 +2,274 @@
   "images": [
     {
       "name": "LEMP",
+      "tags": ["nginx", "php", "mysql","phpmyadmin"],
+      "containers": ["alpine_nginx","alpine_mysql","phpmyadmin"],
+      "notes": "LEMP Stack powered with Nginx, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
+      "dependencies": ["alpine_nginx","alpine_mysql","phpmyadmin"],
+      "ports": [
+        {
+          "env": "NP_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.3
+      },
+      "required": ["localPath"]
+    },
+    {
+      "name": "LAMP",
+      "tags": ["apache", "php", "mysql","phpmyadmin"],
+      "containers": ["alpine_apache","alpine_mysql","phpmyadmin"],
+      "notes": "LAMP Stack powered with Apache2, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
+      "dependencies": ["alpine_apache","alpine_mysql","phpmyadmin"],
+      "ports": [
+        {
+          "env": "AP_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.3
+      },
+      "required": ["localPath"]
+    },
+    {
+      "name": "Apache_PHP 5.6",
+      "tags": ["apache", "php"],
+      "containers": ["apache_5"],
+      "notes": "Basic PHP stack running on Apache2 and php 5.6-fpm.",
+      "dependencies": ["apache_5"],
+      "ports": [
+        {
+          "env": "AP_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 5.6
+      },
+      "required": ["localPath"]
+    },
+    {
+      "name": "Apache_PHP 7.0",
+      "tags": ["apache","php"],
+      "containers": ["alpine_apache"],
+      "notes": "Basic PHP stack running on Apache2 and php 7.0-fpm.",
+      "dependencies": ["alpine_apache"],
+      "ports": [
+        {
+          "env": "AP_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.0
+      },
+      "required": ["localPath"]
+    },
+    {
+      "name": "Apache_PHP 7.1",
+      "tags": ["apache","php"],
+      "containers": ["alpine_apache"],
+      "notes": "Basic PHP stack running on Apache2 and php 7.1-fpm.",
+      "dependencies": ["alpine_apache"],
+      "ports": [
+        {
+          "env": "AP_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.1
+      },
+      "required": ["localPath"]
+    },
+    {
+      "name": "Apache_PHP 7.2",
+      "tags": ["apache","php"],
+      "containers": ["alpine_apache"],
+      "notes": "Basic PHP stack running on Apache2 and php 7.2-fpm.",
+      "dependencies": ["alpine_apache"],
+      "ports": [
+        {
+          "env": "AP_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.2
+      },
+      "required": ["localPath"]
+    },
+    {
+      "name": "Apache_PHP 7.3",
+      "tags": ["apache", "php"],
+      "containers": ["alpine_apache"],
+      "notes": "Basic PHP stack running on Apache2 and php 7.3-fpm.",
+      "dependencies": ["alpine_apache"],
+      "ports": [
+        {
+          "env": "AP_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.3
+      },
+      "required": ["localPath"]
+    },
+    {
+      "name": "Apache_PHP 7.4",
+      "tags": ["apache", "php"],
+      "containers": ["alpine_apache"],
+      "notes": "Basic PHP stack running on Apache2 and php 7.4-fpm.",
+      "dependencies": ["alpine_apache"],
+      "ports": [
+        {
+          "env": "AP_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.4
+      },
+      "required": ["localPath"]
+    },
+    {
+      "name": "Nginx_PHP 7.0",
+      "tags": ["nginx", "php"],
+      "containers": ["alpine_nginx"],
+      "notes": "Basic PHP stack running on Nginx and php 7.0-fpm.",
+      "dependencies": ["alpine_nginx"],
+      "ports": [
+        {
+          "env": "NP_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.0
+      },
+      "required": ["localPath"],
+      "icon": "https://img.icons8.com/color/452/nginx.png"
+    },
+    {
+      "name": "Nginx_PHP 7.1",
+      "tags": ["nginx", "php"],
+      "containers": ["alpine_nginx"],
+      "notes": "Basic PHP stack running on Nginx and php 7.1-fpm.",
+      "dependencies": ["alpine_nginx"],
+      "ports": [
+        {
+          "env": "NP_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.1
+      },
+      "required": ["localPath"],
+      "icon": "https://img.icons8.com/color/452/nginx.png"
+    },
+    {
+      "name": "Nginx_PHP 7.2",
+      "tags": ["nginx","php"],
+      "containers": ["alpine_nginx"],
+      "notes": "Basic PHP stack running on Nginx and php 7.2-fpm.",
+      "dependencies": ["alpine_nginx"],
+      "ports": [
+        {
+          "env": "NP_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.2
+      },
+      "required": ["localPath"],
+      "icon": "https://img.icons8.com/color/452/nginx.png"
+    },
+    {
+      "name": "Nginx_PHP 7.3",
+      "tags": ["nginx", "php"],
+      "containers": ["alpine_nginx"],
+      "notes": "Basic PHP stack running on Nginx and php 7.3-fpm.",
+      "dependencies": ["alpine_nginx"],
+      "ports": [
+        {
+          "env": "NP_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.3
+      },
+      "required": ["localPath"],
+      "icon": "https://img.icons8.com/color/452/nginx.png"
+    },
+    {
+      "name": "Nginx_PHP 7.4",
+      "tags": ["nginx","php"],
+      "containers": ["alpine_nginx"],
+      "notes": "Basic PHP stack running on Nginx and php 7.4-fpm.",
+      "dependencies": ["alpine_nginx"],
+      "ports": [
+        {
+          "env": "NP_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.4
+      },
+      "required": ["localPath"],
+      "icon": "https://img.icons8.com/color/452/nginx.png"
+    },
+    {
+      "name": "Laradock_LEMP",
       "tags": ["php", "nginx", "mysql", "phpmyadmin"],
       "containers": ["php-fpm", "nginx", "mysql", "workspace", "phpmyadmin"],
       "notes": "LEMP Stack powered with Nginx, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
       "dependencies": ["nginx", "mysql", "phpmyadmin", "workspace"]
     },
     {
-      "name": "LAMP",
+      "name": "Laradock_LAMP",
       "tags": ["php", "apache", "mysql", "phpmyadmin"],
       "containers": ["php-fpm", "apache2", "mysql", "workspace", "phpmyadmin"],
       "notes": "LAMP Stack powered with Apache2, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
       "dependencies": ["apache2", "mysql", "phpmyadmin", "workspace"]
     },
     {
-      "name": "Phalcon",
-      "tags": ["phalcon", "php", "nginx", "mysql", "phpmyadmin"],
-      "containers": ["php-fpm", "nginx", "mysql", "workspace", "phpmyadmin"],
-      "notes": "Phalcon is a PHP web framework based on the model–view–controller pattern. Originally released in 2012, it is an open-source framework licensed under the terms of the BSD License.",
-      "dependencies": ["nginx", "mysql", "phpmyadmin", "workspace"],
-      "settings": {
-        "SERVER_ROOT": "/var/www",
-        "WORKSPACE_INSTALL_PHALCON": true,
-        "PHP_FPM_INSTALL_PHALCON": true,
-        "LARADOCK_PHALCON_VERSION": "3.4.5"
-      },
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Phalcon_logo.png"
+      "name": "Laravel 7",
+      "tags": ["laravel 7", "mysql", "bitnami"],
+      "containers": ["laravel7", "mysql"],
+      "notes": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller architectural pattern and based on Symfony",
+      "dependencies": ["laravel7"],
+      "ports": [
+        {
+          "env": "LARAVEL_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "required": ["localPath"],
+      "icon": "https://laravel.com/img/logomark.min.svg"
     },
+    {
+      "name": "Laravel 6",
+      "tags": ["laravel 6", "php", "mariadb", "bitnami"],
+      "containers": ["laravel6", "bitnami-mariadb"],
+      "notes": "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller architectural pattern and based on Symfony",
+      "dependencies": ["laravel6"],
+      "ports": [
+        {
+          "env": "LARAVEL_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "icon": "https://laravel.com/img/logomark.min.svg"
+    },
+
     {
       "name": "WordPress",
       "tags": ["wordpress", "mysql", "phpmyadmin"],
@@ -43,6 +285,136 @@
       "required": ["localPath"]
     },
 
+    {
+      "name": "Nodejs v14",
+      "tags": ["nodejs", "v14", "bitnami"],
+      "containers": ["nodejs"],
+      "notes": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
+      "dependencies": ["nodejs"],
+      "ports": [
+        {
+          "env": "NODEJS_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "NODEJS_VERSION": 14
+      },
+      "required": ["localPath"],
+      "icon": "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png"
+    },
+    {
+      "name": "Nodejs v13",
+      "tags": ["nodejs", "v13", "bitnami"],
+      "containers": ["nodejs"],
+      "notes": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
+      "dependencies": ["nodejs"],
+      "ports": [
+        {
+          "env": "NODEJS_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "NODEJS_VERSION": 13
+      },
+      "required": ["localPath"],
+      "icon": "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png"
+    },
+    {
+      "name": "Nodejs v12",
+      "tags": ["nodejs", "v12", "bitnami"],
+      "containers": ["nodejs"],
+      "notes": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
+      "dependencies": ["nodejs"],
+      "ports": [
+        {
+          "env": "NODEJS_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "NODEJS_VERSION": 12
+      },
+      "required": ["localPath"],
+      "icon": "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png"
+    },
+    {
+      "name": "Nodejs v10",
+      "tags": ["nodejs", "v10", "bitnami"],
+      "containers": ["nodejs"],
+      "notes": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
+      "dependencies": ["nodejs"],
+      "ports": [
+        {
+          "env": "NODEJS_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "NODEJS_VERSION": 10
+      },
+      "required": ["localPath"],
+      "icon": "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/full/nodejslogo.png"
+    },
+    {
+      "name": "Flarum",
+      "tags": ["flarum", "mysql"],
+      "containers": ["flarum", "mysql"],
+      "notes": "Flarum is the next-generation forum software that makes online discussion fun. It's simple, fast, and free",
+      "dependencies": ["flarum"],
+      "ports": [
+        {
+          "env": "FLARUM_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "icon": "https://opencollective-production.s3.us-west-1.amazonaws.com/0959f4e0-0559-11ea-97cf-5fc2f9568174.png"
+    },
+    {
+      "name": "Joomla",
+      "tags": ["joomla", "mariadb", "bitnami"],
+      "containers": ["joomla", "bitnami-mariadb"],
+      "notes": "Joomla Laravel 6",
+      "dependencies": ["joomla"],
+      "ports": [
+        {
+          "env": "JOOMLA_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "required": ["localPath"],
+      "icon": "https://codeception.com/images/frameworks/joomla.png"
+    },
+    {
+      "name": "SuiteCRM",
+      "tags": ["suitecrm", "mysql", "bitnami"],
+      "containers": ["suitecrm", "mysql"],
+      "notes": "SuiteCRM is a free and open source Customer Relationship Management application for servers. It is written in PHP. Open source CRM is often used as an alternative to proprietary CRM software from major corporations such as HubSpot, Salesforce and Microsoft Dynamics CRM applications",
+      "dependencies": ["suitecrm"],
+      "ports": [
+        {
+          "env": "SUITECRM_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "required": ["localPath"],
+      "icon": "https://dyltqmyl993wv.cloudfront.net/assets/stacks/suitecrm/img/suitecrm-stack-220x234.png"
+    },
+    {
+      "name": "Phalcon",
+      "tags": ["phalcon", "php", "nginx", "mysql", "phpmyadmin"],
+      "containers": ["php-fpm", "nginx", "mysql", "workspace", "phpmyadmin"],
+      "notes": "Phalcon is a PHP web framework based on the model–view–controller pattern. Originally released in 2012, it is an open-source framework licensed under the terms of the BSD License.",
+      "dependencies": ["nginx", "mysql", "phpmyadmin", "workspace"],
+      "settings": {
+        "SERVER_ROOT": "/var/www",
+        "WORKSPACE_INSTALL_PHALCON": true,
+        "PHP_FPM_INSTALL_PHALCON": true,
+        "LARADOCK_PHALCON_VERSION": "3.4.5"
+      },
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Phalcon_logo.png"
+    },
     {
       "name": "Ghost",
       "tags": ["ghost"],
@@ -90,7 +462,8 @@
       "tags": ["caddy", "php"],
       "containers": ["caddy", "php-fpm"],
       "notes": "Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go",
-      "dependencies": ["caddy"]
+      "dependencies": ["caddy"],
+      "icon": ["https://d2.alternativeto.net/dist/icons/caddy_167144.png?width=64&height=64&mode=crop&upscale=false"]
     },
     {
       "name": "Adminer",
@@ -104,7 +477,8 @@
           "http": true
         }
       ],
-      "required": ["localPath"]
+      "required": ["localPath"],
+      "icon": ["https://a.fsdn.com/allura/p/adminer/icon?1573477140"]
     },
     {
       "name": "Confluence",
@@ -129,6 +503,59 @@
         {
           "env": "PORTAINER_PORT",
           "http": true
+        }
+      ],
+      "icon": ["https://developer.asustor.com/uploadIcons/0020_999_1596450839_Portainer_256.png"]
+    },
+    {
+      "name": "NextCloud",
+      "tags": ["nextcloud"],
+      "containers": ["nextcloud"],
+      "notes": "NextCloud",
+      "dependencies": ["nextcloud"],
+      "ports": [
+        {
+          "env": "NC_HTTP_PORT",
+          "http": true
+        }
+      ],
+
+      "required": ["localPath"],
+      "icon": ["https://www.privacytools.io/assets/img/svg/3rd-party/nextcloud.svg"]
+    },
+
+    {
+      "name": "Drupal",
+      "tags": ["drupal", "mysql"],
+      "containers": ["drupal", "mysql", "phpmyadmin"],
+      "notes": "Drupal",
+      "dependencies": ["drupal", "mysql", "phpmyadmin"],
+      "ports": [
+        {
+          "env": "DRUPAL_HTTP_PORT",
+          "http": true
+        }
+      ],
+
+      "required": ["localPath"],
+      "icon": ["https://www.zippixel.com/images/hire-drupal.png"]
+    },
+    {
+      "name": "ELK",
+      "tags": ["elk"],
+      "containers": ["elk"],
+      "notes": "ELK Stack",
+      "dependencies": ["elk"],
+      "ports": [
+        {
+          "env": "ES_PORT",
+          "http": true
+        },
+        {
+          "env": "LOGSTASH_PORT"
+        },
+        {
+          "env": "KIBANA_PORT"
         }
       ]
     },
