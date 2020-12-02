@@ -1,4 +1,4 @@
-# DECK
+<img src="https://get-deck.com/wp-content/themes/sinatra/assets/images/d-logo-h5.jpg" alt="Deck logo" height="100"/>
 DECK (formerly Dockerstacks) is a laradock GUI build on top of docker, electron.js, node-pty, xterm.js and the awesome laradock
 
 ### Why a GUI?
