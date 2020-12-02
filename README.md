@@ -1,16 +1,30 @@
 <img src="https://get-deck.com/wp-content/themes/sinatra/assets/images/d-logo-h5.jpg" alt="Deck logo" height="100"/>
-DECK (formerly Dockerstacks) is a laradock GUI build on top of docker, electron.js, node-pty, xterm.js and the awesome laradock
 
-### Why a GUI?
+#### Modern & extendable web development studio
 
-- Starting, stopping, re-building is pretty painful when you're working on a number of projects
-- Setting up more than one project requires a bit of expert knowledge in Laradock, especially when someone is getting started, the desktop app solves this problem by using random open ports without editing any server config
-- Takes away the learning curve on knowing Laradock / Docker commands so that things can be done at the click of a button
-- Developers who still rely on XAMPP / WAMP gets a look how powerful Docker is as a development environment
-- Supports pre-build images for running Laravel or any PHP frameworks, Wordpress or any CMS in few mins
-- Built-in support for HTTPS with SSL certificates, zero configuration needed
-- Advanced networking features to connect multiple stack containers
+DECK (formerly Dockerstacks) is powerful and high performant local web development studio unlike any other.
 
+### Automatic HTTPS
+
+DECK's inbuilt SSL engine powered by LetsEncrypt and a supercharged proxy layer enables full HTTPS on localhost apps.
+
+### Unlimited projects, multiple server configurations
+
+Easily spin-up Laravel, Codeigniter, Node JS, Django, Wordpress, Magento
+and many more apps right on your localhost with the click of a button
+and let DECK do the heavy lifting for you.
+
+### Built-in terminal
+
+Get shell access to your apps and run commands to make changes in file permissions, server configurations, etc
+
+### DECK Flights
+
+Easily share your local app with co-workers remotely by using Flights
+
+### Ready to go configurations
+
+Focus on your web app and let DECK handle the server configurations for you.
 
 
 ![Image description](https://github.com/sfx101/docker-stacks/blob/master/Kapture%202020-05-09%20at%2022.31.46.gif)
