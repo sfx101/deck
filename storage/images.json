@@ -2,7 +2,7 @@
   "images": [
     {
       "name": "LEMP",
-      "tags": ["apache", "php", "mysql","phpmyadmin"],
+      "tags": ["nginx", "php", "mysql","phpmyadmin"],
       "containers": ["alpine_nginx","alpine_mysql","phpmyadmin"],
       "notes": "LEMP Stack powered with Nginx, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
       "dependencies": ["alpine_nginx","alpine_mysql","phpmyadmin"],
