@@ -6,8 +6,9 @@ ARG SERVER_ROOT
 COPY httpd.conf /etc/apache2/httpd.conf
 ARG SERVER_ROOT
 
-RUN sed -i "s#{SERVER_ROOT}#$SERVER_ROOT#g" /etc/apache2/httpd.conf
+RUN sed -i "s#{SERVER_ROOT}#${SERVER_ROOT}#g" /etc/apache2/httpd.conf
 VOLUME [ "/var/www/" ]
+RUN chmod 777 /var/www/
 WORKDIR /var/www
 
 EXPOSE 80
