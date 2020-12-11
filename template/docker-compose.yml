@@ -1708,8 +1708,8 @@ services:
   apache_5:
     build:
       context: ./apache_5
-      args:
-        - "SERVER_ROOT:${SERVER_ROOT}"
+    environment: 
+      - "SERVER_ROOT=${SERVER_ROOT}"
     volumes:
       - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_NGINX}${APP_CODE_CONTAINER_FLAG}
     ports:
