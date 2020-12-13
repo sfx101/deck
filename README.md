@@ -4,7 +4,7 @@
 
 DECK (formerly Dockerstacks) is powerful and high performant local web development studio unlike any other.
 
-![DECK Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-13-at-11.07.31-AM.png)
+![DECK Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-13-at-2.22.50-PM.png)
 
 #### Automatic HTTPS
 
