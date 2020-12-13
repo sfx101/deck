@@ -4,6 +4,8 @@
 
 DECK (formerly Dockerstacks) is powerful and high performant local web development studio unlike any other.
 
+![DECK Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-13-at-11.07.31-AM.png)
+
 #### Automatic HTTPS
 
 DECK's inbuilt SSL engine powered by LetsEncrypt and a supercharged proxy layer enables full HTTPS on localhost apps.
@@ -25,9 +27,6 @@ Easily share your local app with co-workers remotely by using Flights
 #### Ready to go configurations
 
 Focus on your web app and let DECK handle the server configurations for you.
-
-
-![Image description](https://github.com/sfx101/docker-stacks/blob/master/Kapture%202020-05-09%20at%2022.31.46.gif)
 
 Download the app here: https://github.com/sfx101/docker-stacks/releases (Follow the instructions on the Release page)
 
