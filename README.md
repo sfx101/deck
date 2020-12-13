@@ -1,6 +1,6 @@
 <img src="https://get-deck.com/wp-content/themes/sinatra/assets/images/d-logo-h5.jpg" alt="Deck logo" height="100"/>
 
-### Modern & extendable web development studio
+### Modern & extendable local web development studio
 
 DECK (formerly Dockerstacks) is powerful and high performant local web development studio unlike any other.
 
