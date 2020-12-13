@@ -234,14 +234,14 @@
     },
     {
       "name": "Laradock_LEMP",
-      "tags": ["php", "nginx", "mysql", "phpmyadmin"],
+      "tags": ["laradock","php", "nginx", "mysql", "phpmyadmin"],
       "containers": ["php-fpm", "nginx", "mysql", "workspace", "phpmyadmin"],
       "notes": "LEMP Stack powered with Nginx, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
       "dependencies": ["nginx", "mysql", "phpmyadmin", "workspace"]
     },
     {
       "name": "Laradock_LAMP",
-      "tags": ["php", "apache", "mysql", "phpmyadmin"],
+      "tags": ["laradock","php", "apache", "mysql", "phpmyadmin"],
       "containers": ["php-fpm", "apache2", "mysql", "workspace", "phpmyadmin"],
       "notes": "LAMP Stack powered with Apache2, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
       "dependencies": ["apache2", "mysql", "phpmyadmin", "workspace"]
