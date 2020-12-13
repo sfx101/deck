@@ -1,5 +1,11 @@
 version: "3"
 
+networks:
+  frontend:
+    driver: ${NETWORKS_DRIVER}
+  backend:
+    driver: ${NETWORKS_DRIVER}
+
 volumes:
   mysql:
     driver: ${VOLUMES_DRIVER}
@@ -122,6 +128,9 @@ services:
       - DOCKER_TLS_CERTDIR=/certs
       - DOCKER_CERT_PATH=/certs/client
       - INSTALL_LARAVEL=${WORKSPACE_INSTALL_LARAVEL_INSTALLER}
+    networks:
+      - frontend
+      - backend
 
   ### PHP-FPM ##############################################
   php-fpm:
@@ -203,6 +212,8 @@ services:
       - DOCKER_TLS_CERTDIR=/certs
       - DOCKER_CERT_PATH=/certs/client
       - FAKETIME=${PHP_FPM_FAKETIME}
+    networks:
+      - backend
   
   phpfpm-lite:
     image: 'bitnami/php-fpm:latest'
@@ -245,7 +256,8 @@ services:
       - workspace
     extra_hosts:
       - "dockerhost:${DOCKER_HOST_IP}"
-
+    networks:
+      - backend
   ### Laravel Horizon ############################################
   laravel-horizon:
     build:
@@ -275,6 +287,8 @@ services:
       - workspace
     extra_hosts:
       - "dockerhost:${DOCKER_HOST_IP}"
+    networks:
+      - backend
 
   ### NGINX Server #########################################
   nginx:
@@ -297,6 +311,9 @@ services:
       - "${NGINX_HOST_HTTPS_PORT}:443"
     depends_on:
       - php-fpm
+    networks:
+      - frontend
+      - backend
 
   ### Blackfire ########################################
   blackfire:
@@ -306,6 +323,8 @@ services:
       - BLACKFIRE_SERVER_TOKEN=${BLACKFIRE_SERVER_TOKEN}
     depends_on:
       - php-fpm
+    networks:
+      - backend
 
   ### Apache Server ########################################
   apache2:
@@ -325,6 +344,9 @@ services:
       - "${APACHE_HOST_HTTPS_PORT}:443"
     depends_on:
       - php-fpm
+    networks:
+      - frontend
+      - backend
 
   ### HHVM #################################################
   hhvm:
@@ -335,6 +357,9 @@ services:
       - "9000"
     depends_on:
       - workspace
+    networks:
+      - frontend
+      - backend
 
   ### Minio ################################################
   minio:
@@ -347,6 +372,9 @@ services:
     environment:
       - MINIO_ACCESS_KEY=access
       - MINIO_SECRET_KEY=secretkey
+    networks:
+      - frontend
+      - backend
 
   ### MySQL ################################################
   mysql:
@@ -365,6 +393,8 @@ services:
       - "${MYSQL_ENTRYPOINT_INITDB}:/docker-entrypoint-initdb.d"
     ports:
       - "${MYSQL_PORT}:3306"
+    networks:
+      - "backend"
 
   ### Percona ################################################
   percona:
@@ -380,6 +410,8 @@ services:
       - ${PERCONA_ENTRYPOINT_INITDB}:/docker-entrypoint-initdb.d
     ports:
       - "${PERCONA_PORT}:3306"
+    networks:
+      - backend
 
   ### MSSQL ################################################
   mssql:
@@ -394,6 +426,8 @@ services:
       - ${DATA_PATH_HOST}/mssql:/var/opt/mssql
     ports:
       - "${MSSQL_PORT}:1433"
+    networks:
+      - backend
 
   ### MariaDB ##############################################
   mariadb:
@@ -415,6 +449,8 @@ services:
       - MYSQL_USER=${MARIADB_USER}
       - MYSQL_PASSWORD=${MARIADB_PASSWORD}
       - MYSQL_ROOT_PASSWORD=${MARIADB_ROOT_PASSWORD}
+    networks:
+      - backend
 
   ### PostgreSQL ###########################################
   postgres:
@@ -447,6 +483,8 @@ services:
       - POSTGRES_CONFLUENCE_DB=${CONFLUENCE_POSTGRES_DB}
       - POSTGRES_CONFLUENCE_USER=${CONFLUENCE_POSTGRES_USER}
       - POSTGRES_CONFLUENCE_PASSWORD=${CONFLUENCE_POSTGRES_PASSWORD}
+    networks:
+      - backend
 
   ### PostgreSQL PostGis ###################################
   postgres-postgis:
@@ -459,6 +497,8 @@ services:
       - POSTGRES_DB=${POSTGRES_DB}
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    networks:
+      - backend
 
   ### Neo4j ################################################
   neo4j:
@@ -470,6 +510,8 @@ services:
       - NEO4J_AUTH=default:secret
     volumes:
       - ${DATA_PATH_HOST}/neo4j:/var/lib/neo4j/data
+    networks:
+      - backend
 
   ### MongoDB ##############################################
   mongo:
@@ -479,6 +521,8 @@ services:
     volumes:
       - ${DATA_PATH_HOST}/mongo:/data/db
       - ${DATA_PATH_HOST}/mongo_config:/data/configdb
+    networks:
+      - backend
 
   ### RethinkDB ##############################################
   rethinkdb:
@@ -487,6 +531,8 @@ services:
       - "${RETHINKDB_PORT}:8080"
     volumes:
       - ${DATA_PATH_HOST}/rethinkdb:/data/rethinkdb_data
+    networks:
+      - backend
 
   ### Redis ################################################
   redis:
@@ -495,12 +541,16 @@ services:
       - ${DATA_PATH_HOST}/redis:/data
     ports:
       - "${REDIS_PORT}:6379"
+    networks:
+      - backend
 
   ### Redis Cluster ##########################################
   redis-cluster:
     build: ./redis-cluster
     ports:
       - "${REDIS_CLUSTER_PORT_RANGE}:7000-7005"
+    networks:
+      - backend
 
   ### ZooKeeper #########################################
   zookeeper:
@@ -510,6 +560,8 @@ services:
       - ${DATA_PATH_HOST}/zookeeper/datalog:/datalog
     ports:
       - "${ZOOKEEPER_PORT}:2181"
+    networks:
+      - backend
 
   ### Aerospike ##########################################
   aerospike:
@@ -526,6 +578,8 @@ services:
       - STORAGE_GB=${AEROSPIKE_STORAGE_GB}
       - MEM_GB=${AEROSPIKE_MEM_GB}
       - NAMESPACE=${AEROSPIKE_NAMESPACE}
+    networks:
+      - backend
 
   ### Memcached ############################################
   memcached:
@@ -536,6 +590,8 @@ services:
       - "${MEMCACHED_HOST_PORT}:11211"
     depends_on:
       - php-fpm
+    networks:
+      - backend
 
   ### Beanstalkd ###########################################
   beanstalkd:
@@ -545,6 +601,8 @@ services:
     privileged: true
     depends_on:
       - php-fpm
+    networks:
+      - backend
 
   ### RabbitMQ #############################################
   rabbitmq:
@@ -562,6 +620,8 @@ services:
       - ${DATA_PATH_HOST}/rabbitmq:/var/lib/rabbitmq
     depends_on:
       - php-fpm
+    networks:
+      - backend
 
   ### Cassandra ############################################
   cassandra:
@@ -592,6 +652,8 @@ services:
       - ${DATA_PATH_HOST}/cassandra:/var/lib/cassandra
     depends_on:
       - php-fpm
+    networks:
+      - backend
 
   ### Gearman ############################################
   gearman:
@@ -623,6 +685,8 @@ services:
     hostname: laradock-gearman
     depends_on:
       - php-fpm
+    networks:
+      - backend
 
   ### Beanstalkd Console ###################################
   beanstalkd-console:
@@ -631,6 +695,8 @@ services:
       - "${BEANSTALKD_CONSOLE_HOST_PORT}:2080"
     depends_on:
       - beanstalkd
+    networks:
+      - backend
 
   ### Caddy Server #########################################
   caddy:
@@ -645,6 +711,9 @@ services:
       - "${CADDY_HOST_HTTPS_PORT}:443"
     depends_on:
       - php-fpm
+    networks:
+      - frontend
+      - backend
 
   ### phpMyAdmin ###########################################
   phpmyadmin:
@@ -656,6 +725,11 @@ services:
       - MYSQL_ROOT_PASSWORD=${PMA_ROOT_PASSWORD}
     ports:
       - "${PMA_PORT}:80"
+    depends_on:
+      - "${PMA_DB_ENGINE}"
+    networks:
+      - frontend
+      - backend
 
   ### Adminer ###########################################
   adminer:
@@ -667,6 +741,9 @@ services:
       - "${ADM_PORT}:8080"
     depends_on:
       - php-fpm
+    networks:
+      - frontend
+      - backend
 
   ### pgAdmin ##############################################
   pgadmin:
@@ -680,6 +757,9 @@ services:
       - ${DATA_PATH_HOST}/pgadmin:/var/lib/pgadmin
     depends_on:
       - postgres
+    networks:
+      - frontend
+      - backend
 
   ### ElasticSearch ########################################
   elasticsearch:
@@ -704,6 +784,9 @@ services:
       - "${ELASTICSEARCH_HOST_TRANSPORT_PORT}:9300"
     depends_on:
       - php-fpm
+    networks:
+      - frontend
+      - backend
 
   ### Logstash ##############################################
   logstash:
@@ -720,6 +803,9 @@ services:
       LS_JAVA_OPTS: "-Xmx1g -Xms1g"
     env_file:
       - .env
+    networks:
+      - frontend
+      - backend
     depends_on:
       - elasticsearch
 
@@ -733,6 +819,9 @@ services:
       - "${KIBANA_HTTP_PORT}:5601"
     depends_on:
       - elasticsearch
+    networks:
+      - frontend
+      - backend
 
   ### Certbot #########################################
   certbot:
@@ -744,6 +833,8 @@ services:
     environment:
       - CN="fake.domain.com"
       - EMAIL="fake.email@gmail.com"
+    networks:
+      - frontend
 
   ### Mailhog ################################################
   mailhog:
@@ -751,6 +842,9 @@ services:
     ports:
       - "1025:1025"
       - "8025:8025"
+    networks:
+      - frontend
+      - backend
 
   ### MailDev ##############################################
   maildev:
@@ -758,6 +852,9 @@ services:
     ports:
       - "${MAILDEV_HTTP_PORT}:80"
       - "${MAILDEV_SMTP_PORT}:25"
+    networks:
+      - frontend
+      - backend
 
   ### Selenium ###############################################
   selenium:
@@ -766,6 +863,8 @@ services:
       - "${SELENIUM_PORT}:4444"
     volumes:
       - /dev/shm:/dev/shm
+    networks:
+      - frontend
 
   ### Varnish ##########################################
   proxy:
@@ -785,6 +884,8 @@ services:
       - "${VARNISH_PORT}:${VARNISH_PORT}"
     links:
       - workspace
+    networks:
+      - frontend
 
   proxy2:
     container_name: proxy2
@@ -803,6 +904,8 @@ services:
       - "${VARNISH_PORT}:${VARNISH_PORT}"
     links:
       - workspace
+    networks:
+      - frontend
 
   ### HAProxy ####################################
   haproxy:
@@ -827,6 +930,9 @@ services:
     volumes:
       - ${JENKINS_HOME}:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - frontend
+      - backend
 
   ### Grafana ################################################
   grafana:
@@ -836,6 +942,8 @@ services:
       - ${DATA_PATH_HOST}/grafana:/var/lib/grafana
     ports:
       - "${GRAFANA_PORT}:3000"
+    networks:
+      - backend
 
   ### Graylog #######################################
   graylog:
@@ -864,6 +972,8 @@ services:
     user: graylog
     volumes:
       - ${DATA_PATH_HOST}/graylog:/usr/share/graylog/data
+    networks:
+      - backend
 
   ### Laravel Echo Server #######################################
   laravel-echo-server:
@@ -875,6 +985,9 @@ services:
       - "${LARAVEL_ECHO_SERVER_PORT}:6001"
     links:
       - redis
+    networks:
+      - frontend
+      - backend
 
   ### Solr ################################################
   solr:
@@ -888,6 +1001,8 @@ services:
       - ${DATA_PATH_HOST}/solr:/opt/solr/server/solr/mycores
     ports:
       - "${SOLR_PORT}:8983"
+    networks:
+      - backend
 
   ### Thumbor #########################################
   thumbor:
@@ -1001,6 +1116,9 @@ services:
       - TC_AWS_ENABLE_HTTP_LOADER=${TC_AWS_ENABLE_HTTP_LOADER}
       - TC_AWS_ALLOWED_BUCKETS=${TC_AWS_ALLOWED_BUCKETS}
       - TC_AWS_STORE_METADATA=${TC_AWS_STORE_METADATA}
+    networks:
+      - frontend
+      - backend
 
   ### AWS EB-CLI ################################################
   aws:
@@ -1023,6 +1141,8 @@ services:
       - "dockerhost:${DOCKER_HOST_IP}"
     ports:
       - ${PORTAINER_PORT}:9000
+    networks:
+      - backend
 
   ### Gitlab ################################################
   gitlab:
@@ -1053,6 +1173,8 @@ services:
       - "${GITLAB_HOST_HTTP_PORT}:80"
       - "${GITLAB_HOST_HTTPS_PORT}:443"
       - "${GITLAB_HOST_SSH_PORT}:22"
+    networks:
+      - backend
     depends_on:
       - redis
       - postgres
@@ -1081,6 +1203,8 @@ services:
       - ${JUPYTERHUB_CUSTOM_CONFIG}:/jupyterhub_config.py
       - ${JUPYTERHUB_USER_DATA}:/user-data
       - ${JUPYTERHUB_USER_LIST}:/userlist
+    networks:
+      - backend
     ports:
       - "${JUPYTERHUB_PORT}:80"
     environment:
@@ -1106,6 +1230,8 @@ services:
     build:
       context: ./ipython
       dockerfile: Dockerfile.controller
+    networks:
+      - backend
     extra_hosts:
       - "laradock-ipython:${LARADOCK_IPYTHON_CONTROLLER_IP}"
     ports:
@@ -1114,6 +1240,8 @@ services:
     build:
       context: ./ipython
       dockerfile: Dockerfile.engine
+    networks:
+      - backend
     extra_hosts:
       - "laradock-ipython:${LARADOCK_IPYTHON_CONTROLLER_IP}"
 
@@ -1126,6 +1254,8 @@ services:
       - /:/host:ro
     ports:
       - "${NETDATA_PORT}:19999"
+    networks:
+      - backend
 
   ### REDISWEBUI ################################################
   redis-webui:
@@ -1136,6 +1266,8 @@ services:
       - ADMIN_PASS=${REDIS_WEBUI_PASSWORD}
       - REDIS_1_HOST=${REDIS_WEBUI_CONNECT_HOST}
       - REDIS_1_PORT=${REDIS_WEBUI_CONNECT_PORT}
+    networks:
+      - backend
     ports:
       - "${REDIS_WEBUI_PORT}:80"
     depends_on:
@@ -1153,6 +1285,8 @@ services:
       - ${DATA_PATH_HOST}/mongo-webui:/data/db
     ports:
       - "${MONGO_WEBUI_PORT}:3000"
+    networks:
+      - backend
     depends_on:
       - mongo
 
@@ -1165,6 +1299,8 @@ services:
       - ${METABASE_PORT}:3000
     volumes:
       - ${DATA_PATH_HOST}/metabase-data:/metabase-data
+    networks:
+      - backend
 
   ### IDE-THEIA ################################################
   ide-theia:
@@ -1174,6 +1310,8 @@ services:
       - ${APP_CODE_PATH_HOST}:/home/project
     ports:
       - "${IDE_THEIA_PORT}:3000"
+    networks:
+      - backend
 
   ### IDE-WEBIDE ################################################
   ide-webide:
@@ -1183,6 +1321,8 @@ services:
       - ${DATA_PATH_HOST}/ide/webide/ide.db:/root/.coding-ide/ide.db
     ports:
       - "${IDE_WEBIDE_PORT}:8080"
+    networks:
+      - backend
 
   ### IDE-CODIAD ################################################
   ide-codiad:
@@ -1199,6 +1339,8 @@ services:
       - ${DATA_PATH_HOST}/ide/codiad:/config
     ports:
       - "${IDE_CODIAD_PORT}:80"
+    networks:
+      - backend
 
   ### IDE-ICECODER ################################################
   ide-icecoder:
@@ -1214,6 +1356,8 @@ services:
       - ${APP_CODE_PATH_HOST}:/home/laradock/ICEcoder/dev
     ports:
       - "${IDE_ICECODER_PORT}:8080"
+    networks:
+      - backend
 
   ### DOCKER-REGISTRY ################################################
   docker-registry:
@@ -1224,6 +1368,8 @@ services:
       - ${DATA_PATH_HOST}/docker-registry:/var/lib/registry
     ports:
       - "${DOCKER_REGISTRY_PORT}:5000"
+    networks:
+      - backend
 
   ### DOCKER-WEB-UI ################################################
   docker-web-ui:
@@ -1239,6 +1385,9 @@ services:
       - /etc/localtime:/etc/localtime:ro
     ports:
       - "${DOCKER_WEBUI_PORT}:80"
+    networks:
+      - frontend
+      - backend
 
   ### MAILU ################################################
   mailu:
@@ -1418,6 +1567,9 @@ services:
     ports:
       - "${TRAEFIK_HOST_HTTP_PORT}:80"
       - "${TRAEFIK_HOST_HTTPS_PORT}:443"
+    networks:
+      - frontend
+      - backend
     labels:
       - traefik.backend=traefik
       - traefik.frontend.rule=Host:monitor.localhost
@@ -1431,6 +1583,9 @@ services:
       - ${DATA_PATH_HOST}/mosquitto/data:/mosquitto/data
     ports:
       - "${MOSQUITTO_PORT}:9001"
+    networks:
+      - frontend
+      - backend
 
   ### COUCHDB ###################################################
   couchdb:
@@ -1440,6 +1595,8 @@ services:
       - ${DATA_PATH_HOST}/couchdb/data:/opt/couchdb/data
     ports:
       - "${COUCHDB_PORT}:5984"
+    networks:
+      - backend
 
   ### Manticore Search ###########################################
   manticore:
@@ -1453,6 +1610,8 @@ services:
       - "${MANTICORE_API_PORT}:9312"
       - "${MANTICORE_SPHINXQL_PORT}:9306"
       - "${MANTICORE_HTTP_PORT}:9308"
+    networks:
+      - backend
 
   ### SONARQUBE ################################################
   sonarqube:
@@ -1473,6 +1632,9 @@ services:
       - sonar.jdbc.username=${SONARQUBE_POSTGRES_USER}
       - sonar.jdbc.password=${SONARQUBE_POSTGRES_PASSWORD}
       - sonar.jdbc.url=jdbc:postgresql://${SONARQUBE_POSTGRES_HOST}:5432/${SONARQUBE_POSTGRES_DB}
+    networks:
+      - backend
+      - frontend
 
   ### CONFLUENCE ################################################
   confluence:
@@ -1481,6 +1643,9 @@ services:
     restart: always
     ports:
       - "${CONFLUENCE_HOST_HTTP_PORT}:8090"
+    networks:
+      - frontend
+      - backend
     depends_on:
       - postgres
     volumes:
@@ -1494,6 +1659,9 @@ services:
       - "${GHOST_HTTP_PORT}:2368"
     environment:
       - url=https://${COMPOSE_PROJECT_NAME}.stacks.run
+    networks:
+      - frontend
+      - backend
     volumes:
       - ${APP_CODE_PATH_HOST}:/var/lib/ghost/content
 
@@ -1510,6 +1678,9 @@ services:
       - WORDPRESS_DB_HOST=mysql
     volumes:
       - ${APP_CODE_PATH_HOST}:/var/www/html
+    networks:
+      - frontend
+      - backend
 
 ###### NextCloud #####################################################
   nextcloud:
@@ -1519,6 +1690,9 @@ services:
       - ${NC_HTTP_PORT}:80
     volumes:
       - ${APP_CODE_PATH_HOST}:/var/www/html
+    networks:
+      - frontend
+      - backend
 
 ###### ELK #####################################################
   elk:
@@ -1530,6 +1704,9 @@ services:
       - "${KIBANA_PORT}:5044"
     volumes:
       - ${DATA_PATH_HOST}:/var/lib/elasticsearch
+    networks:
+      - frontend
+      - backend
 
 ###### Drupal #####################################################
   drupal:
@@ -1542,6 +1719,9 @@ services:
       - ${APP_CODE_PATH_HOST}/sites:/var/www/html/sites
       - ${APP_CODE_PATH_HOST}/profiles:/var/www/html/profiles
       - ${APP_CODE_PATH_HOST}/themes:/var/www/html/themes
+    networks:
+      - frontend
+      - backend
 
 ###### Laravel7 #####################################################
   laravel7:
@@ -1558,6 +1738,8 @@ services:
       - ${LARAVEL_HTTP_PORT}:3000
     volumes:
       - ${APP_CODE_PATH_HOST}:/app
+    networks:
+      - backend
 
 ###### Laravel6 #####################################################
   laravel6:
@@ -1574,6 +1756,8 @@ services:
       - ${LARAVEL_HTTP_PORT}:3000
     volumes:
       - ${APP_CODE_PATH_HOST}:/app
+    networks:
+      - backend
 
 ###### Joomla #####################################################
   joomla:
@@ -1591,6 +1775,8 @@ services:
       - ${APP_CODE_PATH_HOST}:/bitnami
     depends_on:
       - bitnami-mariadb
+    networks:
+      - backend
 
 ###### Prestashop #####################################################
   prestashop:
@@ -1610,6 +1796,8 @@ services:
       - '${APP_CODE_PATH_HOST}:/bitnami'
     depends_on:
       - mysql
+    networks:
+      - backend
 
 ###### Suitecrm #####################################################
   suitecrm:
@@ -1627,6 +1815,8 @@ services:
       - ${APP_CODE_PATH_HOST}:/bitnami
     depends_on:
       - mysql
+    networks:
+      - backend
 
 ###### Flarum #####################################################
   flarum:
@@ -1650,6 +1840,8 @@ services:
       - ${FLARUM_HTTP_PORT}:8888
     depends_on:
       - mysql
+    networks:
+      - backend
  
 ###### Bitnami Mariadb #####################################################
   bitnami-mariadb:
@@ -1659,6 +1851,8 @@ services:
       - MARIADB_USER=${MYSQL_USER}
       - MARIADB_DATABASE=${MYSQL_DATABASE}
       - MARIADB_PASSWORD=${MYSQL_PASSWORD}
+    networks:
+      - backend
 
 ###### Nodejs #####################################################
   nodejs:
@@ -1668,6 +1862,8 @@ services:
       - ${NODEJS_HTTP_PORT}:3000
     volumes:
       - ${APP_CODE_PATH_HOST}:/app
+    networks:
+      - frontend
 
 ###### Grav #####################################################
   grav:
@@ -1678,7 +1874,8 @@ services:
       - ${GRAV_HOST_HTTP_PORT}:80
     volumes:
       - grav:/var/www/html
-
+    networks:
+      - frontend
 
   ### tomcat ####################################################
   tomcat:
@@ -1686,7 +1883,9 @@ services:
     image: tomcat:${TOMCAT_VERSION}
     ports:
       - "${TOMCAT_HOST_HTTP_PORT}:8080"
-
+    networks:
+      - frontend
+      - backend
     volumes:
       - ${DATA_PATH_HOST}/tomcat/webapps:/usr/local/tomcat/webapps
       - ${DATA_PATH_HOST}/tomcat/logs:/usr/local/tomcat/logs
@@ -1694,50 +1893,22 @@ services:
   
 ###### Apache2 / PHP-FPM ################################################
   alpine_apache:
-    build:
-      context: ./alpine_apache
-      args: 
-        - "SERVER_ROOT=${SERVER_ROOT}"
-        - "PHP_VERSION=${PHP_VERSION}"
+    image: 'deckapp/apache_php:v${PHP_VERSION}'
     volumes:
-      - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_NGINX}${APP_CODE_CONTAINER_FLAG}
+      - ${APP_CODE_PATH_HOST}:/var/www/localhost/htdocs
     ports:
       - "${NGINX_HOST_HTTP_PORT}:80"
-
-###### Apache2 / PHP-FPM ################################################
-  apache_5:
-    build:
-      context: ./apache_5
-      args:
-        - "SERVER_ROOT=${SERVER_ROOT}"
-    volumes:
-      - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_NGINX}${APP_CODE_CONTAINER_FLAG}
-    ports:
-      - "${NGINX_HOST_HTTP_PORT}:80"
-
+    networks:
+      - backend
+      - frontend
 
 ###### Nginx / PHP-FPM ################################################
   alpine_nginx:
-    build:
-      context: ./alpine_nginx
-      args:
-        - "SERVER_ROOT=${SERVER_ROOT}"
-        - "PHP_VERSION=${PHP_VERSION}"
+    image: 'deckapp/nginx_php:v${PHP_VERSION}'
     volumes:
-      - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_NGINX}${APP_CODE_CONTAINER_FLAG}
+      - ${APP_CODE_PATH_HOST}:/var/www/html
     ports:
       - "${NGINX_HOST_HTTP_PORT}:80"
-
-###### Alpine / mysql ################################################
-  alpine_mysql:
-    image: 'deckapp/mysql:v${AMYSQL_VERSION}'
-    environment:
-      - "MYSQL_DATABASE=${MYSQL_DATABASE}"
-      - "MYSQL_USER=${MYSQL_USER}"
-      - "MYSQL_PASSWORD=${MYSQL_PASSWORD}"
-      - "MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}"
-    volumes:
-      - "${DATA_PATH_HOST}/mysql:/var/lib/mysql"
-      - ${MYSQL_PATH}:/etc/mysql/
-    ports:
-      - "${AMYSQL_PORT}:3306"
+    networks:
+      - backend
+      - frontend

@@ -1,8 +1,10 @@
 <img src="https://get-deck.com/wp-content/themes/sinatra/assets/images/d-logo-h5.jpg" alt="Deck logo" height="100"/>
 
-### Modern & extendable web development studio
+### Modern & extendable local web development studio
 
 DECK (formerly Dockerstacks) is powerful and high performant local web development studio unlike any other.
+
+![DECK Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-13-at-2.22.50-PM.png)
 
 #### Automatic HTTPS
 
@@ -25,9 +27,6 @@ Easily share your local app with co-workers remotely by using Flights
 #### Ready to go configurations
 
 Focus on your web app and let DECK handle the server configurations for you.
-
-
-![Image description](https://github.com/sfx101/docker-stacks/blob/master/Kapture%202020-05-09%20at%2022.31.46.gif)
 
 Download the app here: https://github.com/sfx101/docker-stacks/releases (Follow the instructions on the Release page)
 
