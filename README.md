@@ -23,6 +23,8 @@ and let DECK do the heavy lifting for you.
 
 #### Built-in terminal
 
+![DECK Terminal](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.35.23-PM.png)
+
 Get shell access to your apps and run commands to make changes in file permissions, server configurations, etc
 
 #### DECK Flights
