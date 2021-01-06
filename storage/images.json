@@ -1,6 +1,36 @@
 {
   "images": [
     {
+      "name": "Ocktober",
+      "tags": ["ocktober"],
+      "containers": ["ocktober"],
+      "notes": "LEMP Stack powered with Nginx, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
+      "dependencies": ["ocktober"],
+      "ports": [
+        {
+          "env": "dock_PORT",
+          "http": true
+        }
+      ],
+      "required": ["localPath"],
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/OctoberCMS.png/220px-OctoberCMS.png"
+    },
+    {
+      "name": "Codeigniter",
+      "tags": ["codeigniter","mysql"],
+      "containers": ["codeigniter","mysql"],
+      "notes": "LEMP Stack powered with Nginx, PHP and MySQL. Supports WordPress, Laravel, CodeIgniter etc",
+      "dependencies": ["codeigniter","mysql"],
+      "ports": [
+        {
+          "env": "code_PORT",
+          "http": true
+        }
+      ],
+      "required": ["localPath"],
+      "icon": "https://e7.pngegg.com/pngimages/385/811/png-clipart-codeigniter-laravel-jquery-php-logo-codeigniter-web-design-text-thumbnail.png"
+    },
+    {
       "name": "LEMP",
       "tags": ["nginx", "php", "mysql","phpmyadmin"],
       "containers": ["alpine_nginx","alpine_mysql","phpmyadmin"],
