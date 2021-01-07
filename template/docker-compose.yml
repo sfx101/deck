@@ -1741,7 +1741,7 @@ services:
       - ${MYSQL_PATH}:/etc/mysql/
     ports:
       - "${AMYSQL_PORT}:3306"
-      
+
 ###### Opencart ################################################
   opencart:
     build:
