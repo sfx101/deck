@@ -4,19 +4,26 @@
 
 DECK (formerly Dockerstacks) is powerful and high performant local web development studio unlike any other.
 
-![DECK Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-13-at-2.22.50-PM.png)
+![DECK Light Mode Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.22.26-PM.png)
+![DECK Dark Mode Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.27.02-PM.png)
 
 #### Automatic HTTPS
+
+![DECK Automatic HTTPS](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.30.15-PM.png)
 
 DECK's inbuilt SSL engine powered by LetsEncrypt and a supercharged proxy layer enables full HTTPS on localhost apps.
 
 #### Unlimited projects, multiple server configurations
+
+![DECK Marketplace](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.28.25-PM.png)
 
 Easily spin-up Laravel, Codeigniter, Node JS, Django, Wordpress, Magento
 and many more apps right on your localhost with the click of a button
 and let DECK do the heavy lifting for you.
 
 #### Built-in terminal
+
+![DECK Terminal](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.35.23-PM.png)
 
 Get shell access to your apps and run commands to make changes in file permissions, server configurations, etc
 
