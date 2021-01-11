@@ -1771,7 +1771,7 @@ services:
 
 ### Django ####################################################
   web:
-      build: ./web
+      image: "deckapp/django:latest"
       command: python manage.py runserver 0.0.0.0:8000
       volumes:
         - "${APP_CODE_PATH_HOST}:/code"
