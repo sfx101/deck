@@ -8,10 +8,6 @@
       "dependencies": ["amailhog","apache_with_php"],
       "ports": [
         {
-          "env": "NGINX_HOST_HTTP_PORT",
-          "http": true
-        },
-        {
           "env": "MAILHOG_PORT",
           "http": true
         }
