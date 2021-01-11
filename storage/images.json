@@ -2,7 +2,7 @@
   "images": [
     {
       "name": "Mailhog",
-      "tags": ["mailhog","apache","php"],
+      "tags": ["mailhog"],
       "containers": ["amailhog","apache_with_php"],
       "notes": "First of all, we need a small mail server that we can run locally",
       "dependencies": ["amailhog","apache_with_php"],
