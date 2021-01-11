@@ -1768,3 +1768,42 @@ services:
         - ${dock_PORT}:80
       volumes: 
         - "${APP_CODE_PATH_HOST}:/var/www/html"
+
+### Django ####################################################
+  web:
+      build: ./web
+      command: python manage.py runserver 0.0.0.0:8000
+      volumes:
+        - "${APP_CODE_PATH_HOST}:/code"
+      ports:
+        - "${DJANGO_HOST_HTTP_PORT}:8000"
+      depends_on:
+        - postgres
+
+### Oracle ####################################################
+  oracle:
+      image: absolutapps/oracle-12c-ee:latest
+      volumes:
+        - "${DATA_PATH_HOST}:/opt/oracle/dump"
+        - "${MYSQL_PATH}:/opt/oracle/scripts/setup"
+      ports:
+        - "${ORACLE_PORT}:1521"
+        - "5500:5500"
+      environment:
+        - "ORACLE_PWD=oracle"
+        - "SOURCE_SCHEMA=change-or-delete-me"
+        - "SOURCE_TABLESPACE=change-or-delete-me"
+        - "EXCLUDE=user"
+
+### Mailhog ####################################################
+  amailhog:
+      image: mailhog/mailhog:v1.0.0
+      ports:
+        - "1025:1025"
+        - "${MAILHOG_PORT}:8025"
+  apache_with_php:
+      image: nabad600/apphp:7.0
+      volumes:
+        - "${APP_CODE_PATH_HOST}:/var/www/html"
+      ports:
+        - "${NGINX_HOST_HTTP_PORT}:80"
