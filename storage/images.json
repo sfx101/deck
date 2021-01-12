@@ -4,7 +4,7 @@
       "name": "Mailhog",
       "tags": ["mailhog"],
       "containers": ["amailhog","apache_with_php"],
-      "notes": "First of all, we need a small mail server that we can run locally",
+      "notes": "First of all, we need a small mail server that we can run locally(https://github.com/nabad600/Mailhog/blob/main/README.md)",
       "dependencies": ["amailhog","apache_with_php"],
       "ports": [
         {
@@ -19,7 +19,7 @@
       "name": "Oracle",
       "tags": ["oracle"],
       "containers": ["oracle"],
-      "notes": "Oracle Database (commonly referred to as Oracle DBMS or simply as Oracle) is a multi-model database management system produced and marketed by Oracle Corporation.",
+      "notes": "Oracle Database (commonly referred to as Oracle DBMS or simply as Oracle) is a multi-model database management system produced and marketed by Oracle Corporation.(https://github.com/nabad600/Orale/blob/main/README.md)",
       "dependencies": ["oracle"],
       "ports": [
         {
