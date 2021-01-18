@@ -77,17 +77,16 @@ COPY nginx /
 RUN rm -Rf /var/www/*
 COPY php_ini/n_php7.0.ini /etc/php/7.0/php.ini
 
+RUN chmod +x /sbin/runit-wrapper
+RUN chmod +x /sbin/runsvdir-start
+RUN chmod +x /etc/service/nginx/run
+RUN chmod +x /etc/service/php-fpm/run
+
 COPY default.conf /etc/nginx/conf.d/
 ARG SERVER_ROOT
 
 RUN sed -i "s#{SERVER_ROOT}#$SERVER_ROOT#g" /etc/nginx/conf.d/default.conf
 VOLUME [ "/var/www/" ]
-WORKDIR /var/www
-
-RUN chmod +x /sbin/runit-wrapper
-RUN chmod +x /sbin/runsvdir-start
-RUN chmod +x /etc/service/nginx/run
-RUN chmod +x /etc/service/php-fpm/run
 
 EXPOSE 80
 WORKDIR /var/www

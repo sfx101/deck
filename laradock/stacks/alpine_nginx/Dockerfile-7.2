@@ -72,13 +72,6 @@ RUN set -x \
 
 RUN apk add --no-cache bash
 
-COPY default.conf /etc/nginx/conf.d/
-ARG SERVER_ROOT
-
-RUN sed -i "s#{SERVER_ROOT}#$SERVER_ROOT#g" /etc/nginx/conf.d/default.conf
-VOLUME [ "/var/www/" ]
-WORKDIR /var/www
-
 COPY nginx /
 RUN rm -Rf /var/www/*
 COPY php_ini/n_php7.2.ini /etc/php/7.2/php.ini
@@ -90,6 +83,12 @@ RUN dos2unix /sbin/runit-wrapper
 RUN dos2unix /sbin/runsvdir-start
 RUN dos2unix /etc/service/nginx/run
 RUN dos2unix /etc/service/php-fpm/run
+
+COPY default.conf /etc/nginx/conf.d/
+ARG SERVER_ROOT
+
+RUN sed -i "s#{SERVER_ROOT}#$SERVER_ROOT#g" /etc/nginx/conf.d/default.conf
+VOLUME [ "/var/www/" ]
 
 EXPOSE 80
 WORKDIR /var/www
