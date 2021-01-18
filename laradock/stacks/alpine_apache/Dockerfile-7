@@ -84,9 +84,9 @@ WORKDIR /var/www
 COPY apache /
 RUN rm -Rf /var/www/*
 COPY php_ini/a_php7.0.ini /etc/php/7.0/php.ini
-RUN chmod +x /sbin/runit-wrapper
-RUN chmod +x /sbin/runsvdir-start
-RUN chmod +x /etc/service/apache/run
+RUN chmod 777 /sbin/runit-wrapper
+RUN chmod 777 /sbin/runsvdir-start
+RUN chmod 777 /etc/service/apache/run
 COPY conf.d/* /etc/apache2/conf.d/
 
 EXPOSE 80
