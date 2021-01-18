@@ -92,6 +92,9 @@ RUN chmod +x /sbin/runit-wrapper
 RUN chmod +x /sbin/runsvdir-start
 RUN chmod +x /etc/service/apache/run
 COPY conf.d/* /etc/apache2/conf.d/
+RUN dos2unix /sbin/runit-wrapper
+RUN dos2unix /sbin/runsvdir-start
+RUN dos2unix /etc/service/apache/run
 
 EXPOSE 80
 WORKDIR /var/www
