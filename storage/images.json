@@ -16,21 +16,6 @@
       "icon": "https://ps.w.org/transmail/assets/icon-256x256.png?rev=2372126"
     },
     {
-      "name": "Oracle",
-      "tags": ["oracle"],
-      "containers": ["oracle"],
-      "notes": "Oracle Database (commonly referred to as Oracle DBMS or simply as Oracle) is a multi-model database management system produced and marketed by Oracle Corporation.(https://github.com/nabad600/Orale/blob/main/README.md)",
-      "dependencies": ["oracle"],
-      "ports": [
-        {
-          "env": "ORACLE_PORT",
-          "http": true
-        }
-      ],
-      "required": ["localPath"],
-      "icon": "https://downloadly.ir/wp-content/uploads/2019/07/Oracle-Database.png"
-    },
-    {
       "name": "Django",
       "tags": ["django","postgres"],
       "containers": ["web","postgres"],
