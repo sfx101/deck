@@ -74,6 +74,13 @@ RUN set -x \
     
 RUN apk add --no-cache bash
 
+COPY httpd.conf /etc/apache2/httpd.conf
+ARG SERVER_ROOT
+
+RUN sed -i "s#{SERVER_ROOT}#$SERVER_ROOT#g" /etc/apache2/httpd.conf
+VOLUME [ "/var/www/" ]
+WORKDIR /var/www
+
 COPY apache /
 RUN rm -Rf /var/www/*
 COPY php_ini/a_php7.0.ini /etc/php/7.0/php.ini
@@ -87,10 +94,3 @@ EXPOSE 80
 WORKDIR /var/www
 
 CMD ["/sbin/runit-wrapper"]
-
-COPY httpd.conf /etc/apache2/httpd.conf
-ARG SERVER_ROOT
-
-RUN sed -i "s#{SERVER_ROOT}#$SERVER_ROOT#g" /etc/apache2/httpd.conf
-VOLUME [ "/var/www/" ]
-WORKDIR /var/www
