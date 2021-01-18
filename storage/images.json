@@ -16,21 +16,6 @@
       "icon": "https://ps.w.org/transmail/assets/icon-256x256.png?rev=2372126"
     },
     {
-      "name": "Oracle",
-      "tags": ["oracle"],
-      "containers": ["oracle"],
-      "notes": "Oracle Database (commonly referred to as Oracle DBMS or simply as Oracle) is a multi-model database management system produced and marketed by Oracle Corporation.(https://github.com/nabad600/Orale/blob/main/README.md)",
-      "dependencies": ["oracle"],
-      "ports": [
-        {
-          "env": "ORACLE_PORT",
-          "http": true
-        }
-      ],
-      "required": ["localPath"],
-      "icon": "https://downloadly.ir/wp-content/uploads/2019/07/Oracle-Database.png"
-    },
-    {
       "name": "Django",
       "tags": ["django","postgres"],
       "containers": ["web","postgres"],
@@ -61,7 +46,7 @@
       "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/OctoberCMS.png/220px-OctoberCMS.png"
     },
     {
-      "name": "Codeigniter",
+      "name": "CodeIgniter",
       "tags": ["codeigniter","mysql"],
       "containers": ["codeigniter","mysql"],
       "notes": "CodeIgniter is a PHP MVC framework used for developing web applications rapidly. CodeIgniter provides out of the box libraries for connecting to the database and performing various operations like sending emails, uploading files, managing sessions, etc",
@@ -103,7 +88,7 @@
       "dependencies": ["alpine_apache","alpine_mysql","phpmyadmin"],
       "ports": [
         {
-          "env": "NGINX_HOST_HTTP_PORT",
+          "env": "APACHE_HOST_HTTP_PORT",
           "http": true
         },
         {
@@ -118,12 +103,12 @@
     {
       "name": "Apache_PHP 5.6",
       "tags": ["apache", "php"],
-      "containers": ["apache_5"],
+      "containers": ["alpine_apache"],
       "notes": "Basic PHP stack running on Apache2 and php 5.6-fpm.",
-      "dependencies": ["apache_5"],
+      "dependencies": ["alpine_apache"],
       "ports": [
         {
-          "env": "NGINX_HOST_HTTP_PORT",
+          "env": "APACHE_HOST_HTTP_PORT",
           "http": true
         }
       ],
@@ -140,7 +125,7 @@
       "dependencies": ["alpine_apache"],
       "ports": [
         {
-          "env": "NGINX_HOST_HTTP_PORT",
+          "env": "APACHE_HOST_HTTP_PORT",
           "http": true
         }
       ],
@@ -157,7 +142,7 @@
       "dependencies": ["alpine_apache"],
       "ports": [
         {
-          "env": "NGINX_HOST_HTTP_PORT",
+          "env": "APACHE_HOST_HTTP_PORT",
           "http": true
         }
       ],
@@ -174,7 +159,7 @@
       "dependencies": ["alpine_apache"],
       "ports": [
         {
-          "env": "NGINX_HOST_HTTP_PORT",
+          "env": "APACHE_HOST_HTTP_PORT",
           "http": true
         }
       ],
@@ -191,7 +176,7 @@
       "dependencies": ["alpine_apache"],
       "ports": [
         {
-          "env": "NGINX_HOST_HTTP_PORT",
+          "env": "APACHE_HOST_HTTP_PORT",
           "http": true
         }
       ],
@@ -208,7 +193,7 @@
       "dependencies": ["alpine_apache"],
       "ports": [
         {
-          "env": "NGINX_HOST_HTTP_PORT",
+          "env": "APACHE_HOST_HTTP_PORT",
           "http": true
         }
       ],
