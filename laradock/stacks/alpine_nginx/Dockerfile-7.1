@@ -79,6 +79,7 @@ RUN chmod +x /sbin/runit-wrapper
 RUN chmod +x /sbin/runsvdir-start
 RUN chmod +x /etc/service/nginx/run
 RUN chmod +x /etc/service/php-fpm/run
+
 COPY default.conf /etc/nginx/conf.d/
 ARG SERVER_ROOT
 
