@@ -1,6 +1,81 @@
 {
   "images": [
     {
+      "name": "Mailhog",
+      "tags": ["mailhog"],
+      "containers": ["amailhog","apache_with_php"],
+      "notes": "First of all, we need a small mail server that we can run locally(https://github.com/nabad600/Mailhog/blob/main/README.md)",
+      "dependencies": ["amailhog","apache_with_php"],
+      "ports": [
+        {
+          "env": "MAILHOG_PORT",
+          "http": true
+        }
+      ],
+      "required": ["localPath"],
+      "icon": "https://ps.w.org/transmail/assets/icon-256x256.png?rev=2372126"
+    },
+    {
+      "name": "Oracle",
+      "tags": ["oracle"],
+      "containers": ["oracle"],
+      "notes": "Oracle Database (commonly referred to as Oracle DBMS or simply as Oracle) is a multi-model database management system produced and marketed by Oracle Corporation.(https://github.com/nabad600/Orale/blob/main/README.md)",
+      "dependencies": ["oracle"],
+      "ports": [
+        {
+          "env": "ORACLE_PORT",
+          "http": true
+        }
+      ],
+      "required": ["localPath"],
+      "icon": "https://downloadly.ir/wp-content/uploads/2019/07/Oracle-Database.png"
+    },
+    {
+      "name": "Django",
+      "tags": ["django","postgres"],
+      "containers": ["web","postgres"],
+      "notes": "Django is a Python-based free and open-source web framework that follows the model-template-views architectural pattern. It is maintained by the Django Software Foundation, an American independent organization",
+      "dependencies": ["web","postgres"],
+      "ports": [
+        {
+          "env": "DJANGO_HOST_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "required": ["localPath"],
+      "icon": "https://seargin.com/wp-content/uploads/2019/05/django-logo.png"
+    },
+    {
+      "name": "Ocktober",
+      "tags": ["ocktober"],
+      "containers": ["ocktober"],
+      "notes": "October is a free, open-source and self-hosted content management system (CMS) based on the PHP programming language and Laravel web application framework. It supports MySQL, SQLite and PostgreSQL for the database backend and uses a flat file database for the front end structure.",
+      "dependencies": ["ocktober"],
+      "ports": [
+        {
+          "env": "dock_PORT",
+          "http": true
+        }
+      ],
+      "required": ["localPath"],
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/OctoberCMS.png/220px-OctoberCMS.png"
+    },
+    {
+      "name": "Codeigniter",
+      "tags": ["codeigniter","mysql"],
+      "containers": ["codeigniter","mysql"],
+      "notes": "CodeIgniter is a PHP MVC framework used for developing web applications rapidly. CodeIgniter provides out of the box libraries for connecting to the database and performing various operations like sending emails, uploading files, managing sessions, etc",
+      "dependencies": ["codeigniter","mysql"],
+      "ports": [
+        {
+          "env": "code_PORT",
+          "http": true
+        }
+      ],
+      "required": ["localPath"],
+      "icon": "https://e7.pngegg.com/pngimages/385/811/png-clipart-codeigniter-laravel-jquery-php-logo-codeigniter-web-design-text-thumbnail.png"
+    },
+    {
       "name": "LEMP",
       "tags": ["nginx", "php", "mysql","phpmyadmin"],
       "containers": ["alpine_nginx","alpine_mysql","phpmyadmin"],
