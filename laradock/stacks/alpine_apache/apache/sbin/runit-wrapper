@@ -10,7 +10,7 @@ main() {
   /sbin/runsvdir-start &
   wait "$!"
 }
- 
+
 onterm() {
   echo "Exiting..."
   pkill -SIGHUP runsvdir-start
