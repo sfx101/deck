@@ -28,7 +28,7 @@
       "dependencies": ["alpine_apache","alpine_mysql","phpmyadmin"],
       "ports": [
         {
-          "env": "NGINX_HOST_HTTP_PORT",
+          "env": "APACHE_HOST_HTTP_PORT",
           "http": true
         },
         {
@@ -43,12 +43,12 @@
     {
       "name": "Apache_PHP 5.6",
       "tags": ["apache", "php"],
-      "containers": ["apache_5"],
+      "containers": ["alpine_apache"],
       "notes": "Basic PHP stack running on Apache2 and php 5.6-fpm.",
-      "dependencies": ["apache_5"],
+      "dependencies": ["alpine_apache"],
       "ports": [
         {
-          "env": "NGINX_HOST_HTTP_PORT",
+          "env": "APACHE_HOST_HTTP_PORT",
           "http": true
         }
       ],
@@ -65,7 +65,7 @@
       "dependencies": ["alpine_apache"],
       "ports": [
         {
-          "env": "NGINX_HOST_HTTP_PORT",
+          "env": "APACHE_HOST_HTTP_PORT",
           "http": true
         }
       ],
@@ -82,7 +82,7 @@
       "dependencies": ["alpine_apache"],
       "ports": [
         {
-          "env": "NGINX_HOST_HTTP_PORT",
+          "env": "APACHE_HOST_HTTP_PORT",
           "http": true
         }
       ],
@@ -99,7 +99,7 @@
       "dependencies": ["alpine_apache"],
       "ports": [
         {
-          "env": "NGINX_HOST_HTTP_PORT",
+          "env": "APACHE_HOST_HTTP_PORT",
           "http": true
         }
       ],
@@ -116,7 +116,7 @@
       "dependencies": ["alpine_apache"],
       "ports": [
         {
-          "env": "NGINX_HOST_HTTP_PORT",
+          "env": "APACHE_HOST_HTTP_PORT",
           "http": true
         }
       ],
@@ -133,7 +133,7 @@
       "dependencies": ["alpine_apache"],
       "ports": [
         {
-          "env": "NGINX_HOST_HTTP_PORT",
+          "env": "APACHE_HOST_HTTP_PORT",
           "http": true
         }
       ],
