@@ -1,14 +1,14 @@
-ARG PHP_VERSION
-FROM deckapp/apache_php:v${PHP_VERSION}
+ARG SERVER_ROOT
+FROM deckapp/apache_php:v5.6
 
 LABEL maintainer="Naba Kumar Das <nabad600@gmail.com>"
-
+ARG SERVER_ROOT
 COPY httpd.conf /etc/apache2/httpd.conf
 ARG SERVER_ROOT
 
-RUN sed -i "s#{SERVER_ROOT}#$SERVER_ROOT#g" /etc/apache2/httpd.conf
+RUN sed -i "s#{SERVER_ROOT}#${SERVER_ROOT}#g" /etc/apache2/httpd.conf
 VOLUME [ "/var/www/" ]
+RUN chmod 777 /var/www/
 WORKDIR /var/www
 
-CMD ["/sbin/runit-wrapper"]
 EXPOSE 80

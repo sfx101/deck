@@ -1,7 +1,0 @@
-#!/bin/sh
-
-exec 2>&1
-source /env
-
-mkdir -p /run/nginx
-exec /usr/sbin/nginx -g 'daemon off;'
