@@ -1696,13 +1696,14 @@ services:
   alpine_apache:
     build:
       context: ./alpine_apache
+      dockerfile: Dockerfile-${PHP_VERSION}
       args: 
         - "SERVER_ROOT=${SERVER_ROOT}"
         - "PHP_VERSION=${PHP_VERSION}"
     volumes:
       - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_NGINX}${APP_CODE_CONTAINER_FLAG}
     ports:
-      - "${NGINX_HOST_HTTP_PORT}:80"
+      - "${APACHE_HOST_HTTP_PORT}:80"
 
 ###### Apache2 / PHP-FPM ################################################
   apache_5:
@@ -1720,6 +1721,7 @@ services:
   alpine_nginx:
     build:
       context: ./alpine_nginx
+      dockerfile: Dockerfile-${PHP_VERSION}
       args:
         - "SERVER_ROOT=${SERVER_ROOT}"
         - "PHP_VERSION=${PHP_VERSION}"
@@ -1741,3 +1743,69 @@ services:
       - ${MYSQL_PATH}:/etc/mysql/
     ports:
       - "${AMYSQL_PORT}:3306"
+
+###### Opencart ################################################
+  opencart:
+    build:
+      context: ./opencart
+    volumes:
+      - "${APP_CODE_PATH_HOST}:/var/www/"
+    ports:
+      - "${OPENCART_HTTP}:80"
+
+### Codeigniter ####################################################
+  codeigniter:
+      image: 'deckapp/codeigniter:latest'
+      ports:
+        - ${code_PORT}:80
+      links: 
+        - mysql
+      volumes: 
+        - "${APP_CODE_PATH_HOST}:/var/www/html"
+
+### Ocktober ####################################################
+  ocktober:
+      image: 'nabad600/octobercms:v1.8.24.2020'
+      ports: 
+        - ${dock_PORT}:80
+      volumes: 
+        - "${APP_CODE_PATH_HOST}:/var/www/html"
+
+### Django ####################################################
+  web:
+      image: "deckapp/django:latest"
+      command: python manage.py runserver 0.0.0.0:8000
+      volumes:
+        - "${APP_CODE_PATH_HOST}:/code"
+      ports:
+        - "${DJANGO_HOST_HTTP_PORT}:8000"
+      depends_on:
+        - postgres
+
+### Oracle ####################################################
+  oracle:
+      image: absolutapps/oracle-12c-ee:latest
+      volumes:
+        - "${DATA_PATH_HOST}:/opt/oracle/dump"
+        - "${MYSQL_PATH}:/opt/oracle/scripts/setup"
+      ports:
+        - "${ORACLE_PORT}:1521"
+        - "5500:5500"
+      environment:
+        - "ORACLE_PWD=oracle"
+        - "SOURCE_SCHEMA=change-or-delete-me"
+        - "SOURCE_TABLESPACE=change-or-delete-me"
+        - "EXCLUDE=user"
+
+### Mailhog ####################################################
+  amailhog:
+      image: mailhog/mailhog:v1.0.0
+      ports:
+        - "1025:1025"
+        - "${MAILHOG_PORT}:8025"
+  apache_with_php:
+      image: nabad600/apphp:7.0
+      volumes:
+        - "${APP_CODE_PATH_HOST}:/var/www/html"
+      ports:
+        - "${NGINX_HOST_HTTP_PORT}:80"
