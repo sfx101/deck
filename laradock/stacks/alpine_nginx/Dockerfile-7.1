@@ -1,28 +1,10 @@
-FROM alpine:3.9
-LABEL MANTAINTS Naba Das <hello@get-deck.com>
+ARG PHP_VERSION
+FROM deckapp/nginx_php:v${PHP_VERSION}
 
-ARG BUILD_DATE
-ARG VCS_REF
+LABEL maintainer="Naba Kumar Das <nabad600@gmail.com>"
 
-LABEL org.label-schema.build-date=$BUILD_DATE \
-      org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.schema-version="1.0" \
-      org.label-schema.name="docker-php" \
-      org.label-schema.description="Docker For PHP Developers - Docker image with PHP 7.1, Nginx, and Alpine"
-
-# PHP_INI_DIR to be symmetrical with official php docker image
-ENV PHP_INI_DIR /etc/php/7.1
-
-# When using Composer, disable the warning about running commands as root/super user
-ENV COMPOSER_ALLOW_SUPERUSER=1
-
-# Persistent runtime dependencies
-ARG DEPS="\
-        nginx \
-        nginx-mod-http-headers-more \
-        php7.1 \
-        php7.1-phar \
-        php7.1-bcmath \
+RUN apk update
+RUN apk add php7.1-bcmath \
         php7.1-calendar \
         php7.1-mbstring \
         php7.1-exif \
@@ -39,7 +21,6 @@ ARG DEPS="\
         php7.1-curl \
         php7.1-simplexml \
         php7.1-xml \
-        php7.1-pdo \
         php7.1-mongodb \
         php7.1-mysqli \
         php7.1-mysqlnd \
@@ -55,44 +36,15 @@ ARG DEPS="\
         php7.1-iconv \
         php7.1-json \
         php7.1-posix \
-        php7.1-fpm \
-        curl \
-        ca-certificates \
-        runit \
-"
-
-# PHP.earth Alpine repository for better developer experience
-ADD https://repos.php.earth/alpine/phpearth.rsa.pub /etc/apk/keys/phpearth.rsa.pub
-
-RUN set -x \
-    && echo "https://repos.php.earth/alpine/v3.9" >> /etc/apk/repositories \
-    && apk add --no-cache $DEPS \
-    && ln -sf /dev/stdout /var/log/nginx/access.log \
-    && ln -sf /dev/stderr /var/log/nginx/error.log
-
-RUN apk add --no-cache bash
-
-
-
-COPY nginx /
-RUN rm -Rf /var/www/*
-COPY php_ini/n_php7.1.ini /etc/php/7.1/php.ini
-RUN chmod +x /sbin/runit-wrapper
-RUN chmod +x /sbin/runsvdir-start
-RUN chmod +x /etc/service/nginx/run
-RUN chmod +x /etc/service/php-fpm/run
-RUN dos2unix /sbin/runit-wrapper
-RUN dos2unix /sbin/runsvdir-start
-RUN dos2unix /etc/service/nginx/run
-RUN dos2unix /etc/service/php-fpm/run
+	curl \
+	php7.1-pdo
 
 COPY default.conf /etc/nginx/conf.d/
 ARG SERVER_ROOT
 
 RUN sed -i "s#{SERVER_ROOT}#$SERVER_ROOT#g" /etc/nginx/conf.d/default.conf
 VOLUME [ "/var/www/" ]
-
-EXPOSE 80
 WORKDIR /var/www
 
 CMD ["/sbin/runit-wrapper"]
+EXPOSE 80
