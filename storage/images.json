@@ -103,9 +103,9 @@
     {
       "name": "Apache_PHP 5.6",
       "tags": ["apache", "php"],
-      "containers": ["alpine_apache"],
+      "containers": ["apache_5"],
       "notes": "Basic PHP stack running on Apache2 and php 5.6-fpm.",
-      "dependencies": ["alpine_apache"],
+      "dependencies": ["apache_5"],
       "ports": [
         {
           "env": "APACHE_HOST_HTTP_PORT",
