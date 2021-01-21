@@ -1,0 +1,55 @@
+ARG PHP_VERSION
+FROM deckapp/nginx_php:v${PHP_VERSION}
+
+LABEL maintainer="Naba Kumar Das <nabad600@gmail.com>"
+
+RUN apk update
+RUN apk add php7.3-bcmath \
+        php7.3-calendar \
+        php7.3-mbstring \
+        php7.3-exif \
+        php7.3-ftp \
+        php7.3-openssl \
+        php7.3-zip \
+        php7.3-sysvsem \
+        php7.3-sysvshm \
+        php7.3-sysvmsg \
+        php7.3-shmop \
+        php7.3-sockets \
+        php7.3-zlib \
+        php7.3-bz2 \
+        php7.3-curl \
+        php7.3-simplexml \
+        php7.3-xml \
+        php7.3-mongodb \
+        php7.3-mysqli \
+        php7.3-mysqlnd \
+        php7.3-composer \
+        php7.3-opcache \
+        php7.3-dom \
+        php7.3-xmlreader \
+        php7.3-xmlwriter \
+        php7.3-tokenizer \
+        php7.3-ctype \
+        php7.3-session \
+        php7.3-fileinfo \
+        php7.3-iconv \
+        php7.3-json \
+        php7.3-posix \
+	curl \
+	php7.3-pdo
+
+COPY default.conf /etc/nginx/conf.d/
+COPY php_ini/php7.3.ini /etc/php/7.3/php.ini
+COPY docker-entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod 777 /usr/local/bin/entrypoint.sh
+ARG SERVER_ROOT
+
+RUN sed -i "s#{SERVER_ROOT}#$SERVER_ROOT#g" /etc/nginx/conf.d/default.conf
+VOLUME [ "/var/www/" ]
+WORKDIR /var/www
+
+ENTRYPOINT [ "entrypoint.sh" ]
+CMD ["/sbin/runit-wrapper"]
+
+EXPOSE 80

@@ -73,4 +73,5 @@ VOLUME [ "/var/www/" ]
 RUN chmod 777 /var/www/
 WORKDIR /var/www
 
+COPY php_ini/php${PHP_VERSION}.ini /etc/php/${PHP_VERSION}/php.ini
 EXPOSE 80

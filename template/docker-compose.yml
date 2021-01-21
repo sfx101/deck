@@ -1721,6 +1721,7 @@ services:
   alpine_nginx:
     build:
       context: ./alpine_nginx
+      dockerfile: Dockerfile-${PHP_VERSION}
       args:
         - "SERVER_ROOT=${SERVER_ROOT}"
         - "PHP_VERSION=${PHP_VERSION}"
@@ -1808,3 +1809,34 @@ services:
         - "${APP_CODE_PATH_HOST}:/var/www/html"
       ports:
         - "${NGINX_HOST_HTTP_PORT}:80"
+
+### Magento ####################################################
+  magento:
+      image: "malexcheng/magento2"
+      ports:
+        - "${MAGENTO_HTTP_PORT}:80"
+      volumes:
+        - "${APP_CODE_PATH_HOST}:/var/www/html/app/design/frontend/mytheme/default"
+
+### Symfony ####################################################
+  symfony:
+      build:
+        context: ./symfony
+        args:
+          - "SERVER_ROOT=${SERVER_ROOT}"
+          - "PHP_VERSION=${PHP_VERSION}"
+      volumes:
+        - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_NGINX}${APP_CODE_CONTAINER_FLAG}
+      ports:
+        - "${SYMFONY_HTTP_PORT}:80"
+
+### Monicahq ####################################################
+  monica:
+      image: monica:fpm-alpine
+      environment:
+          - APP_KEY=
+          - DB_HOST=alpine_mysql
+      volumes:
+        - ${APP_CODE_PATH_HOST}:/var/www/html/storage
+      ports:
+        - "${MONICA_HTTP_PORT}:80"

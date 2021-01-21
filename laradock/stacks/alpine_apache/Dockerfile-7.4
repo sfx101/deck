@@ -46,5 +46,7 @@ RUN sed -i "s#{SERVER_ROOT}#$SERVER_ROOT#g" /etc/apache2/httpd.conf
 VOLUME [ "/var/www/" ]
 WORKDIR /var/www
 
+COPY php_ini/php7.4.ini /etc/php/7.4/php.ini
+
 CMD ["/sbin/runit-wrapper"]
 EXPOSE 80
