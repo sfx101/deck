@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+su www-data <<EOSU
+/var/www/html/bin/magento sampledata:deploy
+/var/www/html/bin/magento setup:upgrade
+EOSU

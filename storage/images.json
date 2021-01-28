@@ -1,6 +1,57 @@
 {
   "images": [
     {
+      "name": "monica",
+      "tags": ["monica","mysql"],
+      "containers": ["monica","alpine_mysql"],
+      "notes": "Monica lets you quickly and easily log all those information so you can be a better friend, family member or spouse.",
+      "dependencies": ["monica","alpine_mysql"],
+      "ports": [
+        {
+          "env": "MONICA_HTTP_PORT",
+          "http": true
+        },
+        {
+          "env": "AMYSQL_PORT"
+        }
+      ],
+      "required": ["localPath"],
+      "icon": "https://user-images.githubusercontent.com/61099/37693034-5783b3d6-2c93-11e8-80ea-bd78438dcd51.png"
+    },
+    {
+      "name": "Symfony",
+      "tags": ["nginx","php", "symfony"],
+      "containers": ["symfony"],
+      "notes": "Symfony is a PHP web application framework and a set of reusable PHP components/libraries. It was published as free software on October 18, 2005 and released under the MIT license",
+      "dependencies": ["symfony"],
+      "ports": [
+        {
+          "env": "SYMFONY_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.3
+      },
+      "required": ["localPath"],
+      "icon": "https://symfony.com/logos/symfony_black_03.svg"
+    },
+    {
+      "name": "Magento",
+      "tags": ["magento","mysql"],
+      "containers": ["magento","mysql"],
+      "notes": "Magento is an open-source e-commerce platform written in PHP. It uses multiple other PHP frameworks such as Laminas and Symfony",
+      "dependencies": ["magento","mysql"],
+      "ports": [
+        {
+          "env": "MAGENTO_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "required": ["localPath"],
+      "icon": "https://pbs.twimg.com/profile_images/1172242152501460992/7gTmZtSo.jpg"
+    },
+    {
       "name": "Mailhog",
       "tags": ["mailhog"],
       "containers": ["amailhog","apache_with_php"],
@@ -103,9 +154,9 @@
     {
       "name": "Apache_PHP 5.6",
       "tags": ["apache", "php"],
-      "containers": ["alpine_apache"],
+      "containers": ["apache_5"],
       "notes": "Basic PHP stack running on Apache2 and php 5.6-fpm.",
-      "dependencies": ["alpine_apache"],
+      "dependencies": ["apache_5"],
       "ports": [
         {
           "env": "APACHE_HOST_HTTP_PORT",

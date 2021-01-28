@@ -40,12 +40,16 @@ RUN apk add php7.3-bcmath \
 	php7.3-pdo
 
 COPY default.conf /etc/nginx/conf.d/
+COPY php_ini/php7.3.ini /etc/php/7.3/php.ini
+COPY docker-entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod 777 /usr/local/bin/entrypoint.sh
 ARG SERVER_ROOT
 
 RUN sed -i "s#{SERVER_ROOT}#$SERVER_ROOT#g" /etc/nginx/conf.d/default.conf
 VOLUME [ "/var/www/" ]
 WORKDIR /var/www
-COPY php_ini/php7.3.ini /etc/php/7.3/php.ini
 
+ENTRYPOINT [ "entrypoint.sh" ]
 CMD ["/sbin/runit-wrapper"]
+
 EXPOSE 80
