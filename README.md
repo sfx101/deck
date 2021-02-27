@@ -1,8 +1,9 @@
-<img src="https://get-deck.com/wp-content/themes/sinatra/assets/images/d-logo-h5.jpg" alt="Deck logo" height="100"/>
+<p align="center">
+  <img src="https://get-deck.com/wp-content/themes/sinatra/assets/images/d-logo-h5.jpg" alt="Deck logo" height="100"/>
+</p>
 
-### Modern & extendable local web development studio
-
-DECK is powerful and high performant local web development studio unlike any other.
+<h2 align="center">Modern & extendable local web development studio</h3>
+<p align="center">DECK is powerful and high performant local web development studio unlike any other</p>
 
 ![DECK Light Mode Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.22.26-PM.png)
 ![DECK Dark Mode Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.27.02-PM.png)
