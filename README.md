@@ -2,7 +2,7 @@
 
 ### Modern & extendable local web development studio
 
-DECK (formerly Dockerstacks) is powerful and high performant local web development studio unlike any other.
+DECK is powerful and high performant local web development studio unlike any other.
 
 ![DECK Light Mode Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.22.26-PM.png)
 ![DECK Dark Mode Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.27.02-PM.png)
@@ -48,11 +48,3 @@ https://get-deck.com/getting-started/creating-and-starting-stacks/
 #### Opening codes and connecting to a stack
 
 https://get-deck.com/getting-started/opening-codes-and-connecting-to-a-stack/
-
-
-Create your own custom images and unleash the power of Laradock and DECK by editing
-
-```
-~/.docker-stacks/storage/images.json
-```
-Review Laradock documentation for more info on custom images, https://laradock.io/documentation/
