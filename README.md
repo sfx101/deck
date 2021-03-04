@@ -36,11 +36,15 @@ Easily share your local app with co-workers remotely by using Flights
 
 Focus on your web app and let DECK handle the server configurations for you.
 
+### Download
+
 Download the app here: https://github.com/sfx101/docker-stacks/releases (Follow the instructions on the Release page)
 
-#### Installation
+### Installation
 
 https://get-deck.com/getting-started/installation/
+
+### Get started
 
 #### Creating and starting stacks
 
