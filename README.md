@@ -4,6 +4,12 @@
 
 <h2 align="center">Modern & extendable local web development studio</h3>
 <p align="center">DECK is powerful and high performant local web development studio unlike any other</p>
+<p align="center">
+  <a href="https://github.com/sfx101/docker-stacks/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/sfx101/docker-stacks?style=for-the-badge"></a>
+  <a href="https://github.com/sfx101/docker-stacks/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/sfx101/docker-stacks?style=for-the-badge"></a>
+  <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/sfx101/docker-stacks/total?style=for-the-badge">
+  <a href="https://github.com/sfx101/docker-stacks/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/sfx101/docker-stacks?style=for-the-badge"></a>
+</p>
 
 ![DECK Light Mode Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.22.26-PM.png)
 ![DECK Dark Mode Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.27.02-PM.png)
