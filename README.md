@@ -5,6 +5,9 @@
 <h2 align="center">Modern & extendable local web development studio</h3>
 <p align="center">DECK is powerful and high performant local web development studio unlike any other</p>
 <p align="center">
+  <a href="https://www.loom.com/share/056e358938144db788d4c32a65a0572d">Click here to see in action &gt;</a>
+</p>
+<p align="center">
   <a href="https://github.com/sfx101/docker-stacks/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/sfx101/docker-stacks?style=for-the-badge"></a>
   <a href="https://github.com/sfx101/docker-stacks/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/sfx101/docker-stacks?style=for-the-badge"></a>
   <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/sfx101/docker-stacks/total?style=for-the-badge">
