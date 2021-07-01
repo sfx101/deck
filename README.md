@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://get-deck.com/wp-content/themes/sinatra/assets/images/d-logo-h5.jpg" alt="Deck logo" height="100"/>
+  <img src="https://get-deck.com/wp-content/uploads/2020/11/android-chrome-512x512-1.png" alt="Deck logo" height="100"/>
 </p>
 
 <h2 align="center">Modern & extendable local web development studio</h3>
-<p align="center">DECK is powerful and high performant local web development studio unlike any other</p>
+<p align="center">DECK is powerful and high performant local web development studio unlike any other, install & try out more than 40+ open source stacks with editable Docker compose files</p>
 <p align="center">
   <a href="https://www.loom.com/share/056e358938144db788d4c32a65a0572d">Click here to see in action &gt;</a>
 </p>
