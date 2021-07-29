@@ -7,8 +7,9 @@
 <p align="center">
   <a href="https://www.loom.com/share/056e358938144db788d4c32a65a0572d">Click here to see in action &gt;</a>
 </p>
+<p align="center"><strong>Download DECK for macOS & Windows</strong></p>
 <p align="center">
-  <a href="https://github.com/sfx101/docker-stacks/releases/latest">Download DECK</a>
+  <a href="https://github.com/sfx101/deck/releases/download/v3.0.0/DECK-3.0.0.dmg">macOS</a> / <a href="https://github.com/sfx101/deck/releases/download/v3.0.0/DECK-Setup-3.0.0.exe">Windows</a>
 </p>
 <p align="center">
   <a href="https://github.com/sfx101/docker-stacks/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/sfx101/docker-stacks?style=for-the-badge"></a>
