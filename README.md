@@ -6,6 +6,11 @@
 <p align="center">DECK is powerful and high performant local web development studio unlike any other, install & try out more than 40+ open source stacks with editable Docker compose files</p>
 <p align="center">
   <a href="https://www.loom.com/share/056e358938144db788d4c32a65a0572d">Click here to see in action &gt;</a>
+  <br>
+  <br>
+  <strong>Join us @gitter</strong>
+  <br>
+  <a href="https://gitter.im/deck-app-support/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"><img alt="Chat on Gitter" src="https://badges.gitter.im/deck-app-support/community.svg"></a>
 </p>
 <p align="center"><strong>Download DECK for macOS & Windows</strong></p>
 <p align="center">
