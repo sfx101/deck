@@ -17,6 +17,9 @@
   <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/sfx101/docker-stacks/total?style=for-the-badge">
   <a href="https://github.com/sfx101/docker-stacks/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/sfx101/docker-stacks?style=for-the-badge"></a>
 </p>
+<p align="center">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/deck-app/lamp-stack/LAMP?label=LAMP&style=flat-square"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/deck-app/lemp-stack/Docker%20Image%20CI?label=LEMP&style=flat-square"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/deck-app/nginx-stack/Docker%20Image%20CI?label=NGINX&style=flat-square"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/deck-app/apache-stack/Docker%20Image%20CI?label=APACHE&style=flat-square"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/deck-app/laravel/Docker%20Image%20CI?label=LARAVEL&style=flat-square"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/deck-app/wordpress/Docker%20Image%20CI?label=WordPress&style=flat-square"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/deck-app/mysql/Docker%20Image%20CI?label=MySQL&style=flat-square"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/deck-app/mongodb/Docker%20Image%20CI?label=MONGODB&style=flat-square">
+ </p>
 
 ![DECK Light Mode Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.22.26-PM.png)
 ![DECK Dark Mode Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.27.02-PM.png)
