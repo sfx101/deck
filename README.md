@@ -37,7 +37,7 @@ DECK's inbuilt SSL engine powered by LetsEncrypt and a supercharged proxy layer 
 
 #### Unlimited projects, multiple server configurations
 
-![DECK Marketplace](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.28.25-PM.png)
+![DECK Marketplace](https://get-deck.com/wp-content/uploads/2021/10/Screenshot-2021-10-20-at-10.57.50-PM.png)
 
 Easily spin-up Laravel, Codeigniter, Node JS, Django, WordPress, Magento
 and many more apps right on your localhost with the click of a button
