@@ -12,7 +12,7 @@
   <br>
   <a href="https://gitter.im/deck-app-support/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"><img alt="Chat on Gitter" src="https://badges.gitter.im/deck-app-support/community.svg"></a>
 </p>
-<p align="center"><strong>Download DECK for macOS & Windows</strong></p>
+<p align="center"><strong>Download DECK</strong></p>
 <p align="center">
   <a href="https://github.com/sfx101/deck/releases/tag/v3.0.0">Linux</a> /
   <a href="https://github.com/sfx101/deck/releases/download/v3.0.0/DECK-3.0.0.dmg">macOS</a> / <a href="https://github.com/sfx101/deck/releases/download/v3.0.0/DECK-Setup-3.0.0.exe">Windows</a>
