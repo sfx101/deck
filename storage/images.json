@@ -52,7 +52,7 @@
       "@AppName": "Nginx + PHP",
       "@Logo": "https://cdn.changelog.com/uploads/icons/topics/P5o/icon_large.png?v=63684138098",
       "@Description": "Perfect web development stack built with PHP and Nginx on Alpine Linux",
-      "@Tags": ["apache", "php", "alpine"],
+      "@Tags": ["nginx", "php", "alpine"],
       "@Website": "https://get-deck.com",
       "@Github": "deck-app/nginx-stack"
     },
@@ -64,6 +64,15 @@
       "@Tags": ["wordpress", "php"],
       "@Website": "https://get-deck.com",
       "@Github": "deck-app/wordpress"
+    },
+    {
+      "@AppID": "symfony-24102021",
+      "@AppName": "Symfony",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/symfony/master/default_logo.png",
+      "@Description": "Symfony is a PHP web application framework and a set of reusable PHP components/libraries. MIT license.",
+      "@Tags": ["symfony", "mariadb"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/symfony"
     },
     {
       "@AppID": "postgres-17022021",
