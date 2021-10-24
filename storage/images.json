@@ -68,7 +68,7 @@
     {
       "@AppID": "symfony-24102021",
       "@AppName": "Symfony",
-      "@Logo": "https://github.com/deck-app/symfony/blob/master/default.png",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/symfony/master/default_logo.png",
       "@Description": "Symfony is a PHP web application framework and a set of reusable PHP components/libraries. MIT license.",
       "@Tags": ["symfony", "mariadb"],
       "@Website": "https://get-deck.com",
