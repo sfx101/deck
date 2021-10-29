@@ -75,3 +75,8 @@ https://get-deck.com/getting-started/creating-and-starting-stacks/
 #### Opening codes and connecting to a stack
 
 https://get-deck.com/getting-started/opening-codes-and-connecting-to-a-stack/
+
+
+<p align="center">
+  <a href="https://www.buymeacoffee.com/deck"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=deck&button_colour=FFDD00&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff"></a>
+</p>
