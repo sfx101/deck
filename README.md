@@ -3,7 +3,8 @@
 </p>
 
 <h2 align="center">Modern & extendable local web development studio</h3>
-<p align="center">DECK is powerful and high performant local web development studio unlike any other, install & try out more than 40+ open source stacks with editable Docker compose files</p>
+
+#### DECK is powerful and high performant local web development studio unlike any other, install & try out more than 40+ open source stacks with editable Docker compose files
 
 - A local web development studio to spin up almost any development environment effortlessly.
 - Seamless GUI to manage multiple development environments
