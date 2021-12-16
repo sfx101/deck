@@ -4,6 +4,14 @@
 
 <h2 align="center">Modern & extendable local web development studio</h3>
 <p align="center">DECK is powerful and high performant local web development studio unlike any other, install & try out more than 40+ open source stacks with editable Docker compose files</p>
+
+- A local web development studio to spin up almost any development environment effortlessly.
+- Seamless GUI to manage multiple development environments
+- Cross-platform. It runs on macOS, Windows & Linux.
+- A free & open-source marketplace to install, share local development environments
+- It is highly extensible by modifying Dockerfiles.
+- Share dev environments with co-workers using DECK Flights.
+
 <p align="center">
   <a href="https://www.loom.com/share/056e358938144db788d4c32a65a0572d">Click here to see in action &gt;</a>
 </p>
