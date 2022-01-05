@@ -1,3 +1,360 @@
 {
-    "stacks": []
+  "stacks": [
+    {
+      "@AppID": "solidity-05012022",
+      "@AppName": "Solidity",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/solidity/master/default.png",
+      "@Description": "Solidity is an object-oriented programming language for writing smart contracts",
+      "@Tags": ["solidity", "ubuntu"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/solidity"
+    },
+    {
+      "@AppID": "lamp-20012021",
+      "@AppName": "LAMP",
+      "@Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Apache_Feather_Logo.svg/100px-Apache_Feather_Logo.svg.png",
+      "@Description": "Perfect web development stack built with PHP, Apache, Mysql on Alpine Linux",
+      "@Tags": ["apache", "mysql", "php", "alpine"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/lamp-stack"
+    },
+    {
+      "@AppID": "lemp-06022021",
+      "@AppName": "LEMP",
+      "@Logo": "https://cdn.changelog.com/uploads/icons/topics/P5o/icon_large.png?v=63684138098",
+      "@Description": "Perfect web development stack built with PHP, nginx, mysql on Alpine Linux",
+      "@Tags": ["nginx", "mysql", "php", "alpine"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/lemp-stack"
+    },
+
+    {
+      "@AppID": "mautic-20012028",
+      "@AppName": "Mautic",
+      "@Logo": "https://www.mautic.org/sites/default/files/2020-03/Mautic_Logo_LB.png",
+      "@Description": "Email marketing software",
+      "@Tags": ["apache", "mysql", "php", "alpine"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/mautic"
+    },
+
+    {
+      "@AppID": "laravel-20012029",
+      "@AppName": "Laravel",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/laravel/master/default.png",
+      "@Description": "Laravel is a web application framework for PHP, released as free and open-source software under the MIT License.",
+      "@Tags": ["laravel", "bitnami", "php"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/laravel"
+    },
+    {
+      "@AppID": "apache-16022021",
+      "@AppName": "Apache + PHP",
+      "@Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Apache_Feather_Logo.svg/100px-Apache_Feather_Logo.svg.png",
+      "@Description": "Perfect web development stack built with PHP and Apache on Alpine Linux",
+      "@Tags": ["apache", "php", "alpine"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/apache-stack"
+    },
+    {
+      "@AppID": "nginx-16022021",
+      "@AppName": "Nginx + PHP",
+      "@Logo": "https://cdn.changelog.com/uploads/icons/topics/P5o/icon_large.png?v=63684138098",
+      "@Description": "Perfect web development stack built with PHP and Nginx on Alpine Linux",
+      "@Tags": ["nginx", "php", "alpine"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/nginx-stack"
+    },
+    {
+      "@AppID": "wordpress-16022021",
+      "@AppName": "WordPress",
+      "@Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/200px-WordPress_blue_logo.svg.png",
+      "@Description": "Open source software you can use to create a beautiful website, blog, or app",
+      "@Tags": ["wordpress", "php"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/wordpress"
+    },
+    {
+      "@AppID": "symfony-24102021",
+      "@AppName": "Symfony",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/symfony/master/default_logo.png",
+      "@Description": "Symfony is a PHP web application framework and a set of reusable PHP components/libraries. MIT license.",
+      "@Tags": ["symfony", "mariadb"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/symfony"
+    },
+    {
+      "@AppID": "postgres-17022021",
+      "@AppName": "PostgreSQL",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/postgres/master/default.png",
+      "@Description": "Advanced open source relational database",
+      "@Tags": ["postgre"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/postgres",
+      "@Category": []
+    },
+    {
+      "@AppID": "mysql-17022021",
+      "@AppName": "MySQL",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/mysql/master/default.png",
+      "@Description": "Popular open source database",
+      "@Tags": ["mysql"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/mysql",
+      "@Category": []
+    },
+
+    {
+      "@AppID": "magento-17022021",
+      "@AppName": "Magento",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/magento/master/default.png",
+      "@Description": "Open-source e-commerce platform",
+      "@Tags": ["php", "mysql"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/magento",
+      "@Category": ["cms"]
+    },
+
+    {
+      "@AppID": "ghost-17022021",
+      "@AppName": "Ghost",
+      "@Logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-ghost-logo.png",
+      "@Description": "Open source blogging platform written in JavaScript",
+      "@Tags": ["nodejs"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/ghost",
+      "@Category": ["cms"]
+    },
+
+    {
+      "@AppID": "drupal-17022021",
+      "@AppName": "Drupal",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/drupal/master/default.png",
+      "@Description": "Scalable, open platform for web content management and digital experiences",
+      "@Tags": ["php", "mysql"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/drupal",
+      "@Category": ["cms", "php"]
+    },
+
+    {
+      "@AppID": "django-17022021",
+      "@AppName": "Django",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/django/master/default.png",
+      "@Description": "",
+      "@Tags": [],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/django",
+      "@Category": []
+    },
+
+    {
+      "@AppID": "codeigniter-17022021",
+      "@AppName": "CodeIgniter",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/codeigniter/master/default.png",
+      "@Description": "",
+      "@Tags": [],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/codeigniter",
+      "@Category": []
+    },
+
+    {
+      "@AppID": "elk-17022021",
+      "@AppName": "ELK Stack",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/elk/master/default.png",
+      "@Description": "",
+      "@Tags": [],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/elk",
+      "@Category": []
+    },
+
+    {
+      "@AppID": "tastyIgniter-17022021",
+      "@AppName": "TastyIgniter",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/tastyIgniter/master/default.png",
+      "@Description": "",
+      "@Tags": [],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/tastyIgniter",
+      "@Category": []
+    },
+
+    {
+      "@AppID": "nextcloud-17022021",
+      "@AppName": "NextCloud",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/nextcloud/master/default.png",
+      "@Description": "",
+      "@Tags": [],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/nextcloud",
+      "@Category": []
+    },
+
+    {
+      "@AppID": "portainer-17022021",
+      "@AppName": "Portainer",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/portainer/master/default.png",
+      "@Description": "",
+      "@Tags": [],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/portainer",
+      "@Category": []
+    },
+
+    {
+      "@AppID": "confluence-17022021",
+      "@AppName": "Confluence",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/confluence/master/default.png",
+      "@Description": "",
+      "@Tags": [],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/confluence",
+      "@Category": []
+    },
+
+    {
+      "@AppID": "nodejs-17022021",
+      "@AppName": "Node js",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/nodejs/master/default.png",
+      "@Description": "",
+      "@Tags": [],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/nodejs",
+      "@Category": []
+    },
+
+    {
+      "@AppID": "adminer-17022021",
+      "@AppName": "Adminer",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/adminer/master/default.png",
+      "@Description": "",
+      "@Tags": [],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/adminer",
+      "@Category": []
+    },
+
+    {
+      "@AppID": "caddy-17022021",
+      "@AppName": "Caddy",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/caddy/master/default.png",
+      "@Description": "",
+      "@Tags": [],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/caddy",
+      "@Category": []
+    },
+
+    {
+      "@AppID": "n8n-17022021",
+      "@AppName": "N8N",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/n8n/master/default.png",
+      "@Description": "",
+      "@Tags": [],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/n8n",
+      "@Category": []
+    },
+
+    {
+      "@AppID": "mongodb-17022021",
+      "@AppName": "MongoDB",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/mongodb/master/default.png",
+      "@Description": "",
+      "@Tags": [],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/mongodb",
+      "@Category": []
+    },
+
+    {
+      "@AppID": "suitecrm-17022021",
+      "@AppName": "SuiteCRM",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/suitecrm/master/default.png",
+      "@Description": "Award-winning open-source, enterprise-ready Customer Relationship Management (CRM) software application.",
+      "@Tags": ["php"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/suitecrm",
+      "@Category": ["crm", "php"]
+    },
+
+    {
+      "@AppID": "joomla-17022021",
+      "@AppName": "Joomla",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/joomla/master/default.png",
+      "@Description": "Content Management System (CMS) which enables you to build websites and powerful online applications",
+      "@Tags": ["php", "mysql"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/joomla",
+      "@Category": ["cms", "php"]
+    },
+
+    {
+      "@AppID": "flarum-17022021",
+      "@AppName": "Flarum",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/flarum/master/default.png",
+      "@Description": "Simple forum software for building great communities",
+      "@Tags": ["php"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/flarum",
+      "@Category": ["forum", "php"]
+    },
+
+    {
+      "@AppID": "mailhog-17022021",
+      "@AppName": "Mailhog",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/mailhog/master/default.png",
+      "@Description": "Web and API based SMTP testing",
+      "@Tags": ["golang"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/mailhog",
+      "@Category": ["email", "golang"]
+    },
+
+    {
+      "@AppID": "docktober-17022021",
+      "@AppName": "Ocktober",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/docktober/master/default.png",
+      "@Description": "Open-source, self-hosted CMS platform based on the Laravel PHP Framework",
+      "@Tags": ["php", "laravel"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/docktober",
+      "@Category": ["cms"]
+    },
+
+    {
+      "@AppID": "phalcon-17022021",
+      "@AppName": "Phalcon",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/phalcon/master/default.png",
+      "@Description": "Full-stack PHP framework delivered as a C-extension",
+      "@Tags": ["php"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/phalcon",
+      "@Category": ["frameworks", "php"]
+    },
+
+    {
+      "@AppID": "gitlab-17022021",
+      "@AppName": "Gitlab",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/gitlab/master/default.png",
+      "@Description": "Open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more. Self-host GitLab on your own servers, in a container, or on a cloud provider",
+      "@Tags": ["ruby", "redis", "postgre"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/gitlab",
+      "@Category": ["developer-tools"]
+    },
+
+    {
+      "@AppID": "opencart-17022021",
+      "@AppName": "OpenCart",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/opencart/master/default.png",
+      "@Description": "Open source PHP-based online e-commerce solution",
+      "@Tags": ["php", "mariadb"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/opencart",
+      "@Category": ["e-commerce", "php"]
+    }
+  ]
 }

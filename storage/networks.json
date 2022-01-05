@@ -1,0 +1,8 @@
+{
+    "networks": [
+        {
+            "name": "deck-app",
+            "description": "Default network for app"
+        }
+    ]
+  }
