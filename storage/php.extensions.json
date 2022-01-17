@@ -1,0 +1,16 @@
+{
+    "extensions": [
+        {
+            "name": "php-sodium",
+            "description": "sodium added"
+        },
+        {
+            "name":"php-xsl",
+            "description":"XSL added"
+        },
+        {
+            "name":"php-pgsql",
+            "description":"pgsql added"
+        }
+    ]
+  }
