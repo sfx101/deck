@@ -1,15 +1,6 @@
 {
   "stacks": [
     {
-      "@AppID": "solidity-05012022",
-      "@AppName": "Solidity",
-      "@Logo": "https://raw.githubusercontent.com/deck-app/solidity/master/default.png",
-      "@Description": "Solidity is an object-oriented programming language for writing smart contracts",
-      "@Tags": ["solidity", "ubuntu"],
-      "@Website": "https://get-deck.com",
-      "@Github": "deck-app/solidity"
-    },
-    {
       "@AppID": "lamp-20012021",
       "@AppName": "LAMP",
       "@Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Apache_Feather_Logo.svg/100px-Apache_Feather_Logo.svg.png",
@@ -355,6 +346,24 @@
       "@Website": "https://get-deck.com",
       "@Github": "deck-app/opencart",
       "@Category": ["e-commerce", "php"]
+    },
+    {
+      "@AppID": "solidity-05012022",
+      "@AppName": "Solidity",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/solidity/master/default.png",
+      "@Description": "Solidity is an object-oriented programming language for writing smart contracts",
+      "@Tags": ["solidity", "ubuntu"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/solidity"
+    },
+    {
+      "@AppID": "redis-17012022",
+      "@AppName": "Redis",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/redis/master/default.png",
+      "@Description": "Redis is an open-source, networked, in-memory, key-value data store with optional durability. It is written in ANSI C",
+      "@Tags": ["redis", "alpine"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/redis"
     }
   ]
 }
