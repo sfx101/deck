@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://get-deck.com/wp-content/uploads/2020/11/android-chrome-512x512-1.png" alt="Deck logo" height="100"/>
+  <img src="https://get-deck.com/wp-content/uploads/2022/01/app-logo.png" alt="Deck logo" height="100"/>
 </p>
 
 <h2 align="center">Modern & extendable local web development studio</h3>
