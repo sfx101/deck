@@ -1,8 +1,8 @@
 {
     "extensions": [
         {
-            "name": "php-sodium",
-            "description": "sodium added"
+            "name": "php-dom",
+            "description": "dom added"
         },
         {
             "name":"php-xsl",
