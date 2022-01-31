@@ -94,7 +94,6 @@
       "@Github": "deck-app/mysql",
       "@Category": []
     },
-
     {
       "@AppID": "magento-17022021",
       "@AppName": "Magento",
@@ -364,6 +363,16 @@
       "@Tags": ["redis", "alpine"],
       "@Website": "https://get-deck.com",
       "@Github": "deck-app/redis"
+    },
+    {
+      "@AppID": "mariadb-31012022",
+      "@AppName": "MariaDB",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/mariadb/master/default.png",
+      "@Description": "MariaDB Server is one of the most popular open source database server",
+      "@Tags": ["mariadb"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/mariadb",
+      "@Category": []
     }
   ]
 }
