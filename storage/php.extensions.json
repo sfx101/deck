@@ -11,6 +11,10 @@
         {
             "name":"php-pgsql",
             "description":"pgsql added"
+        },
+        {
+            "name":"php-sqlite3",
+            "description":"Support for SQLite version 3 databases"
         }
     ]
   }
