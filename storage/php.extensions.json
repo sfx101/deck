@@ -1,7 +1,7 @@
 {
     "extensions": [
         {
-            "name":"php8-pecl-redis",
+            "name":"php-pecl-redis",
             "description":"Redis"
         },
         {
