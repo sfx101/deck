@@ -6,7 +6,7 @@
         },
         {
             "name":"php-pgsql",
-            "description":"PGSql"
+            "description":"PostgreSQL"
         },
         {
             "name":"php-sqlite3",
