@@ -30,18 +30,17 @@
   <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/deck-app/lamp-stack/LAMP?label=LAMP&style=flat-square"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/deck-app/lemp-stack/Docker%20Image%20CI?label=LEMP&style=flat-square"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/deck-app/nginx-stack/Docker%20Image%20CI?label=NGINX&style=flat-square"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/deck-app/apache-stack/Docker%20Image%20CI?label=APACHE&style=flat-square"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/deck-app/laravel/Docker%20Image%20CI?label=LARAVEL&style=flat-square"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/deck-app/wordpress/Docker%20Image%20CI?label=WordPress&style=flat-square"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/deck-app/mysql/Docker%20Image%20CI?label=MySQL&style=flat-square"> <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/deck-app/mongodb/Docker%20Image%20CI?label=MONGODB&style=flat-square">
  </p>
 
-![DECK Light Mode Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.22.26-PM.png)
-![DECK Dark Mode Screenshot](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.27.02-PM.png)
+![DECK Light Mode Screenshot](https://get-deck.com/wp-content/uploads/2022/03/Screenshot-2022-03-07-at-4.27.32-AM.png)
 
 #### Automatic HTTPS
 
-![DECK Automatic HTTPS](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.30.15-PM.png)
+![DECK Automatic HTTPS](https://get-deck.com/wp-content/uploads/2022/03/Screenshot-2022-03-07-at-4.25.08-AM.png)
 
 DECK's inbuilt SSL engine powered by LetsEncrypt and a supercharged proxy layer enables full HTTPS on localhost apps.
 
 #### Unlimited projects, multiple server configurations
 
-![DECK Marketplace](https://get-deck.com/wp-content/uploads/2021/10/Screenshot-2021-10-20-at-10.57.50-PM.png)
+![DECK Marketplace](https://get-deck.com/wp-content/uploads/2022/03/Screenshot-2022-03-07-at-4.23.39-AM.png)
 
 Easily spin-up Laravel, Codeigniter, Node JS, Django, WordPress, Magento
 and many more apps right on your localhost with the click of a button
@@ -49,7 +48,7 @@ and let DECK do the heavy lifting for you.
 
 #### Built-in terminal
 
-![DECK Terminal](https://get-deck.com/wp-content/uploads/2020/12/Screenshot-2020-12-16-at-2.35.23-PM.png)
+![DECK Terminal](https://get-deck.com/wp-content/uploads/2022/03/Screenshot-2022-03-07-at-4.26.12-AM.png)
 
 Get shell access to your apps and run commands to make changes in file permissions, server configurations, etc
 
