@@ -42,9 +42,7 @@ DECK's inbuilt SSL engine powered by LetsEncrypt and a supercharged proxy layer 
 
 ![DECK Marketplace](https://get-deck.com/wp-content/uploads/2022/03/Screenshot-2022-03-07-at-4.23.39-AM.png)
 
-Easily spin-up Laravel, Codeigniter, Node JS, Django, WordPress, Magento
-and many more apps right on your localhost with the click of a button
-and let DECK do the heavy lifting for you.
+Create any number of development environments right from your localhost. DECK's integrated marketplace lets you spin up stacks with just a click of a button. Popular web technologies such as LAMP, LEMP, MERN, MEAN, Laravel, Symfony, WordPress, Magento & many more are available out of the box
 
 #### Built-in terminal
 
@@ -52,33 +50,10 @@ and let DECK do the heavy lifting for you.
 
 Get shell access to your apps and run commands to make changes in file permissions, server configurations, etc
 
-#### DECK Flights
+### Downloads
 
-Easily share your local app with co-workers remotely by using Flights
+See a full list of downloads here: https://github.com/sfx101/docker-stacks/releases
 
-#### Ready to go configurations
+### Documentation
+https://getdeck.io/docs/
 
-Focus on your web app and let DECK handle the server configurations for you.
-
-### Download
-
-Download the app here: https://github.com/sfx101/docker-stacks/releases (Follow the instructions on the Release page)
-
-### Installation
-
-https://get-deck.com/getting-started/installation/
-
-### Get started
-
-#### Creating and starting stacks
-
-https://get-deck.com/getting-started/creating-and-starting-stacks/
-
-#### Opening codes and connecting to a stack
-
-https://get-deck.com/getting-started/opening-codes-and-connecting-to-a-stack/
-
-
-<p align="center">
-  <a href="https://www.buymeacoffee.com/deck"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=deck&button_colour=FFDD00&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff&nonce=00000"></a>
-</p>
