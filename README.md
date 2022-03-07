@@ -18,7 +18,7 @@
 </p>
 <p align="center"><strong>Download DECK</strong></p>
 <p align="center">
-  <a href="https://github.com/deck-app/stable-releases/releases/download/v4.0.0/DECK-4.0.0-mac-x64.dmg">macOS Intel</a> / <a href="https://github.com/deck-app/stable-releases/releases/download/v4.0.0/DECK-4.0.0-mac-x64.dmg">macOS Silicon</a> / <a href="https://github.com/sfx101/deck/releases/tag/v3.0.0">Linux</a> / <a href="https://github.com/sfx101/deck/releases/download/v3.0.0/DECK-Setup-3.0.0.exe">Windows</a>
+  <a href="https://github.com/deck-app/stable-releases/releases/download/v4.0.0/DECK-4.0.0-mac-x64.dmg">macOS Intel</a> / <a href="https://github.com/deck-app/stable-releases/releases/download/v4.0.0/DECK-4.0.0-mac-arm64.dmg">macOS Silicon</a> / <a href="https://github.com/sfx101/deck/releases/tag/v3.0.0">Linux</a> / <a href="https://github.com/sfx101/deck/releases/download/v3.0.0/DECK-Setup-3.0.0.exe">Windows</a>
 </p>
 <p align="center">
   <a href="https://github.com/sfx101/docker-stacks/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/sfx101/docker-stacks?style=for-the-badge"></a>
