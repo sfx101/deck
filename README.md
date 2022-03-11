@@ -10,8 +10,9 @@
 - Seamless GUI to manage multiple development environments
 - Cross-platform. It runs on macOS, Windows & Linux.
 - A free & open-source marketplace to install, share local development environments
-- It is highly extensible by modifying Dockerfiles.
-- Share dev environments with co-workers using DECK Flights.
+- It is highly extensible by modifying Docker & docker-compose files
+- Create your own Docker projects as custom dev environment
+- No dependency on **Docker Desktop**, works without it
 
 <p align="center">
   <a href="https://www.loom.com/share/056e358938144db788d4c32a65a0572d">Click here to see in action &gt;</a>
