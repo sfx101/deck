@@ -47,11 +47,15 @@ DECK's inbuilt SSL engine powered by LetsEncrypt and a supercharged proxy layer 
 
 Create any number of development environments right from your localhost. DECK's integrated marketplace lets you spin up stacks with just a click of a button. Popular web technologies such as LAMP, LEMP, MERN, MEAN, Laravel, Symfony, WordPress, Magento & many more are available out of the box
 
-#### Built-in terminal
+#### Built-in Log output and Terminal
 
 ![DECK Terminal](https://get-deck.com/wp-content/uploads/2022/03/Screenshot-2022-03-07-at-4.26.12-AM.png)
 
-Get shell access to your apps and run commands to make changes in file permissions, server configurations, etc
+See real-time logs from your projects, access terminal to run shell commands, composer or npm
+
+#### Native support for Docker without Docker Desktop
+
+DECK has **NO** dependency on **Docker Desktop app** to run Docker containers. It just works out of the box with native support for Docker powered by Multipass on macOS & WSL 2 on Windows
 
 ### Downloads
 
