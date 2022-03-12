@@ -24,7 +24,7 @@
 - 🚀 Deploy projects to AWS, Google cloud & DigitalOcean
 
 <p align="center">
-  <a href="https://www.loom.com/share/056e358938144db788d4c32a65a0572d">Click here to see in action &gt;</a>
+  <a href="https://deck-app-assets.s3.us-east-2.amazonaws.com/create-project.mp4">Click here to see in action &gt;</a>
 </p>
 <p align="center"><strong>Download DECK</strong></p>
 <p align="center">
