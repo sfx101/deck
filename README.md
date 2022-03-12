@@ -4,7 +4,7 @@
 
 <h2 align="center">Modern & extendable local web development studio</h3>
 
-#### DECK is powerful and high performant local web development studio unlike any other, install & try out more than 40+ open source stacks
+#### DECK is powerful and high performant local web development studio unlike any other, install & try out more than 40+ open source stacks ☀️
 
 - A local web development studio to spin up almost any development environment effortlessly
 - Seamless GUI to manage multiple development environments
@@ -15,6 +15,13 @@
 - It is highly extensible by modifying **Docker & docker-compose** files
 - Create your own Docker projects as **custom dev environment**
 - Native support for Docker, doesn't require **Docker Desktop** app
+
+#### Roadmap 🌱🌱🌱
+
+- Live reload for PHP, Javascript apps
+- Automatic sync with remote server using rsync
+- Share projects previews as public URLs
+- 🚀 Deploy projects to AWS, Google cloud & DigitalOcean
 
 <p align="center">
   <a href="https://www.loom.com/share/056e358938144db788d4c32a65a0572d">Click here to see in action &gt;</a>
