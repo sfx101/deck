@@ -7,7 +7,7 @@
 #### DECK is powerful and high performant local web development studio unlike any other, install & try out more than 40+ open source stacks ☀️
 
 - A local web development studio to spin up almost any development environment effortlessly
-- Seamless GUI to manage multiple development environments
+- Seamless GUI to create & manage **multiple development environments**
 - Cross-platform. It runs on **macOS, Windows & Linux**
 - Automatic **HTTPS**, powered by LetsEncrypt
 - Test your code by switching multiple PHP versions or servers like Apache or Nginx
