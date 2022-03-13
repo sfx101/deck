@@ -10,7 +10,7 @@
 - Seamless GUI to create & manage **multiple development environments**
 - Cross-platform. It runs on **macOS, Windows & Linux**
 - Automatic **HTTPS**, powered by LetsEncrypt
-- Test your code by switching multiple PHP versions or servers like Apache or Nginx
+- Test your code by switching multiple PHP, Nodejs, Apache, Nginx versions
 - A free & open-source marketplace to install, share local development environments
 - It is highly extensible by modifying **Docker & docker-compose** files
 - Create your own Docker projects as **custom dev environment**
