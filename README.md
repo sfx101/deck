@@ -8,7 +8,7 @@
 
 - A local web development studio to spin up almost any development environment effortlessly
 - Seamless GUI to create & manage **multiple development environments**
-- Cross-platform. It runs on **macOS, Windows & Linux**
+- Cross-platform. It runs on **macOS, Windows & Ubuntu**
 - Automatic **HTTPS**, powered by LetsEncrypt
 - Test your code by switching multiple PHP, Nodejs, Apache, Nginx versions
 - A free & open-source marketplace to install, share local development environments
