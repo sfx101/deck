@@ -11,6 +11,10 @@
         {
             "name":"php-sqlite3",
             "description":"Support for SQLite version 3 databases"
+        },
+        {
+            "name":"php-pdo_pgsql",
+            "description":"PDO PostgreSQL"
         }
     ]
   }
