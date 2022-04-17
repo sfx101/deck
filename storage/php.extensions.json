@@ -17,8 +17,8 @@
             "description":"PDO PostgreSQL"
         },
         {
-            "name":"php-mysql",
-            "description":"MySQL extension"
+            "name":"php-pdo_mysql",
+            "description":"PDO MySQL"
         }
     ]
   }
