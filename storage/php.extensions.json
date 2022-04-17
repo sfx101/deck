@@ -15,6 +15,11 @@
         {
             "name":"php-pdo_pgsql",
             "description":"PDO PostgreSQL"
+        },
+        ,
+        {
+            "name":"php-mysql",
+            "description":"MySQL extension"
         }
     ]
   }
