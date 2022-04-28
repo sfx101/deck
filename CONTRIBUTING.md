@@ -12,9 +12,9 @@ The [Open Source Guides](https://opensource.guide/) website has a collection of 
 
 ## Development setup
 
-1. Clone the repo at ~/.docker-stacks
+1. Clone the repo at ~/.deck
 2. Download the latest release of DECK from the GitHub releases page
-3. Install & run DECK (Once the app loads, it tries to detect whether ~/.docker-stacks is a git repository, that's why #1 is required for development setup)
+3. Install & run DECK (Once the app loads, it tries to detect whether ~/.deck is a git repository, that's why #1 is required for development setup)
 
 ## Developing marketplace apps
 
