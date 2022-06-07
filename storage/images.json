@@ -34,7 +34,7 @@
       "@AppName": "Laravel",
       "@Logo": "https://raw.githubusercontent.com/deck-app/laravel/master/default.png",
       "@Description": "Laravel is a web application framework for PHP, released as free and open-source software under the MIT License.",
-      "@Tags": ["laravel", "bitnami", "php"],
+      "@Tags": ["laravel", "php"],
       "@Website": "https://get-deck.com",
       "@Github": "deck-app/laravel"
     },
