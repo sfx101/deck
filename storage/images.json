@@ -1,6 +1,15 @@
 {
   "images": [
     {
+      "@AppID": "Iris-16062022",
+      "@AppName": "IRIS",
+      "@Logo": "https://raw.githubusercontent.com/github/explore/69db39d72db7f886d4ef6af80f37c790c78c387a/topics/iris/iris.png",
+      "@Description": "Iris is a fast, simple yet fully featured and very efficient web framework for Go programming language",
+      "@Tags": ["go", "alpine"],
+      "@Website": "https://get-deck.com",
+      "@Github": "deck-app/iris-stack"
+    },
+    {
       "@AppID": "lamp-20012021",
       "@AppName": "LAMP",
       "@Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Apache_Feather_Logo.svg/100px-Apache_Feather_Logo.svg.png",
