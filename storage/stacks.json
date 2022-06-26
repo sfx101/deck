@@ -336,17 +336,6 @@
       "@Github": "deck-app/gitlab",
       "@Category": ["developer-tools"]
     },
-
-    {
-      "@AppID": "opencart-17022021",
-      "@AppName": "OpenCart",
-      "@Logo": "https://raw.githubusercontent.com/deck-app/opencart/master/default.png",
-      "@Description": "Open source PHP-based online e-commerce solution",
-      "@Tags": ["php", "mariadb"],
-      "@Website": "https://get-deck.com",
-      "@Github": "deck-app/opencart",
-      "@Category": ["e-commerce", "php"]
-    },
     {
       "@AppID": "solidity-05012022",
       "@AppName": "Solidity",
