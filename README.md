@@ -71,3 +71,8 @@ See a full list of downloads here: https://github.com/sfx101/deck/releases
 ### Documentation
 https://getdeck.io/docs/
 
+
+
+### Infrastructure model
+
+![Insfrastructure model](.infragenie/infrastructure_model.png)
