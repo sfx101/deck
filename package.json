@@ -11,7 +11,7 @@
     "rebuild": "electron-rebuild -f -w",
     "postinstall": "set DEBUG=electron-builder && electron-builder install-app-deps",
     "build": "rollup -c",
-    "build-ui": "tailwindcss build style.css -o public/css/style.css"
+    "build-ui": "tailwindcss build -i theme.css -o public/css/style.css"
   },
   "author": "DECK Contributors <hello@get-deck.com>",
   "license": "GNU Affero General Public License v3.0",

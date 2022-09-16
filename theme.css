@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .ease-transition {
+        @apply transition duration-200 ease-in-out;
+    }
+    .sidebar-action-btn {
+      @apply inline-flex items-center px-3 py-2 border text-xs font-medium rounded-full focus:outline-none;
+    }
+    .border-btn-island {
+        @apply bg-white border-island-300 text-island-600 hover:bg-island-600 hover:text-white hover:border-transparent;
+    }
+    .border-btn-azure {
+        @apply bg-white border-azure-300 text-azure-600 hover:bg-azure-600 hover:text-white hover:border-transparent;
+    }
+    .border-btn-chillindigo {
+        @apply bg-white border-chillindigo-300 text-chillindigo-600 hover:bg-chillindigo-600 hover:text-white hover:border-transparent;
+    }
+    .border-btn-chillcerise {
+        @apply bg-white border-chillcerise-300 text-chillcerise-600 hover:bg-chillcerise-600 hover:text-white hover:border-transparent;
+    }
+    .border-btn-gray {
+        @apply bg-white border-gray-300 text-gray-600 hover:bg-gray-600 hover:text-white hover:border-transparent;
+    }
+  }
