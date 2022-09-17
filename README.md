@@ -23,9 +23,6 @@
 - Share projects previews as public URLs
 - 🚀 Deploy projects to AWS, Google cloud & DigitalOcean
 
-<p align="center">
-  <a href="https://deck-app-assets.s3.us-east-2.amazonaws.com/create-project.mp4">Click here to see in action &gt;</a>
-</p>
 <p align="center"><strong>Download DECK</strong></p>
 <p align="center">
   <a href="https://get-deck.com/download-macos/">macOS</a> / <a href="https://get-deck.com/download-ubuntu/">Ubuntu</a> / <a href="https://get-deck.com/download-windows/">Windows</a>
