@@ -41,8 +41,8 @@
         <div
             data-href="/stacks/{stack.COMPOSE_PROJECT_NAME}"
             use:active
-            data-active-class="bg-chillgray-100"
-            class="select-none flex flex-1 items-center justify-center p-2 rounded-lg hover:bg-chillgray-100 ease-transition"
+            data-active-class="bg-chillgray-900"
+            class="select-none flex flex-1 items-center justify-center p-2 rounded-lg hover:bg-chillgray-100 dark:hover:bg-chillgray-900 ease-transition"
         >
             <span class="inline-block relative">
                 <!-- stack list status indicator -->
@@ -57,12 +57,12 @@
                         class="col-span-2 label-text grid grid-cols-12 gap-0.5 items-center"
                     >
                         <span
-                            class="context-menu col-span-9 text-sm font-medium text-gray-700 truncate pr-1"
+                            class="context-menu col-span-9 text-sm font-medium text-csgray-700 dark:text-csgray-300 truncate pr-1"
                             >{stack.COMPOSE_PROJECT_NAME}</span
                         >
                         <span class="col-span-3 flex justify-end">
                             <p
-                                class="flex items-center text-sm text-gray-500 gap-x-0.5"
+                                class="flex items-center text-sm text-csgray-500 gap-x-0.5"
                             >
                                 {#if stack.isButtonLoading === true}
                                     <svg
@@ -148,7 +148,7 @@
                                         data-href="/stacks/{stack.COMPOSE_PROJECT_NAME}"
                                         use:active
                                         data-active-class="text-blue-700"
-                                        class="h-6 w-6 text-gray-300"
+                                        class="h-6 w-6 text-csgray-300"
                                         x-description="Heroicon name: solid/chevron-right"
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 20 20"

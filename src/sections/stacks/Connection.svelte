@@ -44,9 +44,9 @@
 {:then res}
     {#if res.length}
         <div class="mb-6 space-y-4">
-            <h3 class="text-md font-medium text-gray-900 mb-4">Connection</h3>
+            <h3 class="text-md font-medium text-csgray-900 mb-4">Connection</h3>
             <div
-                class="flex flex-col p-4 bg-gray-800 shadow-md hover:shodow-lg rounded-lg gap-1"
+                class="flex flex-col p-4 bg-csgray-800 shadow-md hover:shodow-lg rounded-lg gap-1"
             >
                 <!-- Info bar -->
                 <!-- <div class="bg-indigo-600 rounded-md">
@@ -127,14 +127,14 @@
                                 </div>
                                 <div class="col-span-2">
                                     <p
-                                        class="text-md font-medium text-gray-100 truncate"
+                                        class="text-md font-medium text-csgray-100 truncate"
                                     >
                                         {_.get(container, "title", false)
                                             ? container.title
                                             : "Empty"}
                                     </p>
                                     <!-- <p
-                                        class="mt-2 flex items-center text-sm text-gray-500"
+                                        class="mt-2 flex items-center text-sm text-csgray-500"
                                     >
                                         <span class="truncate"
                                             >Some sub text here</span
@@ -152,7 +152,7 @@
                                             {/if}
                                         </p>
                                         <p
-                                            class="flex font-bold text-xs text-gray-500"
+                                            class="flex font-bold text-xs text-csgray-500"
                                         >
                                             <span class="truncate">HOST</span>
                                         </p>
@@ -167,7 +167,7 @@
                                         {/if}
                                     </p>
                                     <p
-                                        class="flex font-bold text-xs text-gray-500"
+                                        class="flex font-bold text-xs text-csgray-500"
                                     >
                                         <span class="truncate">PORT</span>
                                     </p>
@@ -185,7 +185,7 @@
                                                 );
                                             }
                                         }}
-                                        class="text-gray-400 hover:text-white"
+                                        class="text-csgray-400 hover:text-white"
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -209,7 +209,7 @@
                                             container.showPublicPort =
                                                 !container.showPublicPort;
                                         }}
-                                        class="text-gray-400 hover:text-white"
+                                        class="text-csgray-400 hover:text-white"
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -244,7 +244,7 @@
                                                 );
                                             }
                                         }}
-                                        class="text-gray-400 hover:text-white"
+                                        class="text-csgray-400 hover:text-white"
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"

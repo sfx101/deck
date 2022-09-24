@@ -1,5 +1,5 @@
 <div
-    class="btnDisabled flex-none p-1 rounded-md text-gray-400 ease-transition cursor-pointer"
+    class="btnDisabled flex-none p-1 rounded-md text-csgray-400 ease-transition cursor-pointer"
 >
     <svg
         xmlns="http://www.w3.org/2000/svg"

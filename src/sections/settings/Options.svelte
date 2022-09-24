@@ -3,7 +3,7 @@
 </script>
 
 <aside
-    class="min-w-1/4 w-1/4 bg-white shadow-sm overflow-y-auto h-screen lg:block"
+    class="min-w-1/4 w-1/4 bg-white dark:bg-darkgray-1000 dark:border-slate-50/[0.06] dark:border-r shadow-sm overflow-y-auto h-screen lg:block"
 >
     <div class="overflow-y-auto">
         <ul class="flex flex-col left-side gap-2 overflow-y-auto py-16">
@@ -11,11 +11,11 @@
                 <a
                     href="/#/settings/integrations"
                     use:active
-                    active-class="bg-chillgray-100"
+                    active-class="bg-chillgray-900"
                     class="select-none flex flex-1 items-center p-2 rounded-lg gap-0.5 hover:bg-chillgray-100 ease-transition"
                 >
                     <span
-                        class="inline-block relative bg-white rounded-lg p-1.5 shadow-xs"
+                        class="inline-block relative bg-white dark:bg-darkgray-1000 rounded-lg p-1.5 shadow-xs"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-azure-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -28,7 +28,7 @@
                                 class="col-span-3 label-text grid grid-cols-12 gap-0.5 items-center"
                             >
                                 <span
-                                    class="col-span-12 text-sm font-medium text-gray-700"
+                                    class="col-span-12 text-sm font-medium text-csgray-700 dark:text-csgray-300"
                                 >
                                     Integrations
                                 </span>
@@ -45,11 +45,11 @@
                     class="p-2 select-none flex flex-1 items-center rounded-lg gap-0.5 hover:bg-chillgray-100 ease-transition"
                 >
                     <span
-                        class="inline-block relative bg-white rounded-lg p-1.5 shadow-xs"
+                        class="inline-block relative bg-white dark:bg-darkgray-1000 rounded-lg p-1.5 shadow-xs"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5 text-chillindigo-400"
+                            class="h-5 w-5 text-chillindigo-400 dark:text-chillindigo-500"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                         >
@@ -64,7 +64,7 @@
                                 class="col-span-3 label-text grid grid-cols-12 gap-0.5 items-center"
                             >
                                 <span
-                                    class="col-span-12 text-sm font-medium text-gray-700"
+                                    class="col-span-12 text-sm font-medium text-csgray-700 dark:text-csgray-300"
                                 >
                                     Docker engine
                                 </span>
@@ -81,11 +81,11 @@
                     class="select-none flex flex-1 items-center p-2 rounded-lg gap-0.5 hover:bg-chillgray-100 ease-transition"
                 >
                     <span
-                        class="inline-block relative bg-white rounded-lg p-1.5 shadow-xs"
+                        class="inline-block relative bg-white dark:bg-darkgray-1000 rounded-lg p-1.5 shadow-xs"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5 text-cerise-400"
+                            class="h-5 w-5 text-cerise-400 dark:text-cerise-500"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                         >
@@ -102,7 +102,7 @@
                                 class="col-span-3 label-text grid grid-cols-12 gap-0.5 items-center"
                             >
                                 <span
-                                    class="col-span-12 text-sm font-medium text-gray-700"
+                                    class="col-span-12 text-sm font-medium text-csgray-700 dark:text-csgray-300"
                                 >
                                     Troubleshoot
                                 </span>

@@ -248,7 +248,7 @@
     <section
         aria-labelledby="primary-heading"
         class="
-            bg-gray-100
+            bg-csgray-100
             min-w-0
             flex-1
             h-full
@@ -261,15 +261,15 @@
             class="flex flex-col gap-4 justify-center items-center px-4 py-12 container mx-auto"
         >
             <div
-                class="flex items-center p-6 justify-between bg-white rounded-md border border-gray-200 gap-6 w-3/4"
+                class="flex items-center p-6 justify-between bg-white rounded-md border border-csgray-200 gap-6 w-3/4"
             >
                 <span class="flex-grow flex flex-col">
                     <span
-                        class="text-sm font-medium text-gray-900"
+                        class="text-sm font-medium text-csgray-900"
                         id="availability-label">Restart DECK</span
                     >
                     <span
-                        class="text-sm text-gray-500"
+                        class="text-sm text-csgray-500"
                         id="availability-description"
                         >Restarting should fix an exception which might have occurred in the app</span
                     >
@@ -285,15 +285,15 @@
                 </button>
             </div>
             <!-- <div
-                class="flex items-center p-6 justify-between bg-white rounded-md border border-gray-200 gap-6 w-3/4"
+                class="flex items-center p-6 justify-between bg-white rounded-md border border-csgray-200 gap-6 w-3/4"
             >
                 <span class="flex-grow flex flex-col">
                     <span
-                        class="text-sm font-medium text-gray-900"
+                        class="text-sm font-medium text-csgray-900"
                         id="availability-label">Clean / Purge data</span
                     >
                     <span
-                        class="text-sm text-gray-500"
+                        class="text-sm text-csgray-500"
                         id="availability-description"
                         >This will solve problems with disk corruption.</span
                     >
@@ -332,15 +332,15 @@
                 </button>
             </div>
             <div
-                class="flex items-center p-6 justify-between bg-white rounded-md border border-gray-200 gap-6 w-3/4"
+                class="flex items-center p-6 justify-between bg-white rounded-md border border-csgray-200 gap-6 w-3/4"
             >
                 <span class="flex-grow flex flex-col">
                     <span
-                        class="text-sm font-medium text-gray-900"
+                        class="text-sm font-medium text-csgray-900"
                         id="availability-label">Reset to factory defaults</span
                     >
                     <span
-                        class="text-sm text-gray-500"
+                        class="text-sm text-csgray-500"
                         id="availability-description"
                         >All settings and data will be removed.</span
                     >
@@ -354,15 +354,15 @@
                 </button>
             </div>
             <div
-                class="flex items-center p-6 justify-between bg-white rounded-md border border-gray-200 gap-6 w-3/4"
+                class="flex items-center p-6 justify-between bg-white rounded-md border border-csgray-200 gap-6 w-3/4"
             >
                 <span class="flex-grow flex flex-col">
                     <span
-                        class="text-sm font-medium text-gray-900"
+                        class="text-sm font-medium text-csgray-900"
                         id="availability-label">Uninstall</span
                     >
                     <span
-                        class="text-sm text-gray-500"
+                        class="text-sm text-csgray-500"
                         id="availability-description"
                         >We are sorry to see you go.</span
                     >

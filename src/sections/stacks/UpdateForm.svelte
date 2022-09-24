@@ -67,7 +67,7 @@
 {#each Object.entries(formFields) as [key1, obj1]}
     {#if obj1.length > 0}
         <dl
-            class="bg-gray-50 shadow-sm rounded-lg p-4 inline-flex flex-col w-full h-fit-content float-left gap-4 break-inside mb-6"
+            class="bg-csgray-50 dark:bg-darkgray-950 shadow-sm rounded-lg p-4 inline-flex flex-col w-full h-fit-content float-left gap-4 break-inside mb-6"
         >
             {#each Object.entries(obj1) as [key, obj]}
                 {#if _.get(obj, "type", false)}

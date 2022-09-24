@@ -9,7 +9,7 @@
                     <div class="text-blue-500 text-xs">Choose a stack</div>
                  </div>
                  <div class="h-full border-l-4 border-transparent">
-                    <div class="border-l-4 mr-4 h-full border-gray-300 border-dashed"></div>
+                    <div class="border-l-4 mr-4 h-full border-csgray-300 border-dashed"></div>
                  </div>
               </div>
               <div class="flex-auto rounded bg-white">
@@ -23,12 +23,12 @@
            </div>
            <div class="flex items-start flex-row">
               <div class="border-t-4 border-r-4 border-transparent">
-                 <div class="w-16 ml-16 h-16 border-l-4 border-gray-300 border-dashed border-b-4 rounded-bl-full"></div>
+                 <div class="w-16 ml-16 h-16 border-l-4 border-csgray-300 border-dashed border-b-4 rounded-bl-full"></div>
               </div>
               <div class="border-t-4 border-transparent flex-auto">
-                 <div class="h-16 border-b-4 border-gray-300 border-dashed"></div>
+                 <div class="h-16 border-b-4 border-csgray-300 border-dashed"></div>
               </div>
-              <div class="w-16 mt-16 mr-16 h-16 border-r-4 border-gray-300 border-dashed border-t-4 rounded-tr-full"></div>
+              <div class="w-16 mt-16 mr-16 h-16 border-r-4 border-csgray-300 border-dashed border-t-4 rounded-tr-full"></div>
            </div>
            <div class="flex flex-row-reverse">
               <div class="hidden md:flex flex-col items-center">
@@ -37,7 +37,7 @@
                     <div class="text-indigo-500 text-xs">Add details</div>
                  </div>
                  <div class="h-full border-r-4 border-transparent">
-                    <div class="border-l-4 ml-4 h-full border-gray-300 border-dashed"></div>
+                    <div class="border-l-4 ml-4 h-full border-csgray-300 border-dashed"></div>
                  </div>
               </div>
               <div class="flex-auto rounded bg-white">
@@ -51,12 +51,12 @@
            </div>
            <div class="flex items-start flex-row-reverse">
               <div class="border-t-4 border-l-4 border-transparent">
-                 <div class="w-16 mr-16 h-16 border-r-4 border-gray-300 border-dashed border-b-4 rounded-br-full"></div>
+                 <div class="w-16 mr-16 h-16 border-r-4 border-csgray-300 border-dashed border-b-4 rounded-br-full"></div>
               </div>
               <div class="border-t-4 border-transparent flex-auto">
-                 <div class="h-16 border-b-4 border-gray-300 border-dashed"></div>
+                 <div class="h-16 border-b-4 border-csgray-300 border-dashed"></div>
               </div>
-              <div class="w-16 mt-16 ml-16 h-16 border-l-4 border-gray-300 border-dashed border-t-4 rounded-tl-full"></div>
+              <div class="w-16 mt-16 ml-16 h-16 border-l-4 border-csgray-300 border-dashed border-t-4 rounded-tl-full"></div>
            </div>
            <div class="flex flex-row">
               <div class="hidden md:flex flex-col items-center">

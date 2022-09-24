@@ -37,7 +37,7 @@
             class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
         >
             <div
-                class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+                class="fixed inset-0 bg-csgray-500 bg-opacity-75 transition-opacity"
                 aria-hidden="true"
             />
 
@@ -71,13 +71,13 @@
                     </div>
                     <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                         <h3
-                            class="text-lg leading-6 font-medium text-gray-900"
+                            class="text-lg leading-6 font-medium text-csgray-900"
                             id="modal-title"
                         >
                             {title}
                         </h3>
                         <div class="mt-2">
-                            <p class="text-sm text-gray-500">
+                            <p class="text-sm text-csgray-500">
                                 {description}
                             </p>
                         </div>
@@ -94,7 +94,7 @@
                     <button
                         on:click={closeAction}
                         type="button"
-                        class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:w-auto sm:text-sm"
+                        class="mt-3 w-full inline-flex justify-center rounded-md border border-csgray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-csgray-700 hover:bg-csgray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:w-auto sm:text-sm"
                     >
                         {cancelButtonText}
                     </button>

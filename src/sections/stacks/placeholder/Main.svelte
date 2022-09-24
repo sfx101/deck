@@ -6,7 +6,7 @@
     aria-labelledby="primary-heading"
     class="
             {selectedStack === false ? 'block' : 'hidden'}
-            bg-gray-100
+            bg-csgray-100
             h-full
             flex justify-center flex-wrap content-center
             overflow-hidden
@@ -18,8 +18,8 @@
             src="img/cute-sloth-skateboarding.png"
             alt="logo"
         />
-        <h3 class="mt-2 text-sm font-medium text-gray-900">No projects</h3>
-        <p class="mt-1 text-sm text-gray-500">
+        <h3 class="mt-2 text-sm font-medium text-csgray-900">No projects</h3>
+        <p class="mt-1 text-sm text-csgray-500">
             Get started by creating a new project.
         </p>
         <div class="mt-6">

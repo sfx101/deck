@@ -39,7 +39,7 @@
         class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
     >
         <div
-            class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+            class="fixed inset-0 bg-csgray-500 bg-opacity-75 transition-opacity"
             aria-hidden="true"
         />
 
@@ -55,7 +55,7 @@
                 <button
                     on:click={closeModal}
                     type="button"
-                    class="bg-gray-100 rounded-md text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-0 opacity-60 hover:opacity-100"
+                    class="bg-csgray-100 rounded-md text-csgray-700 hover:text-csgray-900 focus:outline-none focus:ring-0 opacity-60 hover:opacity-100"
                 >
                     <span class="sr-only">Close</span>
                     <svg
@@ -80,17 +80,17 @@
             <div class="flex flex-row gap-4">
                 <div class="my-8 sm:my-8 w-1/2">
                     <h3
-                        class="text-2xl leading-6 font-medium text-gray-900 mb-4 text-center"
+                        class="text-2xl leading-6 font-medium text-csgray-900 mb-4 text-center"
                         id="modal-title"
                     >
                         Grant Full Disk Access to "nfsd"
                     </h3>
                     <div class="mt-2 px-4">
-                        <p class="text-sm text-gray-500 text-center">
+                        <p class="text-sm text-csgray-500 text-center">
                             DECK uses NFS (Network file system) to keep your
                             local and VM directories in sync 
                         </p>
-                        <ul class="list-decimal px-6 mt-4 space-y-2 text-gray-600 text-sm">
+                        <ul class="list-decimal px-6 mt-4 space-y-2 text-csgray-600 text-sm">
                             <li>Open your <button
                                 on:click={openSystemPrefs}
                                 class="text-blue-500 underline"
@@ -101,7 +101,7 @@
                                 <path d="M10 2a5 5 0 00-5 5v2a2 2 0 00-2 2v5a2 2 0 002 2h10a2 2 0 002-2v-5a2 2 0 00-2-2H7V7a3 3 0 015.905-.75 1 1 0 001.937-.5A5.002 5.002 0 0010 2z" />
                               </svg> and click <kbd class="kbd">+</kbd></li>
                             <li>Press <kbd class="kbd">command &#8984;</kbd> + <kbd class="kbd">shift</kbd> + <kbd class="kbd">G</kbd></li>
-                            <li>Type <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-gray-800 text-gray-100">/sbin/nfsd</span> and click 
+                            <li>Type <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-csgray-800 text-csgray-100">/sbin/nfsd</span> and click 
                                 <span class="inline-flex items-center px-4 py-0.5 rounded-md text-sm font-medium bg-blue-700 text-white">Go</span></li>
                         </ul>
                     </div>

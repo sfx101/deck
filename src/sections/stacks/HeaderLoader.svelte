@@ -39,9 +39,9 @@
         id="__sub-content-app-div"
         class=" flex flex-none items-center justify-start mt-0.5"
     >
-        <p class="text-xs text-gray-400">
+        <p class="text-xs text-csgray-400">
             <span class=""> {$headerLoaderStore.message} </span>
-            <span class="font-medium text-gray-500">
+            <span class="font-medium text-csgray-500">
                 <span>
                     {timeElapsed ? timeElapsed : ""}
                 </span>

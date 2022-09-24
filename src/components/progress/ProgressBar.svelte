@@ -22,6 +22,6 @@
 </script>
 
 <div class="w-full h-2 relative max-w-xl rounded-full overflow-hidden">
-    <div class="w-full h-full bg-gray-200 absolute" />
+    <div class="w-full h-full bg-csgray-200 absolute" />
     <div id="bar" class="h-full bg-blue-500 relative w-0" />
 </div>

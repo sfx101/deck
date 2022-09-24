@@ -23,11 +23,11 @@
     });
 </script>
 
-<div class="p-4 pr-0 bg-white rounded-lg flex flex-col justify-center">
+<div class="p-4 pr-0 bg-white dark:bg-darkgray-1000 rounded-lg flex flex-col justify-center">
     <div class="flex-shrink-0 card rounded-none">
         <div class="form-control grid grid-cols-5">
             <label class="col-span-2 label p-0" for="">
-                <span class="label-text text-xs text-gray-400">
+                <span class="label-text text-xs text-csgray-400">
                     {inputObject.label}
                 </span>
             </label>
@@ -37,7 +37,8 @@
                 name={inputField}
                 bind:value={selected}
                 class="
-                col-span-3 border-none justify-self-end p-0 focus:ring-0 text-gray-500  text-right focus:outline-none px-4 w-24 {errorClass}
+                col-span-3 border-none justify-self-end p-0 focus:ring-0 text-csgray-500  text-right focus:outline-none px-4 w-24 {errorClass}
+                bg-inherit
                 "
                 disabled={_.get(inputObject, "disabled_post_install", false)}
             >

@@ -6,7 +6,7 @@
 </script>
 
 <!-- Content area -->
-<div class="flex-1 flex flex-col overflow-hidden bg-gray-100">
+<div class="flex-1 flex flex-col overflow-hidden bg-csgray-100">
     <!-- Main content -->
     <div class="flex-1 flex items-stretch overflow-hidden">
         <!-- Secondary column (hidden on smaller screens) -->
@@ -21,7 +21,7 @@
                         >Search all files</label
                     >
                     <div
-                        class="relative w-full text-gray-400 focus-within:text-gray-600"
+                        class="relative w-full text-csgray-400 focus-within:text-csgray-600"
                     >
                         <div
                             class="pointer-events-none absolute right-3 top-1/2 transform -translate-y-1/2"
@@ -45,7 +45,7 @@
                         <input
                             name="search-field"
                             id="search-field"
-                            class="h-full w-full shadow-sm focus-within:shadow border border-gray-100 rounded-lg p-3 text-base text-gray-900 placeholder-gray-200 focus:outline-none focus:ring-0 focus:border-indigo-500 focus:placeholder-gray-400 appearance-none"
+                            class="h-full w-full shadow-sm focus-within:shadow border border-csgray-100 rounded-lg p-3 text-base text-csgray-900 placeholder-csgray-200 focus:outline-none focus:ring-0 focus:border-indigo-500 focus:placeholder-csgray-400 appearance-none"
                             placeholder="Search"
                             type="text"
                         />
@@ -74,7 +74,7 @@
                                             class="col-span-3 label-text grid grid-cols-12 gap-0.5 items-center"
                                         >
                                             <span
-                                                class="col-span-12 text-sm font-medium text-gray-700 truncate"
+                                                class="col-span-12 text-sm font-medium text-csgray-700 truncate"
                                             >
                                                 Laravel app
                                             </span>
@@ -88,7 +88,7 @@
                                             >
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
-                                                    class="h-5 w-5 text-gray-300 hover:text-gray-600"
+                                                    class="h-5 w-5 text-csgray-300 hover:text-csgray-600"
                                                     viewBox="0 0 20 20"
                                                     fill="currentColor"
                                                 >
@@ -104,7 +104,7 @@
                                                 >
                                                     <div class="relative">
                                                         <span
-                                                            class="z-10 p-2 text-xs leading-none bg-white font-medium text-gray-700 rounded whitespace-pre block relative"
+                                                            class="z-10 p-2 text-xs leading-none bg-white font-medium text-csgray-700 rounded whitespace-pre block relative"
                                                             >Copy stack ID</span
                                                         >
                                                         <div
@@ -123,7 +123,7 @@
                                                 type="button"
                                                 class="{value
                                                     ? 'bg-azure-600'
-                                                    : 'bg-gray-200'} relative justify-self-end col-span-1 inline-flex flex-shrink-0 h-4 w-7 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
+                                                    : 'bg-csgray-200'} relative justify-self-end col-span-1 inline-flex flex-shrink-0 h-4 w-7 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
                                                 role="switch"
                                                 aria-checked="false"
                                             >
@@ -144,7 +144,7 @@
                                                         aria-hidden="true"
                                                     >
                                                         <svg
-                                                            class="h-2 w-2 text-gray-400"
+                                                            class="h-2 w-2 text-csgray-400"
                                                             fill="none"
                                                             viewBox="0 0 12 12"
                                                         >
@@ -199,7 +199,7 @@
                                 <div class="flex-1 ml-2">
                                     <label class="cursor-pointer label">
                                         <span
-                                            class="label-tex text-sm font-medium text-gray-700 truncate"
+                                            class="label-tex text-sm font-medium text-csgray-700 truncate"
                                             >Ocktober App</span
                                         >
                                         <button
@@ -207,7 +207,7 @@
                                             type="button"
                                             class="{value2
                                                 ? 'bg-azure-600'
-                                                : 'bg-gray-200'} relative inline-flex flex-shrink-0 h-4 w-7 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
+                                                : 'bg-csgray-200'} relative inline-flex flex-shrink-0 h-4 w-7 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -228,7 +228,7 @@
                                                     aria-hidden="true"
                                                 >
                                                     <svg
-                                                        class="h-2 w-2 text-gray-400"
+                                                        class="h-2 w-2 text-csgray-400"
                                                         fill="none"
                                                         viewBox="0 0 12 12"
                                                     >
@@ -282,7 +282,7 @@
                                 <div class="flex-1 ml-2">
                                     <label class="cursor-pointer label">
                                         <span
-                                            class="label-text text-sm font-medium text-gray-700 truncate"
+                                            class="label-text text-sm font-medium text-csgray-700 truncate"
                                             >Magento app</span
                                         >
                                         <button
@@ -290,7 +290,7 @@
                                             type="button"
                                             class="{value3
                                                 ? 'bg-azure-600'
-                                                : 'bg-gray-200'} relative inline-flex flex-shrink-0 h-4 w-7 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
+                                                : 'bg-csgray-200'} relative inline-flex flex-shrink-0 h-4 w-7 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -311,7 +311,7 @@
                                                     aria-hidden="true"
                                                 >
                                                     <svg
-                                                        class="h-2 w-2 text-gray-400"
+                                                        class="h-2 w-2 text-csgray-400"
                                                         fill="none"
                                                         viewBox="0 0 12 12"
                                                     >
@@ -365,7 +365,7 @@
                                 <div class="flex-1 ml-2">
                                     <label class="cursor-pointer label">
                                         <span
-                                            class="label-text text-sm font-medium text-gray-700 truncate"
+                                            class="label-text text-sm font-medium text-csgray-700 truncate"
                                             >ELK Stack App</span
                                         >
                                         <button
@@ -373,7 +373,7 @@
                                             type="button"
                                             class="{value4
                                                 ? 'bg-azure-600'
-                                                : 'bg-gray-200'} relative inline-flex flex-shrink-0 h-4 w-7 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
+                                                : 'bg-csgray-200'} relative inline-flex flex-shrink-0 h-4 w-7 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -394,7 +394,7 @@
                                                     aria-hidden="true"
                                                 >
                                                     <svg
-                                                        class="h-2 w-2 text-gray-400"
+                                                        class="h-2 w-2 text-csgray-400"
                                                         fill="none"
                                                         viewBox="0 0 12 12"
                                                     >
@@ -451,7 +451,7 @@
                                             class="col-span-3 label-text grid grid-cols-12 gap-0.5 items-center"
                                         >
                                             <span
-                                                class="col-span-12 text-sm font-medium text-gray-700 truncate"
+                                                class="col-span-12 text-sm font-medium text-csgray-700 truncate"
                                             >
                                                 Laravel app
                                             </span>
@@ -465,7 +465,7 @@
                                             >
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
-                                                    class="h-5 w-5 text-gray-300 hover:text-gray-600"
+                                                    class="h-5 w-5 text-csgray-300 hover:text-csgray-600"
                                                     viewBox="0 0 20 20"
                                                     fill="currentColor"
                                                 >
@@ -481,7 +481,7 @@
                                                 >
                                                     <div class="relative">
                                                         <span
-                                                            class="z-10 p-2 text-xs leading-none bg-white font-medium text-gray-700 rounded whitespace-pre block relative"
+                                                            class="z-10 p-2 text-xs leading-none bg-white font-medium text-csgray-700 rounded whitespace-pre block relative"
                                                             >Copy stack ID</span
                                                         >
                                                         <div
@@ -500,7 +500,7 @@
                                                 type="button"
                                                 class="{value
                                                     ? 'bg-azure-600'
-                                                    : 'bg-gray-200'} relative justify-self-end col-span-1 inline-flex flex-shrink-0 h-4 w-7 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
+                                                    : 'bg-csgray-200'} relative justify-self-end col-span-1 inline-flex flex-shrink-0 h-4 w-7 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
                                                 role="switch"
                                                 aria-checked="false"
                                             >
@@ -521,7 +521,7 @@
                                                         aria-hidden="true"
                                                     >
                                                         <svg
-                                                            class="h-2 w-2 text-gray-400"
+                                                            class="h-2 w-2 text-csgray-400"
                                                             fill="none"
                                                             viewBox="0 0 12 12"
                                                         >
@@ -576,7 +576,7 @@
                                 <div class="flex-1 ml-2">
                                     <label class="cursor-pointer label">
                                         <span
-                                            class="label-tex text-sm font-medium text-gray-700 truncate"
+                                            class="label-tex text-sm font-medium text-csgray-700 truncate"
                                             >Ocktober App</span
                                         >
                                         <button
@@ -584,7 +584,7 @@
                                             type="button"
                                             class="{value2
                                                 ? 'bg-azure-600'
-                                                : 'bg-gray-200'} relative inline-flex flex-shrink-0 h-4 w-7 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
+                                                : 'bg-csgray-200'} relative inline-flex flex-shrink-0 h-4 w-7 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -605,7 +605,7 @@
                                                     aria-hidden="true"
                                                 >
                                                     <svg
-                                                        class="h-2 w-2 text-gray-400"
+                                                        class="h-2 w-2 text-csgray-400"
                                                         fill="none"
                                                         viewBox="0 0 12 12"
                                                     >
@@ -659,7 +659,7 @@
                                 <div class="flex-1 ml-2">
                                     <label class="cursor-pointer label">
                                         <span
-                                            class="label-text text-sm font-medium text-gray-700 truncate"
+                                            class="label-text text-sm font-medium text-csgray-700 truncate"
                                             >Magento app</span
                                         >
                                         <button
@@ -667,7 +667,7 @@
                                             type="button"
                                             class="{value3
                                                 ? 'bg-azure-600'
-                                                : 'bg-gray-200'} relative inline-flex flex-shrink-0 h-4 w-7 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
+                                                : 'bg-csgray-200'} relative inline-flex flex-shrink-0 h-4 w-7 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -688,7 +688,7 @@
                                                     aria-hidden="true"
                                                 >
                                                     <svg
-                                                        class="h-2 w-2 text-gray-400"
+                                                        class="h-2 w-2 text-csgray-400"
                                                         fill="none"
                                                         viewBox="0 0 12 12"
                                                     >
@@ -742,7 +742,7 @@
                                 <div class="flex-1 ml-2">
                                     <label class="cursor-pointer label">
                                         <span
-                                            class="label-text text-sm font-medium text-gray-700 truncate"
+                                            class="label-text text-sm font-medium text-csgray-700 truncate"
                                             >ELK Stack App</span
                                         >
                                         <button
@@ -750,7 +750,7 @@
                                             type="button"
                                             class="{value4
                                                 ? 'bg-azure-600'
-                                                : 'bg-gray-200'} relative inline-flex flex-shrink-0 h-4 w-7 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
+                                                : 'bg-csgray-200'} relative inline-flex flex-shrink-0 h-4 w-7 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
                                             role="switch"
                                             aria-checked="false"
                                         >
@@ -771,7 +771,7 @@
                                                     aria-hidden="true"
                                                 >
                                                     <svg
-                                                        class="h-2 w-2 text-gray-400"
+                                                        class="h-2 w-2 text-csgray-400"
                                                         fill="none"
                                                         viewBox="0 0 12 12"
                                                     >
@@ -813,7 +813,7 @@
             <div class="h-1/3 relative">
                 <div class="p-4 absolute w-full bottom-0">
                     <div
-                        class="w-full mx-auto rounded-lg bg-orange-100 pt-4 pb-2 px-4 text-gray-800"
+                        class="w-full mx-auto rounded-lg bg-orange-100 pt-4 pb-2 px-4 text-csgray-800"
                     >
                         <div class="w-full flex flex-col-reverse items-end">
                             <div
@@ -857,7 +857,7 @@
             <section
                 aria-labelledby="primary-heading"
                 class="
-                bg-gray-100
+                bg-csgray-100
                 min-w-0
                 flex-1
                 h-full
@@ -867,7 +867,7 @@
             "
             >
                 <!-- stack header -->
-                <div class="bg-gray-50 py-4 px-6">
+                <div class="bg-csgray-50 py-4 px-6">
                     <div
                         class="w-full mx-auto flex items-center justify-between"
                     >
@@ -886,12 +886,12 @@
                             <div class="flex flex-col justify-center">
                                 <span class="flex flex-row gap-2 items-center">
                                     <h1
-                                        class="text-lg font-semibold text-gray-700 subpixel-antialiased"
+                                        class="text-lg font-semibold text-csgray-700 subpixel-antialiased"
                                     >
                                         DECK Flights
                                     </h1>
                                 </span>
-                                <p class="text-xs text-gray-500 mb-1 pr-3">
+                                <p class="text-xs text-csgray-500 mb-1 pr-3">
                                     Preview co-worker's stack remotely on your
                                     system, enter their Stack ID below and click
                                     "Preview"
@@ -904,12 +904,12 @@
                 <!-- stack details -->
                 <div class="p-6 mb-8 overflow-y-auto rounded-md">
                     <!-- Open co-worker's stack -->
-                    <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="bg-csgray-50 p-6 rounded-lg">
                         <div class="grid grid-cols-2 gap-6 items-start">
                             <div class="col-span-1">
                                 <div class="">
                                     <p
-                                        class="block text-sm font-medium text-gray-700 pb-2 mb-6 border-b border-gray-200"
+                                        class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200"
                                     >
                                         Open Stack from friend
                                     </p>
@@ -917,14 +917,14 @@
                                 <div class="mt-0">
                                     <form>
                                         <span
-                                            class="text-gray-500 text-xs mb-2 block leading-6"
+                                            class="text-csgray-500 text-xs mb-2 block leading-6"
                                             >Your friend needs to enable Flights
                                             on stack settings and share you the
                                             stack ID</span
                                         >
                                         <div class="flex rounded-md mb-2">
                                             <span
-                                                class=" inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-200 bg-gray-50 text-gray-500 sm:text-sm"
+                                                class=" inline-flex items-center px-3 rounded-l-md border border-r-0 border-csgray-200 bg-csgray-50 text-csgray-500 sm:text-sm"
                                             >
                                                 https://
                                             </span>
@@ -948,7 +948,7 @@
                             </div>
                             <div class="col-span-1">
                                 <p
-                                    class="block text-sm font-medium text-gray-700 pb-2 mb-6 border-b border-gray-200"
+                                    class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200"
                                 >
                                     You are previewing
                                 </p>
@@ -969,16 +969,16 @@
                                                     </span>
                                                     <div class="flex-1 mx-2">
                                                         <div
-                                                            class="text-sm font-medium text-gray-700 truncate"
+                                                            class="text-sm font-medium text-csgray-700 truncate"
                                                         >
                                                             example-laravel.stacks.run
                                                         </div>
                                                     </div>
                                                     <div
-                                                        class="text-gray-600 dark:text-gray-200 text-xs"
+                                                        class="text-csgray-600 dark:text-csgray-200 text-xs"
                                                     >
                                                         <p
-                                                            class="flex items-center text-sm text-gray-500"
+                                                            class="flex items-center text-sm text-csgray-500"
                                                         >
                                                             <button
                                                                 class="text-right flex justify-end"
@@ -1016,16 +1016,16 @@
                                                     </span>
                                                     <div class="flex-1 mx-2">
                                                         <div
-                                                            class="text-sm font-medium text-gray-700 truncate"
+                                                            class="text-sm font-medium text-csgray-700 truncate"
                                                         >
                                                             example2-laravel.stacks.run
                                                         </div>
                                                     </div>
                                                     <div
-                                                        class="text-gray-600 dark:text-gray-200 text-xs"
+                                                        class="text-csgray-600 dark:text-csgray-200 text-xs"
                                                     >
                                                         <p
-                                                            class="flex items-center text-sm text-gray-500"
+                                                            class="flex items-center text-sm text-csgray-500"
                                                         >
                                                             <button
                                                                 class="text-right flex justify-end"

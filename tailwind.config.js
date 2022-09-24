@@ -1,12 +1,32 @@
 module.exports = {
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class',
+  content: [
+    './public/**/*.html',
+    './src/**/*.svelte',
+    './src/**/*.js',
+  ],
   theme: {
     minHeight: {
       serachHeight:'106px',
     },
     extend: {
       colors: {
-        gray: {
+        darkgray:{
+          '50': '#f9fafb',
+          '100': '#f3f4f6',
+          '200': '#e5e7eb',
+          '300': '#d1d5db',
+          '400': '#9ca3af',
+          '500': '#6b7280',
+          '600': '#374151',
+          '700': '#3f3f46',
+          '800': '#1f2937',
+          '900': '#111827',
+          '950': '#161b22',
+          '1000': '#0d1117',
+
+        },
+        csgray: {
           '50': '#fafafa',
           '100': '#f4f4f5',
           '200': '#e4e4e7',
@@ -347,13 +367,6 @@ module.exports = {
       'light-purple' : '#f4f4fd',
       'body-bg' : '#f3f3f3',
     }),
-  },
-  variants: {
-    extend: {
-      appearance: ['hover', 'focus'],
-      backgroundColor: ['active'],
-      display: ["group-hover"],
-    },
   },
   corePlugins: {
    textTransform: true,

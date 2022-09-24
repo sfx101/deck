@@ -49,7 +49,7 @@
     <!-- Primary column -->
     <section
         aria-labelledby="primary-heading"
-        class="bg-gray-100 min-w-0 flex-1 h-full flex flex-col relative overflow-hidden"
+        class="bg-csgray-100 min-w-0 flex-1 h-full flex flex-col relative overflow-hidden"
     >
         <!-- stack header -->
         <Header
@@ -62,7 +62,7 @@
         <div class="p-6 overflow-y-auto rounded-md">
             {#if installClickStatus}
                 <!-- Installation form -->
-                <div class="bg-gray-50 p-5 rounded-lg relative">
+                <div class="bg-csgray-50 p-5 rounded-lg relative">
                     {#await settings}
                         <ContentLoader />
                     {:then res}
@@ -86,14 +86,14 @@
                                     src="img/sleeping-dog.png"
                                     alt="logo"
                                 />
-                                <h3 class="text-gray-700">{error.message}</h3>
+                                <h3 class="text-csgray-700">{error.message}</h3>
                             </div>
                         </div>
                     {/await}
                 </div>
             {:else}
                 <!-- Installation doc -->
-                <div class="bg-gray-50 p-5 rounded-lg text-gray-700">
+                <div class="bg-csgray-50 p-5 rounded-lg text-csgray-700">
                     {#await readmeResult}
                         <ContentLoader />
                     {:then readMeData}

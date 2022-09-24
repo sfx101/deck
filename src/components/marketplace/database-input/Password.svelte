@@ -22,7 +22,7 @@
         name="db_password"
         type="password"
         placeholder="Password"
-        class="input input-bordered h-10 focus:ring-0  text-gray-700"
+        class="input input-bordered h-10 focus:ring-0  text-csgray-700"
         class:focus:border-pumpkin-500={(!$validity.valid && startValidation) ||
             error}
         class:border-pumpkin-500={(!$validity.valid && startValidation) ||
@@ -35,7 +35,7 @@
     <div class="absolute transform -translate-y-1.5 top-4 right-4">
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-gray-400 "
+            class="h-5 w-5 text-csgray-400 "
             class:focus:border-pumpkin-500={(!$validity.valid &&
                 startValidation) ||
                 error}

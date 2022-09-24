@@ -52,14 +52,14 @@
           To: "opacity-0"
       -->
             <div
-                class="max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5 divide-x divide-gray-200"
+                class="max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5 divide-x divide-csgray-200"
             >
                 <div class="w-0 flex-1 flex items-center p-4">
                     <div class="w-full">
-                        <p class="text-sm font-medium text-gray-900">
+                        <p class="text-sm font-medium text-csgray-900">
                             {_.get($confirmNotificationStore, "title", "")}
                         </p>
-                        <p class="mt-1 text-sm text-gray-500">
+                        <p class="mt-1 text-sm text-csgray-500">
                             {_.get(
                                 $confirmNotificationStore,
                                 "description",
@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div class="flex">
-                    <div class="flex flex-col divide-y divide-gray-200">
+                    <div class="flex flex-col divide-y divide-csgray-200">
                         <div class="h-0 flex-1 flex">
                             <button
                                 on:click={successAction}
@@ -85,7 +85,7 @@
                         <div class="h-0 flex-1 flex">
                             <button
                                 on:click={closeAction}
-                                class="w-full border border-transparent rounded-none rounded-br-lg px-4 py-3 flex items-center justify-center text-sm font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                class="w-full border border-transparent rounded-none rounded-br-lg px-4 py-3 flex items-center justify-center text-sm font-medium text-csgray-700 hover:text-csgray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                             >
                                 {_.get(
                                     $confirmNotificationStore,

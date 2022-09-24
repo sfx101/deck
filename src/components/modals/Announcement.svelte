@@ -63,7 +63,7 @@
             class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
         >
             <div
-                class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+                class="fixed inset-0 bg-csgray-500 bg-opacity-75 transition-opacity"
                 aria-hidden="true"
             />
 
@@ -115,7 +115,7 @@
                     <button
                         on:click={close}
                         type="button"
-                        class="bg-gray-100 rounded-md text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-0 opacity-60 hover:opacity-100"
+                        class="bg-csgray-100 rounded-md text-csgray-700 hover:text-csgray-900 focus:outline-none focus:ring-0 opacity-60 hover:opacity-100"
                     >
                         <span class="sr-only">Close</span>
                         <svg
@@ -139,13 +139,13 @@
                 <div class="px-4 pt-5 pb-4">
                     <div class="mt-3 text-center sm:mt-5">
                         <h3
-                            class="text-lg leading-6 font-medium text-gray-900 text-left ml-2"
+                            class="text-lg leading-6 font-medium text-csgray-900 text-left ml-2"
                             id="modal-title"
                         >
                             {@html title}
                         </h3>
                         <div class="m-2">
-                            <p class="text-sm text-gray-500 text-left">
+                            <p class="text-sm text-csgray-500 text-left">
                                 {@html html}
                             </p>
                         </div>
@@ -154,9 +154,9 @@
                 <div class="flex justify-between px-4 pb-4">
                     <button
                         on:click={previous}
-                        class="p-2 text-sm font-bold tracking-wide rounded-md border border-gray-300 hover:shadow-sm {canPrevious
+                        class="p-2 text-sm font-bold tracking-wide rounded-md border border-csgray-300 hover:shadow-sm {canPrevious
                             ? 'bg-white'
-                            : 'bg-chillgray-50 cursor-not-allowed'} text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:outline-none"
+                            : 'bg-chillgray-50 cursor-not-allowed'} text-base font-medium text-csgray-700 hover:bg-csgray-50 focus:outline-none focus:outline-none"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -175,9 +175,9 @@
                     </button>
                     <button
                         on:click={next}
-                        class="p-2 text-sm font-bold tracking-wide rounded-md border border-gray-300 hover:shadow-sm {canNext
+                        class="p-2 text-sm font-bold tracking-wide rounded-md border border-csgray-300 hover:shadow-sm {canNext
                             ? 'bg-white'
-                            : 'bg-chillgray-50 cursor-not-allowed'} text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:outline-none"
+                            : 'bg-chillgray-50 cursor-not-allowed'} text-base font-medium text-csgray-700 hover:bg-csgray-50 focus:outline-none focus:outline-none"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

@@ -5,8 +5,8 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="text-center h-full flex flex-col items-center justify-center">
         <img src="img/welcome-new.png" class="mx-auto w-24" alt="" />
-        <h3 class="mt-2 text-sm font-medium text-gray-900">No projects</h3>
-        <p class="mt-1 text-sm text-gray-500">
+        <h3 class="mt-2 text-sm font-medium text-csgray-900">No projects</h3>
+        <p class="mt-1 text-sm text-csgray-500">
             Get started by creating a new project.
         </p>
         <div class="mt-3">

@@ -54,7 +54,7 @@
     id="__sub-content-app-div"
     class="flex flex-none items-center justify-start mb-4"
 >
-    <p class="text-xs text-gray-400 mt-0.5">
+    <p class="text-xs text-csgray-400 mt-0.5">
         <span class="mr-1">{stackStatusText}</span>
     </p>
 </div>

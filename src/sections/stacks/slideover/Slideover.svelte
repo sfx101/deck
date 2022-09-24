@@ -191,7 +191,7 @@
                             <div class="px-4">
                                 <div class="flex items-start justify-between">
                                     <h2
-                                        class="text-lg font-medium text-gray-700"
+                                        class="text-lg font-medium text-csgray-700"
                                         id="slide-over-title"
                                     >
                                         Actions & Insights
@@ -200,7 +200,7 @@
                                         <button
                                             on:click={close}
                                             type="button"
-                                            class="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:outline-none p-1 hover:bg-gray-100 ease-transition cursor-pointer"
+                                            class="bg-white rounded-md text-csgray-400 hover:text-csgray-500 focus:outline-none p-1 hover:bg-csgray-100 ease-transition cursor-pointer"
                                         >
                                             <span class="sr-only"
                                                 >Close panel</span

@@ -70,7 +70,7 @@
                 Secure
             </a>
             <!-- <div
-                class="dropdown-content -mt-2 absolute hidden arrow_box bg-white shadow-2xl p-4 rounded-lg w-48 text-center border border-gray-100"
+                class="dropdown-content -mt-2 absolute hidden arrow_box bg-white shadow-2xl p-4 rounded-lg w-48 text-center border border-csgray-100"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@
                 <h4 class="text-sm text-grey-400 font-medium mb-2">
                     Secure Service
                 </h4>
-                <p class="text-xs text-gray-400">
+                <p class="text-xs text-csgray-400">
                     Private services are accessible only to your own services
                     and can speak any protocol. You can connect to the m easily
                     using the provided hostname and port.
@@ -127,7 +127,7 @@
                 Non secure
             </a>
             <!-- <div
-                class="dropdown-content -mt-2 absolute hidden arrow_box bg-white shadow-2xl p-4 rounded-lg w-48 text-center border border-gray-100"
+                class="dropdown-content -mt-2 absolute hidden arrow_box bg-white shadow-2xl p-4 rounded-lg w-48 text-center border border-csgray-100"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +154,7 @@
                 <h4 class="text-sm text-grey-400 font-medium mb-2">
                     Secure Service
                 </h4>
-                <p class="text-xs text-gray-400">
+                <p class="text-xs text-csgray-400">
                     Private services are accessible only to your own services
                     and can speak any protocol. You can connect to the m easily
                     using the provided hostname and port.

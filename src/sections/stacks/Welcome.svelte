@@ -5,11 +5,11 @@
 <main class="flex flex-1  justify-center w-full">
     <!-- Primary column -->
     <!-- stack details -->
-    <div class="flex h-screen overflow-y-auto">
-        <div class="p-8 rounded-lg text-gray-700 m-auto">
+    <div class="flex h-screen overflow-y-auto dark:bg-darkgray-1000">
+        <div class="p-8 rounded-lg m-auto">
             <div class="my-8 text-center">
-                <h2 class="text-3xl font-medium text-gray-600 mb-3 italic leading-loose">Hola!</h2>
-                <h3 class="text-lg font-semibold text-gray-400">
+                <h2 class="text-3xl font-medium text-csgray-600 dark:text-blue-600 mb-3 italic leading-loose">Hola!</h2>
+                <h3 class="text-lg font-semibold text-csgray-400">
                     DECK is ready to spin-up stacks for your project
                 </h3>
             </div>
@@ -24,8 +24,8 @@
                 />
             </div>
             <!-- <div class="my-8">
-                    <h2 class="text-3xl font-bold text-gray-600 mb-3">Hi there!</h2>
-                    <h3 class="text-lg font-semibold text-gray-400">
+                    <h2 class="text-3xl font-bold text-csgray-600 mb-3">Hi there!</h2>
+                    <h3 class="text-lg font-semibold text-csgray-400">
                         Thank you for trying out DECK, here is a few things you can
                         do
                     </h3>
@@ -58,7 +58,7 @@
                                     </div>
                                     <div>
                                         <h3
-                                            class="text-sm font-medium text-gray-900"
+                                            class="text-sm font-medium text-csgray-900"
                                         >
                                             <a
                                                 href="/#/"
@@ -76,7 +76,7 @@
                                                 >
                                             </a>
                                         </h3>
-                                        <p class="mt-1 text-sm text-gray-500">
+                                        <p class="mt-1 text-sm text-csgray-500">
                                             Another to-do system you’ll try but
                                             eventually give up on.
                                         </p>
@@ -108,7 +108,7 @@
                                     </div>
                                     <div>
                                         <h3
-                                            class="text-sm font-medium text-gray-900"
+                                            class="text-sm font-medium text-csgray-900"
                                         >
                                             <a
                                                 href="/#/"
@@ -126,7 +126,7 @@
                                                 >
                                             </a>
                                         </h3>
-                                        <p class="mt-1 text-sm text-gray-500">
+                                        <p class="mt-1 text-sm text-csgray-500">
                                             Stay on top of your deadlines, or
                                             don’t — it’s up to you.
                                         </p>
@@ -158,7 +158,7 @@
                                     </div>
                                     <div>
                                         <h3
-                                            class="text-sm font-medium text-gray-900"
+                                            class="text-sm font-medium text-csgray-900"
                                         >
                                             <a
                                                 href="/#/"
@@ -176,7 +176,7 @@
                                                 >
                                             </a>
                                         </h3>
-                                        <p class="mt-1 text-sm text-gray-500">
+                                        <p class="mt-1 text-sm text-csgray-500">
                                             Another to-do system you’ll try but
                                             eventually give up on.
                                         </p>
@@ -208,7 +208,7 @@
                                     </div>
                                     <div>
                                         <h3
-                                            class="text-sm font-medium text-gray-900"
+                                            class="text-sm font-medium text-csgray-900"
                                         >
                                             <a
                                                 href="/#/"
@@ -226,7 +226,7 @@
                                                 >
                                             </a>
                                         </h3>
-                                        <p class="mt-1 text-sm text-gray-500">
+                                        <p class="mt-1 text-sm text-csgray-500">
                                             Stay on top of your deadlines, or
                                             don’t — it’s up to you.
                                         </p>

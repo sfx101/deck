@@ -147,7 +147,7 @@
 </script>
 
 <!-- Content area -->
-<div class="flex-1 flex flex-col overflow-hidden bg-gray-100">
+<div class="flex-1 flex flex-col overflow-hidden bg-csgray-100">
     <!-- Main content -->
     <div class="flex-1 flex items-stretch overflow-hidden">
         <aside

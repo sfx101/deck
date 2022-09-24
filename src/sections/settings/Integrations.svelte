@@ -11,7 +11,7 @@
     <section
         aria-labelledby="primary-heading"
         class="
-            bg-gray-100
+            bg-csgray-100 dark:bg-darkgray-1000
             min-w-0
             flex-1
             h-full

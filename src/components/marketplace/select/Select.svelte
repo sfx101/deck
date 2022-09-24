@@ -49,13 +49,13 @@
     <div role="group" aria-labelledby="label-notifications">
         <label
             for="username"
-            class="block text-sm font-medium text-gray-700 pb-2 mb-6 border-b border-gray-200"
+            class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200"
         >
             {inputObject.label}
         </label>
         <div class="grid grid-cols-2 gap-4 items-start">
             <div class="col-span-1">
-                <span class="text-gray-500 text-xs">{inputObject.hint}</span>
+                <span class="text-csgray-500 text-xs">{inputObject.hint}</span>
             </div>
             <div class="col-span-1">
                 <div class="w-full">
@@ -83,7 +83,7 @@
                                         <div class="flex items-center">
                                             <sapn class="h-4 w-4"
                                                 ><i
-                                                    class="{iconClass} text-gray-400"
+                                                    class="{iconClass} text-csgray-400"
                                                     class:border-pumpkin-500={isInvalidInput}
                                                     class:placeholder-pumpkin-600={isInvalidInput}
                                                     class:text-pumpkin-600={isInvalidInput}
@@ -94,7 +94,7 @@
                                             class="flex w-full justify-between items-center ml-2"
                                         >
                                             <span
-                                                class="font-medium text-xs text-gray-400"
+                                                class="font-medium text-xs text-csgray-400"
                                                 class:border-pumpkin-500={isInvalidInput}
                                                 class:placeholder-pumpkin-600={isInvalidInput}
                                                 class:text-pumpkin-600={isInvalidInput}

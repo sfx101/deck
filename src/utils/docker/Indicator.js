@@ -16,7 +16,7 @@ export async function setIndicatorColor(project) {
         setTimeout(resolve, 1000)
     );
     let stackObject;
-    let indicatorColors = "gray";
+    let indicatorColors = "csgray";
 
     stackObject = get(projectStore).find(
         (item) => item["COMPOSE_PROJECT_NAME"] === project
@@ -50,7 +50,7 @@ function getIndicatorColor(stackHealth) {
     let indicatorColors;
     // Check docker status
     if (_.get(stackHealth, "docker", false) === false) {
-        indicatorColors = "gray";
+        indicatorColors = "csgray";
     } else {
         if (_.get(stackHealth, "status", false) === true) {
             indicatorColors = "green";
@@ -62,7 +62,7 @@ function getIndicatorColor(stackHealth) {
             indicatorColors = "red";
         }
         if (stackHealth.containers.length === 0) {
-            indicatorColors = "gray";
+            indicatorColors = "csgray";
         }
 
     }

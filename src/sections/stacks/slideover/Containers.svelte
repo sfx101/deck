@@ -65,14 +65,14 @@
 {#await connectionsPromissObj}
     <!-- @TODO: This loader is only for show now this need to fix by om -->
     <div
-        class="border border-gray-200 shadow rounded-md p-4 max-w-sm w-full mx-auto"
+        class="border border-csgray-200 shadow rounded-md p-4 max-w-sm w-full mx-auto"
     >
         <div class="animate-pulse flex space-x-4">
             <div class="flex-1 space-y-4 py-1">
-                <div class="h-4 bg-gray-300 rounded w-3/4" />
+                <div class="h-4 bg-csgray-300 rounded w-3/4" />
                 <div class="space-y-2">
-                    <div class="h-4 bg-gray-300 rounded" />
-                    <div class="h-4 bg-gray-300 rounded w-5/6" />
+                    <div class="h-4 bg-csgray-300 rounded" />
+                    <div class="h-4 bg-csgray-300 rounded w-5/6" />
                 </div>
             </div>
         </div>
@@ -81,17 +81,17 @@
     {#if res.length}
         <div class="w-full">
             <div class="flex flex-wrap gap-2 mb-4">
-                <h2 class="text-md font-medium text-gray-700" id="">Stack</h2>
-                <span class="text-xs font-normal text-gray-400"
+                <h2 class="text-md font-medium text-csgray-700" id="">Stack</h2>
+                <span class="text-xs font-normal text-csgray-400"
                     >The panel below shows individual container health status &
                     information on how to access them</span
                 >
             </div>
-            <div class="bg-gray-100 p-2 rounded-md">
+            <div class="bg-csgray-100 p-2 rounded-md">
                 <ul role="list" class="flex flex-wrap gap-2">
                     {#each res as container}
                         <li
-                            class="w-full flex-none bg-white rounded-md border border-gray-200"
+                            class="w-full flex-none bg-white rounded-md border border-csgray-200"
                         >
                             <!-- svelte-ignore a11y-missing-attribute -->
                             <a class="block cursor-default">
@@ -136,7 +136,7 @@
                                                             container.publicHostPort
                                                     );
                                                 }}
-                                                class="flex-none p-1 rounded-md text-gray-400 hover:bg-gray-100 ease-transition cursor-pointer"
+                                                class="flex-none p-1 rounded-md text-csgray-400 hover:bg-csgray-100 ease-transition cursor-pointer"
                                             >
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +161,7 @@
                                     {/await}
                                     <!--  -->
                                     <div
-                                        class="flex-none p-1 rounded-md text-gray-400 hover:bg-gray-100 ease-transition cursor-pointer"
+                                        class="flex-none p-1 rounded-md text-csgray-400 hover:bg-csgray-100 ease-transition cursor-pointer"
                                         on:click={() =>
                                             (container.expanded =
                                                 !container.expanded)}
@@ -201,7 +201,7 @@
                                 <div class="px-4 pb-4" transition:slide>
                                     <p>
                                         <span
-                                            class="text-xs text-gray-600 font-normal"
+                                            class="text-xs text-csgray-600 font-normal"
                                             >Connect to {_.get(
                                                 container,
                                                 "title",
@@ -211,14 +211,14 @@
                                     </p>
                                     <p>
                                         <span
-                                            class=" mt-2 block text-xs text-gray-400 font-normal leading-tight tracking-tight"
+                                            class=" mt-2 block text-xs text-csgray-400 font-normal leading-tight tracking-tight"
                                             >Connect from within containers in
                                             stack or other projects</span
                                         >
                                     </p>
                                     <!--  -->
                                     <div
-                                        class="group my-2 p-2 rounded-md bg-chillgray-100 text-gray-700 text-sm font-normal flex flex-row gap-1 font-mono"
+                                        class="group my-2 p-2 rounded-md bg-chillgray-100 text-csgray-700 text-sm font-normal flex flex-row gap-1 font-mono"
                                     >
                                         <div class="flex-grow flex flex-col">
                                             <p>
@@ -260,14 +260,14 @@
 
                                     <p>
                                         <span
-                                            class="mt-2 block text-xs text-gray-400 font-normal leading-tight tracking-tight"
+                                            class="mt-2 block text-xs text-csgray-400 font-normal leading-tight tracking-tight"
                                             >Connect using external applications</span
                                         >
                                     </p>
 
                                     <!--  -->
                                     <div
-                                        class="group my-2 p-2 rounded-md bg-chillgray-100 text-gray-700 text-sm font-normal flex flex-row gap-1 font-mono"
+                                        class="group my-2 p-2 rounded-md bg-chillgray-100 text-csgray-700 text-sm font-normal flex flex-row gap-1 font-mono"
                                     >
                                         <div class="flex-grow flex flex-col">
                                             <p>
@@ -309,18 +309,18 @@
                                     {#if _.get(container, "title", false) && (container.title === "mysql" || container.title === "mariadb")}
                                         <p>
                                             <span
-                                                class="mt-2 block text-xs text-gray-400 font-normal leading-tight tracking-tight"
+                                                class="mt-2 block text-xs text-csgray-400 font-normal leading-tight tracking-tight"
                                                 >Authentication</span
                                             >
                                         </p>
                                         <div
-                                            class="group my-2 p-2 rounded-md bg-chillgray-100 text-gray-700 text-sm font-normal flex flex-row gap-1 font-mono"
+                                            class="group my-2 p-2 rounded-md bg-chillgray-100 text-csgray-700 text-sm font-normal flex flex-row gap-1 font-mono"
                                         >
                                             <div
                                                 class="flex-grow flex flex-col"
                                             >
                                                 <p>
-                                                    <span class="text-gray-400"
+                                                    <span class="text-csgray-400"
                                                         >//username & password</span
                                                     >
                                                 </p>
@@ -350,12 +350,12 @@
 
                                         <p>
                                             <span
-                                                class="mt-2 block text-xs text-gray-400 font-normal leading-tight tracking-tight"
+                                                class="mt-2 block text-xs text-csgray-400 font-normal leading-tight tracking-tight"
                                                 >Root password</span
                                             >
                                         </p>
                                         <div
-                                            class="group my-2 p-2 rounded-md bg-chillgray-100 text-gray-700 text-sm font-normal flex flex-row gap-1 font-mono"
+                                            class="group my-2 p-2 rounded-md bg-chillgray-100 text-csgray-700 text-sm font-normal flex flex-row gap-1 font-mono"
                                         >
                                             <div
                                                 class="flex-grow flex flex-col"

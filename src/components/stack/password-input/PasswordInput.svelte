@@ -39,7 +39,7 @@
     <div class="flex-shrink-0 card rounded-none relative">
         <div class="items-center justify-between grid grid-cols-5">
             <label class="col-span-2 cursor-pointer label p-0" for={inputField}>
-                <span class="label-text text-xs text-gray-400"
+                <span class="label-text text-xs text-csgray-400"
                     >{inputObject.label}</span
                 >
             </label>
@@ -54,7 +54,7 @@
                 name={inputField}
                 bind:value
                 placeholder={inputObject.label}
-                class="filter blur-sm col-span-3 text-right border-none p-0 text-sm text-gray-500 font-normal focus:outline-none"
+                class="filter blur-sm col-span-3 text-right border-none p-0 text-sm text-csgray-500 font-normal focus:outline-none"
                 class:focus:border-pumpkin-500={isValid}
                 class:border-pumpkin-500={isValid}
                 class:placeholder-pumpkin-600={isValid}

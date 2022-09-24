@@ -43,11 +43,11 @@
     }
 </script>
 
-<div class="p-4 rounded-lg bg-white flex flex-col justify-center">
+<div class="p-4 rounded-lg bg-white dark:bg-darkgray-1000 flex flex-col justify-center">
     <div class="flex-shrink-0 card overflow-visible rounded-none relative">
         <div class="form-control grid grid-cols-5">
             <label
-                class="col-span-2 label-text text-xs text-gray-400 p-0"
+                class="col-span-2 label-text text-xs text-csgray-400 p-0"
                 for={inputField}
                 class:text-coral-600={isValid}
             >
@@ -64,10 +64,11 @@
                     text-right text-sm
                     border-none
                     p-0
-                    text-gray-500
+                    text-csgray-500
                     font-normal
                     focus:outline-none 
                     cursor-pointer
+                    bg-inherit
                     "
                 class:focus:border-text-coral-500={isValid}
                 class:border-text-coral-500={isValid}

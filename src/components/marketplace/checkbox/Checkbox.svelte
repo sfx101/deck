@@ -8,14 +8,14 @@
 
 <div class="pt-6">
     <p
-        class="block text-sm font-medium text-gray-700 pb-2 mb-6 border-b border-gray-200"
+        class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200"
     >
         {inputObject.label}
     </p>
     <div class="grid grid-cols-1 items-start">
         <div class="col-span-1 form-control p-0">
             <label class="cursor-pointer label">
-                <span class="label-text text-gray-500 text-xs"
+                <span class="label-text text-csgray-500 text-xs"
                     >{inputObject.hint
                         ? inputObject.hint
                         : inputObject.label}</span
@@ -25,7 +25,7 @@
                     type="button"
                     class="{value
                         ? 'bg-azure-600'
-                        : 'bg-gray-200'} relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
+                        : 'bg-csgray-200'} relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
                     role="switch"
                     aria-checked="false"
                 >
@@ -44,7 +44,7 @@
                             aria-hidden="true"
                         >
                             <svg
-                                class="h-3 w-3 text-gray-400"
+                                class="h-3 w-3 text-csgray-400"
                                 fill="none"
                                 viewBox="0 0 12 12"
                             >

@@ -45,9 +45,9 @@
 {#if _.get(project, "APP_CODE_PATH_HOST", false)}
     <div class={hasComposer ? "visible" : "hidden"}>
         <dl
-            class="bg-gray-50 shadow-sm rounded-lg p-4 inline-flex flex-col w-full h-fit-content gap-2 break-inside mb-6"
+            class="bg-csgray-50 dark:bg-darkgray-950 shadow-sm rounded-lg p-4 inline-flex flex-col w-full h-fit-content gap-2 break-inside mb-6"
         >
-            <div class="text-gray-400 flex flex-wrap items-center">
+            <div class="text-csgray-400 flex flex-wrap items-center">
                 <span class="mr-2">Power tools</span>
                 <span>
                     <svg
@@ -64,7 +64,7 @@
                     </svg>
                 </span>
             </div>
-            <div class="text-gray-400 text-xs">
+            <div class="text-csgray-400 text-xs">
                 Run commands in the project by clicking on the buttons
             </div>
 

@@ -22,9 +22,9 @@
 </script>
 
 <div class="flex flex-col w-20">
-    <div class="flex-1 flex flex-col min-h-0 bg-chillgray-800">
+    <div class="flex-1 flex flex-col min-h-0 bg-chillgray-800 dark:bg-darkgray-950">
         <div class="flex-1">
-            <div class="bg-chillgray-800 pt-4 flex items-center justify-center">
+            <div class="bg-chillgray-800 dark:bg-darkgray-950 pt-4 flex items-center justify-center">
                 <img class="h-14 w-auto" src="img/DECK.png" alt="Deck Logo" />
             </div>
             <nav
@@ -55,7 +55,7 @@
                         class="absolute bottom-0 -right-2.5 hidden top-2/4 transform -translate-y-1/2 translate-x-full group-hover:block"
                     >
                         <span
-                            class="relative z-10 p-2 text-xs leading-none bg-white font-medium text-gray-700 border border-chillgray-200 rounded whitespace-no-wrap block"
+                            class="relative z-10 p-2 text-xs leading-none bg-white font-medium text-csgray-700 border border-chillgray-200 rounded whitespace-no-wrap block"
                             >Projects</span
                         >
                         <div
@@ -89,7 +89,7 @@
                         class="absolute bottom-0 -right-2.5 hidden top-2/4 transform -translate-y-1/2 translate-x-full group-hover:block"
                     >
                         <span
-                            class="relative z-10 p-2 text-xs leading-none bg-white font-medium text-gray-700 border border-chillgray-200 rounded whitespace-no-wrap block"
+                            class="relative z-10 p-2 text-xs leading-none bg-white font-medium text-csgray-700 border border-chillgray-200 rounded whitespace-no-wrap block"
                             >Marketplace</span
                         >
                         <div
@@ -122,7 +122,7 @@
                         class="absolute bottom-0 -right-2.5 hidden top-2/4 transform -translate-y-1/2 translate-x-full group-hover:block"
                     >
                         <span
-                            class="relative z-10 p-2 text-xs leading-none bg-white font-medium text-gray-700 border border-chillgray-200 rounded whitespace-no-wrap block"
+                            class="relative z-10 p-2 text-xs leading-none bg-white font-medium text-csgray-700 border border-chillgray-200 rounded whitespace-no-wrap block"
                             >Flight</span
                         >
                         <div
@@ -161,7 +161,7 @@
                         class="absolute bottom-0 -right-2.5 hidden top-2/4 transform -translate-y-1/2 translate-x-full group-hover:block"
                     >
                         <span
-                            class="relative z-10 p-2 text-xs leading-none bg-white font-medium text-gray-700 border border-chillgray-200 rounded whitespace-no-wrap block"
+                            class="relative z-10 p-2 text-xs leading-none bg-white font-medium text-csgray-700 border border-chillgray-200 rounded whitespace-no-wrap block"
                             >Settings</span
                         >
                         <div
@@ -194,7 +194,7 @@
                         class="absolute bottom-0 -right-2.5 hidden top-2/4 transform -translate-y-1/2 translate-x-full group-hover:block"
                     >
                         <span
-                            class="relative z-10 p-2 text-xs leading-none bg-white font-medium text-gray-400 border border-chillgray-200 rounded whitespace-no-wrap block"
+                            class="relative z-10 p-2 text-xs leading-none bg-white font-medium text-csgray-400 border border-chillgray-200 rounded whitespace-no-wrap block"
                             >Report</span
                         >
                         <div

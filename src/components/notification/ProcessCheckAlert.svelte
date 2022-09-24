@@ -52,10 +52,10 @@
                             </svg>
                         </div>
                         <div class="ml-3 w-0 flex-1 pt-0.5">
-                            <p class="text-sm font-medium text-gray-900">
+                            <p class="text-sm font-medium text-csgray-900">
                                 {_.get($cmdProcess, "title", "")}
                             </p>
-                            <p class="mt-1 text-sm text-gray-500">
+                            <p class="mt-1 text-sm text-csgray-500">
                                 {_.get($cmdProcess, "description", "")}
                             </p>
                         </div>
@@ -63,7 +63,7 @@
                             {#if _.get($cmdProcess, "cancelButtonText", "")}
                                 <button
                                     on:click={closeAction}
-                                    class="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                    class="bg-white rounded-md inline-flex text-csgray-400 hover:text-csgray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 >
                                     <span class="sr-only"
                                         >{_.get(

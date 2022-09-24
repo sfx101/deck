@@ -25,7 +25,7 @@
     on:mouseleave={() => {
         // isCopied = false;
     }}
-    class="hidden group-hover:block cursor-pointer text-gray-500 flex-none"
+    class="hidden group-hover:block cursor-pointer text-csgray-500 flex-none"
 >
     <div class="relative tooltip-hover group">
         {#if isCopied}
@@ -46,7 +46,7 @@
                 class="absolute left-1/2 block -top-10 transform transform -translate-x-1/2 group-hover:block"
             >
                 <span
-                    class="relative z-10 p-2 text-xs leading-none bg-white font-medium text-gray-700 border border-chillgray-200 rounded whitespace-no-wrap block"
+                    class="relative z-10 p-2 text-xs leading-none bg-white font-medium text-csgray-700 border border-chillgray-200 rounded whitespace-no-wrap block"
                     >{copiedText}</span
                 >
                 <div
@@ -72,7 +72,7 @@
                 class="absolute left-1/2 block -top-10 transform transform -translate-x-1/2 group-hover:block"
             >
                 <span
-                    class="relative z-10 p-2 text-xs leading-none bg-white font-medium text-gray-700 border border-chillgray-200 rounded whitespace-nowrap block"
+                    class="relative z-10 p-2 text-xs leading-none bg-white font-medium text-csgray-700 border border-chillgray-200 rounded whitespace-nowrap block"
                     >{copyText}</span
                 >
                 <div

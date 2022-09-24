@@ -181,12 +181,12 @@
     }
 </script>
 
-<div class="bg-gray-50 py-4 px-6">
+<div class="bg-csgray-50 dark:bg-darkgray-950 py-4 px-6">
     <div class="w-full mx-auto flex items-center justify-between">
         <div class="flex items-center space-x-5">
             <div class="flex-shrink-0">
                 <span
-                    class="inline-block relative border bg-white border-gray-200 rounded-lg p-1.5 indicator"
+                    class="inline-block relative border bg-white dark:bg-darkgray-1000 border-csgray-200 dark:border-slate-100/[0.06] rounded-lg p-1.5 indicator"
                 >
                     {#if _.get(stackObject, "image['@Logo']", false)}
                         <img
@@ -211,14 +211,14 @@
                         class="flex flex-none items-center justify-start gap-3"
                     >
                         <h1
-                            class="text-xl font-semibold text-gray-700 subpixel-antialiased"
+                            class="text-xl font-semibold text-csgray-700 dark:text-csgray-300 subpixel-antialiased"
                         >
                             {projectName}
                         </h1>
 
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class=" text-gray-500 hover:text-moreshadyazure-400 h-5 w-5"
+                            class=" text-csgray-500 hover:text-moreshadyazure-400 h-5 w-5"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -329,7 +329,7 @@
                     $controls.panel = false;
                     slideoverShow = !slideoverShow;
                 }}
-                class="text-gray-800 hover:text-gray-600 hover:bg-gray-100 p-4 rounded-full"
+                class="text-csgray-800 hover:text-csgray-600 hover:bg-csgray-100 p-4 rounded-full"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

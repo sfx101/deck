@@ -129,7 +129,7 @@
         type="button"
         class:showOptions
         on:click={handleTokenClick}
-        class="tokens flex flex-wrap items-center gap-2 relative w-full bg-white border border-gray-200 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-0 sm:text-sm"
+        class="tokens flex flex-wrap items-center gap-2 relative w-full bg-white dark:bg-darkgray-1000 border border-csgray-200 dark:border-slate-50/[0.06] rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-0 sm:text-sm"
         aria-haspopup="listbox"
         aria-expanded="true"
         aria-labelledby="listbox-label"
@@ -138,13 +138,13 @@
         {#each Object.values(selected) as s}
             <div class="token hidden" data-id={s.value}>
                 <span
-                    class="inline-flex items-center py-0.5 pl-2 pr-0.5 rounded text-xs font-medium bg-gray-200 text-gray-600"
+                    class="inline-flex items-center py-0.5 pl-2 pr-0.5 rounded text-xs font-medium bg-csgray-200 text-csgray-600"
                 >
                     {s.name}
                     {#if !readonly}
                         <button
                             type="button"
-                            class="token-remove flex-shrink-0 ml-0.5 h-4 w-4 rounded inline-flex items-center justify-center text-gray-400 hover:bg-gray-300 hover:text-gray-00 focus:outline-none focus:bg-gray-500 focus:text-white"
+                            class="token-remove flex-shrink-0 ml-0.5 h-4 w-4 rounded inline-flex items-center justify-center text-csgray-400 hover:bg-csgray-300 hover:text-csgray-00 focus:outline-none focus:bg-csgray-500 focus:text-white"
                         >
                             <span class="sr-only">Remove {s.name}</span>
                             <svg
@@ -167,7 +167,7 @@
         <div class="actions w-full">
             {#if !readonly}
                 <input
-                    class="w-full p-0 text-xs border-none focus:border-none outline-none focus:outline-none focus:ring-0 text-gray-400 "
+                    class="w-full p-0 text-xs border-none focus:border-none outline-none focus:outline-none focus:ring-0 text-csgray-400 bg-inherit"
                     {id}
                     autocomplete="off"
                     bind:value={inputValue}
@@ -183,7 +183,7 @@
                         class:hidden={!Object.keys(selected).length}
                     >
                         <svg
-                        class="h-3 w-3 text-gray-500"
+                        class="h-3 w-3 text-csgray-500"
                         stroke="currentColor"
                         fill="none"
                         viewBox="0 0 8 8"
@@ -203,7 +203,7 @@
         >
             <!-- Heroicon name: solid/selector -->
             <svg
-                class="h-5 w-5 text-gray-400"
+                class="h-5 w-5 text-csgray-400"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
@@ -232,7 +232,7 @@
         >
             {#each filtered as option}
                 <li
-                    class="options text-gray-900 cursor-default select-none relative py-3 pl-3 pr-10 hover:bg-chillgray-100"
+                    class="options text-csgray-900 cursor-default select-none relative py-3 pl-3 pr-10 hover:bg-chillgray-100"
                     class:selected={selected[option.value]}
                     class:active={activeOption === option}
                     data-value={option.value}
@@ -242,16 +242,16 @@
                         class="flex items-center"
                         data-value={option.value}
                     >
-                        <!-- Online: "bg-green-400", Not Online: "bg-gray-200" -->
+                        <!-- Online: "bg-green-400", Not Online: "bg-csgray-200" -->
                         <span
-                            class="text-gray-400 flex-shrink-0 inline-block h-4 w-4 rounded-full"
+                            class="text-csgray-400 flex-shrink-0 inline-block h-4 w-4 rounded-full"
                             aria-hidden="true"
                             data-value={option.value}
                         >
                             <svg
                                 data-value={option.value}
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="h-4 w-4 text-gray-500"
+                                class="h-4 w-4 text-csgray-500"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -271,14 +271,14 @@
                         >
                             <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
                             <span
-                                class="text-md font-normal text-gray-600 block"
+                                class="text-md font-normal text-csgray-600 block"
                                 data-value={option.value}
                             >
                                 {option.name}
                             </span>
                             <span
                                 data-value={option.value}
-                                class="text-xs w-full normal-case font-normal text-gray-400"
+                                class="text-xs w-full normal-case font-normal text-csgray-400"
                             >
                                 {option.description}
                             </span>
@@ -310,7 +310,7 @@
                             <div
                                 data-value={option.value}
                                 date-activeOption={activeOption}
-                                class="border-2 rounded-full border-gray-300 w-5 h-5 flex flex-shrink-0 justify-center items-center"
+                                class="border-2 rounded-full border-csgray-300 w-5 h-5 flex flex-shrink-0 justify-center items-center"
                             />
                         {/if}
                     </span>

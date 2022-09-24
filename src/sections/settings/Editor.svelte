@@ -28,14 +28,14 @@
 
 {#if editorObject.length > 0}
     <fieldset class="w-3/6">
-        <legend class="mb-1 text-md font-medium text-gray-800">External Editors</legend>
-        <p class="mb-3 text-sm text-gray-400">
+        <legend class="mb-1 text-md font-medium text-csgray-800 dark:text-csgray-300">External Editors</legend>
+        <p class="mb-3 text-sm text-csgray-400">
             Select a default code editor for opening projects
         </p>
-        <div class="bg-white rounded-md -space-y-px">
+        <div class="bg-white dark:bg-darkgray-950 rounded-md -space-y-px">
             {#each editorObject as editor, i}
                 <label
-                    class="relative border p-4 flex cursor-pointer focus:outline-none flex-row justify-between gap-3  {getFirstItemClass(
+                    class="relative border dark:border-slate-50/[0.06] p-4 flex cursor-pointer focus:outline-none flex-row justify-between gap-3  {getFirstItemClass(
                         i
                     )} {getLastItemClass(
                         i,
@@ -59,8 +59,8 @@
                                 'editor',
                                 false
                             ) === editor.editor
-                                ? 'text-azure-900'
-                                : 'text-gray-600'}"
+                                ? 'text-azure-900 dark:text-azure-500'
+                                : 'text-csgray-600'}"
                         >
                             {editor.editor}
                         </span>
@@ -74,7 +74,7 @@
                         value={i}
                         type="radio"
                         name="editor"
-                        class="h-4 w-4 mt-0.5 cursor-pointer text-azure-600 border-gray-300 focus:ring-azure-500"
+                        class="h-4 w-4 mt-0.5 cursor-pointer text-azure-600 dark:text-azure-500 border-csgray-300 focus:ring-azure-500"
                         aria-labelledby="privacy-setting-1-label"
                         aria-describedby="privacy-setting-1-description"
                     />

@@ -263,5 +263,5 @@ export function getLastItemClass(index, itemLength) {
  * Get active item class
  */
 export function getActiveClass(selected, current) {
-    return current === selected ? "bg-blue-50 border-azure-200 z-10" : "";
+    return current === selected ? "bg-blue-50 border-azure-200 z-10 dark:bg-darkgray-950" : "";
 }

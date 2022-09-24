@@ -37,7 +37,7 @@
     <div class="flex-shrink-0 card rounded-none">
         <div class="form-control grid grid-cols-5">
             <label class="col-span-2 label p-0" for="stack_name">
-                <span class="label-text text-xs text-gray-400">Site host</span>
+                <span class="label-text text-xs text-csgray-400">Site host</span>
             </label>
             <input
                 bind:value
@@ -49,7 +49,7 @@
                     text-right text-sm
                     border-none
                     p-0
-                    text-md text-gray-500
+                    text-md text-csgray-500
                     font-normal
                     focus:outline-none
                     {errorClass}

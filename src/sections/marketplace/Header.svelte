@@ -37,12 +37,12 @@
 </script>
 
 <!-- stack header -->
-<div class="bg-gray-50 py-4 px-6">
+<div class="bg-csgray-50 py-4 px-6">
     <div class="w-full mx-auto flex items-center justify-between">
         <div class="flex items-center space-x-5">
             <div class="flex-shrink-0">
                 <span
-                    class="inline-block relative border bg-white border-gray-200 rounded-lg p-1.5 indicator"
+                    class="inline-block relative border bg-white border-csgray-200 rounded-lg p-1.5 indicator"
                 >
                     <img
                         class="h-16 w-16 object-content"
@@ -54,12 +54,12 @@
             <div class="flex flex-col justify-center">
                 <span class="flex flex-row gap-2 items-center">
                     <h1
-                        class="text-lg font-semibold text-gray-700 subpixel-antialiased"
+                        class="text-lg font-semibold text-csgray-700 subpixel-antialiased"
                     >
                         {_.get(dockerImage, "@AppName", "App name empty")}
                     </h1>
                 </span>
-                <p class="text-xs text-gray-500 mb-1 pr-3">
+                <p class="text-xs text-csgray-500 mb-1 pr-3">
                     {_.get(dockerImage, "@Description", "")}
                 </p>
 
@@ -67,7 +67,7 @@
                     <div class="">
                         {#each dockerImage["@Tags"] as tag, i}
                             <div
-                                class="badge badge-primary border-blue-100 bg-blue-100 text-gray-800 text-2xs font-semibold {i >
+                                class="badge badge-primary border-blue-100 bg-blue-100 text-csgray-800 text-2xs font-semibold {i >
                                 0
                                     ? 'ml-1'
                                     : ''}"

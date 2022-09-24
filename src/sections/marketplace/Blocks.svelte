@@ -31,11 +31,11 @@
                         class="col-span-1 label-text grid grid-cols-12 gap-0.5 items-center"
                     >
                         <span
-                            class="col-span-11 text-sm font-medium text-gray-700 truncate pr-2"
+                            class="col-span-11 text-sm font-medium text-csgray-700 truncate pr-2"
                             >{image["@AppName"]}</span
                         >
                         <span class="col-span-1 flex justify-end">
-                            <p class="flex items-center text-sm text-gray-500">
+                            <p class="flex items-center text-sm text-csgray-500">
                                 <button class="text-right flex justify-end">
                                     <svg
                                         use:active
@@ -43,7 +43,7 @@
                                             '@AppID'
                                         ]}"
                                         data-active-class="text-blue-700"
-                                        class="h-6 w-6 text-gray-300"
+                                        class="h-6 w-6 text-csgray-300"
                                         x-description="Heroicon name: solid/chevron-right"
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 20 20"

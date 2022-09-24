@@ -47,7 +47,7 @@
                 tabindex="-1"
             >
                 <div class="p-1" role="none">
-                    <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                    <!-- Active: "bg-csgray-100 text-csgray-900", Not Active: "text-csgray-700" -->
                     <a
                         href="/#/"
                         class="text-chillgray-500 group flex items-center px-4 py-2 text-sm hover:bg-chillgray-100 rounded-md"

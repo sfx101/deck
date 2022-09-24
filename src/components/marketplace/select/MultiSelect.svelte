@@ -62,13 +62,13 @@
     <div role="group" aria-labelledby="label-notifications">
         <label
             for="username"
-            class="block text-sm font-medium text-gray-700 pb-2 mb-6 border-b border-gray-200"
+            class="block text-sm font-medium text-csgray-700 pb-2 mb-6 border-b border-csgray-200"
         >
             {inputObject.label}
         </label>
         <div class="grid grid-cols-2 gap-4 items-start">
             <div class="col-span-1">
-                <span class="text-gray-500 text-xs">{inputObject.hint}</span>
+                <span class="text-csgray-500 text-xs">{inputObject.hint}</span>
             </div>
             <div class="col-span-1">
                 <div class="w-full flex flex-col items-center">
@@ -76,7 +76,7 @@
                         <div class="flex flex-col items-center relative">
                             <div class="w-full">
                                 <div
-                                    class="my-2 p-1 h-10 bg-white flex border border-gray-200 rounded-lg"
+                                    class="my-2 p-1 h-10 bg-white flex border border-csgray-200 rounded-lg"
                                 >
                                     <div class="flex flex-auto flex-wrap" />
                                     <!-- placeholder={inputObject.label} -->
@@ -86,17 +86,17 @@
                                         }}
                                         bind:value={searchTerm}
                                         placeholder={selectedText}
-                                        class="p-1 px-2 pl-3 appearance-none outline-none w-full text-gray-800 text-sm"
+                                        class="p-1 px-2 pl-3 appearance-none outline-none w-full text-csgray-800 text-sm"
                                     />
                                     <div
-                                        class="text-gray-300 w-8 text-center py-1 border-l flex items-center justify-items-center border-gray-200"
+                                        class="text-csgray-300 w-8 text-center py-1 border-l flex items-center justify-items-center border-csgray-200"
                                     >
                                         <button
                                             on:click={(e) => {
                                                 e.preventDefault();
                                                 listShow = !listShow;
                                             }}
-                                            class="cursor-pointer w-4 h-4 text-gray-600 outline-none focus:outline-none mx-auto"
+                                            class="cursor-pointer w-4 h-4 text-csgray-600 outline-none focus:outline-none mx-auto"
                                         >
                                             {#if listShow != true}
                                                 <svg
@@ -176,7 +176,7 @@
                                                 class="opacity-0 absolute h-5 w-5"
                                             />
                                             <div
-                                                class="border-2 rounded-full border-gray-300 w-5 h-5 flex flex-shrink-0 justify-center items-center"
+                                                class="border-2 rounded-full border-csgray-300 w-5 h-5 flex flex-shrink-0 justify-center items-center"
                                             >
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
@@ -197,7 +197,7 @@
                                             class="select-none w-full"
                                         >
                                             <div
-                                                class="cursor-pointer w-full border-gray-100"
+                                                class="cursor-pointer w-full border-csgray-100"
                                             >
                                                 <div
                                                     class="flex w-full items-center relative"
@@ -210,7 +210,7 @@
                                                         >
                                                             <svg
                                                                 xmlns="http://www.w3.org/2000/svg"
-                                                                class="h-4 w-4 text-gray-500"
+                                                                class="h-4 w-4 text-csgray-500"
                                                                 fill="none"
                                                                 viewBox="0 0 24 24"
                                                                 stroke="currentColor"
@@ -229,12 +229,12 @@
                                                     >
                                                         <div class="mx-2">
                                                             <div
-                                                                class="mb-1 text-md font-normal text-gray-600"
+                                                                class="mb-1 text-md font-normal text-csgray-600"
                                                             >
                                                                 {value1.name}
                                                             </div>
                                                             <div
-                                                                class="text-xs w-full normal-case font-normal text-gray-400"
+                                                                class="text-xs w-full normal-case font-normal text-csgray-400"
                                                             >
                                                                 {value1.description}
                                                             </div>

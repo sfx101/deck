@@ -23,7 +23,7 @@
         class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
     >
         <div
-            class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+            class="fixed inset-0 bg-csgray-500 bg-opacity-75 transition-opacity"
         />
 
         <!-- This element is to trick the browser into centering the modal contents. -->
@@ -39,12 +39,12 @@
                     class="flex flex-col mt-3 text-center sm:mt-0 sm:text-left gap-2"
                 >
                     <h3
-                        class="text-lg leading-6 font-medium text-gray-900"
+                        class="text-lg leading-6 font-medium text-csgray-900"
                         id="modal-title"
                     >
                         Root priviledges are required
                     </h3>
-                    <p class="text-gray-400 text-xs">
+                    <p class="text-csgray-400 text-xs">
                         Enter your password to continue
                     </p>
                     <div class="">
@@ -58,7 +58,7 @@
                                                 bind:value={password}
                                                 type="password"
                                                 name="password"
-                                                class="input input-bordered h-10 pr-10 focus:ring-0 text-gray-700 shadow-sm block w-full sm:text-sm border-gray-300 rounded-md"
+                                                class="input input-bordered h-10 pr-10 focus:ring-0 text-csgray-700 shadow-sm block w-full sm:text-sm border-csgray-300 rounded-md"
                                                 placeholder="Password"
                                             />
                                         </div>
@@ -91,7 +91,7 @@
                             d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                         />
                     </svg>
-                    <span class="text-gray-500 text-xs"
+                    <span class="text-csgray-500 text-xs"
                         >Waiting for input ...</span
                     >
                 </span>

@@ -132,16 +132,16 @@
             <ul class="flex justify-center items-center gap-2">
                 <li
                     class="cursor-pointer px-0.5 py-1.5 text-xs font-semibold 
-                    {$controls.output == true ? 'text-white' : 'text-gray-300'}"
+                    {$controls.output == true ? 'text-white' : 'text-csgray-300'}"
                     on:click|stopPropagation={toggleOutput}
                 >
                     OUTPUT <span class="font-normal ml-1" />
                 </li>
                 <li
-                    class="cursor-pointer px-0.5 py-1.5 mx-1 text-xs font-semibold border-gray-100 
+                    class="cursor-pointer px-0.5 py-1.5 mx-1 text-xs font-semibold border-csgray-100 
                     {$controls.terminal == true
                         ? 'text-white'
-                        : 'text-gray-300'}"
+                        : 'text-csgray-300'}"
                     on:click|stopPropagation={toggleTeminal}
                 >
                     TERMINAL

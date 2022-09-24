@@ -27,7 +27,7 @@
 {#if isMounted}
     <div
         in:fly={{ y: 200, duration: 200 }}
-        class="flex-1 flex flex-col overflow-hidden bg-gray-100"
+        class="flex-1 flex flex-col overflow-hidden bg-csgray-100"
     >
         <!-- Main content -->
         <div class="flex-1 flex items-stretch overflow-hidden">

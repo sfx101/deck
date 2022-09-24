@@ -35,8 +35,8 @@
             class="
             relative
             w-full
-            text-gray-400
-            focus-within:text-gray-600
+            text-csgray-400 dark:bg-darkgray-1000
+            focus-within:text-csgray-600
         "
         >
             <div
@@ -74,14 +74,15 @@
             w-full
             shadow-sm
             focus-within:shadow
-            border-2 border-gray-100
+            border-2 border-csgray-100 dark:border dark:border-slate-50/[0.06]
             rounded-lg
             p-3
-            text-base text-gray-900
-            placeholder-gray-200
-            focus:outline-none focus:placeholder-gray-400
+            text-base text-csgray-900 dark:text-gray-500
+            placeholder-csgray-200 dark:placeholder-slate-50/[0.06]
+            focus:outline-none focus:placeholder-csgray-400
             appearance-none
             focus:ring-0 focus:border-blue-500 pr-9
+            dark:bg-darkgray-1000
             "
                 placeholder="Search"
                 type="text"
