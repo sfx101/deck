@@ -67,3 +67,5 @@ See a full list of downloads here: https://github.com/sfx101/deck/releases
 
 ### Documentation
 https://getdeck.io/docs/
+
+Instructions for making a custom deck stack can (also) be found in [this repository](https://github.com/deck-app/custom-stack)
