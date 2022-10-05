@@ -65,5 +65,12 @@ DECK has **NO** dependency on **Docker Desktop app** to run Docker containers. I
 
 See a full list of downloads here: https://github.com/sfx101/deck/releases
 
+### Get started
+[1. Creating a project](https://get-deck.com/docs/creating-project)
+
+[2. Viewing project logs](https://get-deck.com/docs/project-log)
+
+[3. Accessing project shell](https://get-deck.com/docs/project-shell)
+
 ### Documentation
 https://getdeck.io/docs/
