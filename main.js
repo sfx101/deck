@@ -175,8 +175,8 @@ ipcMain.on("app_version", (event) => {
     event.sender.send("app_version", { version: app.getVersion() });
 });
 
-ipcMain.on("isDarkModeOn", (event) => {
-    event.sender.send("isDarkModeOn", nativeTheme.shouldUseDarkColors);
+ipcMain.on("getSystemTheme", (event) => {
+    event.sender.send("darkMode", nativeTheme.shouldUseDarkColors);
 });
 
 ipcMain.on("restart-app", (event) => {

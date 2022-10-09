@@ -13,7 +13,7 @@
 	<link href="css/custom.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body class="dark">
+<body class="">
 	<div class="w-screen h-screen bg-body-bg dark:bg-slate-800 flex overflow-hidden" id="app">
 		<script defer src='/build/bundle.js'></script>
 	</div>
@@ -21,7 +21,8 @@
 		console.log('index');
 		const { ipcRenderer } = require("electron");
 		console.log(ipcRenderer);
-		ipcRenderer.on("isDarkModeOn", (event, data) => {
+		ipcRenderer.send("getSystemTheme")
+		ipcRenderer.on("darkMode", (event, data) => {
 			console.log(event);
 			if(data === true){
 				document.body.classList.add("dark");

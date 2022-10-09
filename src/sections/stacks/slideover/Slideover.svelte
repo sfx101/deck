@@ -186,12 +186,12 @@
                 >
                     <div class="w-screen max-w-sm {getWinTopBorderClass()}">
                         <div
-                            class="h-full flex flex-col pt-6 pb-16 bg-white shadow-xl overflow-y-scroll"
+                            class="h-full flex flex-col pt-6 pb-16 bg-white dark:bg-darkgray-1000 shadow-xl overflow-y-scroll"
                         >
                             <div class="px-4">
                                 <div class="flex items-start justify-between">
                                     <h2
-                                        class="text-lg font-medium text-csgray-700"
+                                        class="text-lg font-medium text-csgray-700 dark:text-csgray-300"
                                         id="slide-over-title"
                                     >
                                         Actions & Insights
@@ -200,7 +200,12 @@
                                         <button
                                             on:click={close}
                                             type="button"
-                                            class="bg-white rounded-md text-csgray-400 hover:text-csgray-500 focus:outline-none p-1 hover:bg-csgray-100 ease-transition cursor-pointer"
+                                            class="bg-white dark:bg-darkgray-1000 hover:bg-csgray-100 
+                                            rounded-md 
+                                            text-csgray-400 dark:text-csgray-500 hover:text-csgray-500 dark:hover:text-csgray-4 00
+                                            focus:outline-none 
+                                            p-1
+                                            ease-transition cursor-pointer"
                                         >
                                             <span class="sr-only"
                                                 >Close panel</span
