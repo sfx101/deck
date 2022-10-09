@@ -17,6 +17,22 @@
 	<div class="w-screen h-screen bg-body-bg dark:bg-slate-800 flex overflow-hidden" id="app">
 		<script defer src='/build/bundle.js'></script>
 	</div>
+	<script>
+		console.log('index');
+		const { ipcRenderer } = require("electron");
+		console.log(ipcRenderer);
+		ipcRenderer.on("isDarkModeOn", (event, data) => {
+			console.log(event);
+			if(data === true){
+				document.body.classList.add("dark");
+			}
+			else{
+				document.body.classList.remove("dark");
+			}
+			
+			console.log(document.body);
+		});
+	</script>
 </body>
 
 </html>

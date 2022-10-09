@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, dialog, Menu, globalShortcut } = require("electron");
+const { app, BrowserWindow, ipcMain, dialog, Menu, globalShortcut, nativeTheme } = require("electron");
 const { Tray, nativeImage } = require("electron");
 const logger = require("electron-timber");
 const { autoUpdater } = require("electron-updater");
@@ -60,6 +60,7 @@ function createWindow() {
     }
 
     mainWindow.once("ready-to-show", () => {
+        logger.log('nativeTheme.shouldUseDarkColors', nativeTheme.shouldUseDarkColors);
         mainWindow.show();
         autoUpdater.checkForUpdatesAndNotify();
     });
@@ -172,6 +173,10 @@ ipcMain.on("open-file-dialog", (event) => {
 
 ipcMain.on("app_version", (event) => {
     event.sender.send("app_version", { version: app.getVersion() });
+});
+
+ipcMain.on("isDarkModeOn", (event) => {
+    event.sender.send("isDarkModeOn", nativeTheme.shouldUseDarkColors);
 });
 
 ipcMain.on("restart-app", (event) => {
