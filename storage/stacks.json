@@ -204,17 +204,6 @@
     },
 
     {
-      "@AppID": "confluence-17022021",
-      "@AppName": "Confluence",
-      "@Logo": "https://raw.githubusercontent.com/deck-app/confluence/master/default.png",
-      "@Description": "",
-      "@Tags": [],
-      "@Website": "https://get-deck.com",
-      "@Github": "deck-app/confluence",
-      "@Category": []
-    },
-
-    {
       "@AppID": "nodejs-17022021",
       "@AppName": "Node js",
       "@Logo": "https://raw.githubusercontent.com/deck-app/nodejs/master/default.png",
@@ -333,17 +322,6 @@
       "@Website": "https://get-deck.com",
       "@Github": "deck-app/phalcon",
       "@Category": ["frameworks", "php"]
-    },
-
-    {
-      "@AppID": "gitlab-17022021",
-      "@AppName": "Gitlab",
-      "@Logo": "https://raw.githubusercontent.com/deck-app/gitlab/master/default.png",
-      "@Description": "Open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more. Self-host GitLab on your own servers, in a container, or on a cloud provider",
-      "@Tags": ["ruby", "redis", "postgre"],
-      "@Website": "https://get-deck.com",
-      "@Github": "deck-app/gitlab",
-      "@Category": ["developer-tools"]
     },
     {
       "@AppID": "solidity-05012022",
