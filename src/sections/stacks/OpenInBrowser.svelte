@@ -45,7 +45,7 @@
     </div>
     <ul
         tabindex="0"
-        class="text-sm text-chillgray-500 p-1 shadow menu dropdown-content bg-base-100 rounded-lg w-auto overflow-visible"
+        class="text-sm text-chillgray-500 p-1 absolute top-full shadow menu dropdown-content bg-white rounded-lg w-auto ease-transition overflow-visible"
     >
         <li class="w-full dropdown dropdown-right group overflow-visible">
             <!-- svelte-ignore a11y-missing-attribute -->
@@ -53,7 +53,7 @@
                 on:click={() => {
                     shell.openExternal(`https:${stack}.stacks.run`);
                 }}
-                class="inline-flex text-left text-sm group-hover:bg-blue-500 group-hover:text-white gap-2"
+                class="inline-flex items-center w-full text-left text-sm group-hover:bg-blue-500 group-hover:text-white rounded-md gap-2"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +112,7 @@
                         `http:${$settingsStore.host}:${httpPort}`
                     );
                 }}
-                class="inline-flex text-left text-sm group-hover:bg-blue-500 group-hover:text-white gap-2"
+                class="inline-flex items-center w-full text-left text-sm group-hover:bg-blue-500 group-hover:text-white rounded-md gap-2"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

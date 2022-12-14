@@ -59,9 +59,9 @@
             </div>
             <div class="col-span-1">
                 <div class="w-full">
-                    <div class="grid grid-flow-col auto-cols-max gap-4">
+                    <div class="flex flex-wrap -m-2">
                         {#each Object.entries(inputObject.values) as [key1, value1]}
-                            <div class=" custom-radio">
+                            <div class="custom-radio m-2">
                                 <div class="w-full">
                                     <input
                                         on:change={onChange}

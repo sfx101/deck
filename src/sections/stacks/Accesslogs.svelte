@@ -88,7 +88,7 @@
     </div>
     <ul
         tabindex="0"
-        class="text-sm text-chillgray-500 p-1 shadow menu dropdown-content bg-base-100 rounded-lg w-auto"
+        class="text-sm text-chillgray-500 p-1 absolute top-full shadow menu dropdown-content bg-white rounded-lg w-auto ease-transition overflow-visible"
     >
         {#each containers as container}
             <li class="w-full group">
@@ -97,7 +97,7 @@
                     on:click={() => {
                         accessLogs(container);
                     }}
-                    class="inline-flex text-left text-sm group-hover:bg-blue-500 group-hover:text-white gap-2"
+                    class="inline-flex items-center w-full text-left text-sm group-hover:bg-blue-500 group-hover:text-white rounded-md gap-2"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

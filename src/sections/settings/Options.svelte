@@ -11,7 +11,7 @@
                 <a
                     href="/#/settings/integrations"
                     use:active
-                    active-class="bg-chillgray-900"
+                    active-class="bg-chillgray-100"
                     class="select-none flex flex-1 items-center p-2 rounded-lg gap-0.5 hover:bg-chillgray-100 ease-transition"
                 >
                     <span
