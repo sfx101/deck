@@ -351,6 +351,13 @@ module.exports = {
           '900': '#751a3d',
         },
       },
+      borderRadius: {
+        '2xl': '1.9rem;',
+      },
+      fontSize: {
+        '2xs': '0.7rem',
+        'xxs': '0.875rem',
+      },
     },
     backgroundColor: theme => ({
       ...theme('colors'),

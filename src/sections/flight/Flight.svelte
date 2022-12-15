@@ -933,7 +933,7 @@
                                                     type="text"
                                                     placeholder=""
                                                     value="example.stacks.run"
-                                                    class="input input-bordered w-full rounded-r-md rounded-none focus:ring-0 focus:border-indigo-500 h-10"
+                                                    class="text-xxs w-full rounded-r-md rounded-none focus:ring-0 focus:border-indigo-500 h-10"
                                                 />
                                             </div>
                                         </div>

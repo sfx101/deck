@@ -58,7 +58,7 @@
                                                 bind:value={password}
                                                 type="password"
                                                 name="password"
-                                                class="input input-bordered h-10 pr-10 focus:ring-0 text-csgray-700 shadow-sm block w-full sm:text-sm border-csgray-300 rounded-md"
+                                                class="text-xxs h-10 pr-10 focus:ring-0 text-csgray-700 shadow-sm block w-full sm:text-sm border-csgray-300 rounded-md"
                                                 placeholder="Password"
                                             />
                                         </div>

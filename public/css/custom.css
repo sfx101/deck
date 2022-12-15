@@ -360,10 +360,3 @@ body {
     min-height: 2.2em;
     min-width: 2.2em;
 }
-.tag-radius {
-    border-radius: 1.9rem;   
-    font-size: .7rem;
-}
-.input {
-    font-size: .875rem;
-}

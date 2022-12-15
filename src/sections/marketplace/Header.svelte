@@ -67,7 +67,7 @@
                     <div class="">
                         {#each dockerImage["@Tags"] as tag, i}
                             <div
-                                class="inline-flex badge badge-primary border-blue-100 bg-blue-100 text-csgray-800 tag-radius px-2 py-1 rounded-xl font-semibold {i >
+                                class="inline-flex badge badge-primary border-blue-100 bg-blue-100 text-csgray-800 text-2xs px-2 py-1 rounded-2xl font-semibold {i >
                                 0
                                     ? 'ml-1'
                                     : ''}"
