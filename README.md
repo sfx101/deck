@@ -36,6 +36,7 @@
 <p align="center">
   <img alt="GitHub Workflow Status" src="https://github.com/deck-app/lamp-stack/actions/workflows/docker-image.yml/badge.svg"> <img alt="GitHub Workflow Status" src="https://github.com/deck-app/lemp-stack/actions/workflows/docker-image.yml/badge.svg"> <img alt="GitHub Workflow Status" src="https://github.com/deck-app/nginx-stack/actions/workflows/docker-image.yml/badge.svg"> <img alt="GitHub Workflow Status" src="https://github.com/deck-app/apache-stack/actions/workflows/docker-image.yml/badge.svg"> <img alt="GitHub Workflow Status" src="https://github.com/deck-app/laravel/actions/workflows/docker-image.yml/badge.svg"> <img alt="GitHub Workflow Status" src="https://github.com/deck-app/Wordpress/actions/workflows/docker-image.yml/badge.svg"> <img alt="GitHub Workflow Status" src="https://github.com/deck-app/mysql/actions/workflows/docker-image.yml/badge.svg"> <img alt="GitHub Workflow Status" src="https://github.com/deck-app/mongodb/actions/workflows/docker-image.yml/badge.svg">
  </p>
+
 ![DECK Light Mode Screenshot](https://get-deck.com/wp-content/uploads/2022/03/Screenshot-2022-03-07-at-4.27.32-AM.png)
 
 #### Automatic HTTPS
