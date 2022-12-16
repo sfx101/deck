@@ -22,9 +22,9 @@
 </script>
 
 <div class="flex flex-col w-20">
-    <div class="flex-1 flex flex-col min-h-0 bg-chillgray-800 dark:bg-darkgray-950">
+    <div class="flex-1 flex flex-col min-h-0 bg-chillgray-800">
         <div class="flex-1">
-            <div class="bg-chillgray-800 dark:bg-darkgray-950 pt-4 flex items-center justify-center">
+            <div class="pt-4 flex items-center justify-center">
                 <img class="h-14 w-auto" src="img/DECK.png" alt="Deck Logo" />
             </div>
             <nav

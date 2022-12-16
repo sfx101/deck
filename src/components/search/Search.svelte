@@ -35,7 +35,7 @@
             class="
             relative
             w-full
-            text-csgray-400 dark:bg-darkgray-1000
+            text-csgray-400
             focus-within:text-csgray-600
         "
         >
@@ -69,21 +69,7 @@
                 bind:value={searchTerm}
                 name="search-field"
                 id="search-field"
-                class="
-            h-full
-            w-full
-            shadow-sm
-            focus-within:shadow
-            border-2 border-csgray-100 dark:border dark:border-slate-50/[0.06]
-            rounded-lg
-            p-3
-            text-base text-csgray-900 dark:text-gray-500
-            placeholder-csgray-200 dark:placeholder-slate-50/[0.06]
-            focus:outline-none focus:placeholder-csgray-400
-            appearance-none
-            focus:ring-0 focus:border-blue-500 pr-9
-            dark:bg-darkgray-1000
-            "
+                class="h-full w-full shadow-sm focus-within:shadow border-2 border-csgray-100 rounded-lg p-3 text-base text-csgray-800 dark:text-gray-500 placeholder-csgray-200 dark:placeholder-slate-50/[0.06] focus:outline-none focus:placeholder-csgray-400 appearance-none focus:ring-0 focus:border-blue-500 pr-9 dark:bg-slate-850"
                 placeholder="Search"
                 type="text"
             />

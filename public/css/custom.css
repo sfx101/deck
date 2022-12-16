@@ -360,3 +360,18 @@ body {
     min-height: 2.2em;
     min-width: 2.2em;
 }
+.dark #search-field {
+    border: none 0;
+}
+.dark .dark-border-r {
+    border-right: 1px solid #353f4f;
+}
+.dark .dark-border-l {
+    border-left: 1px solid #353f4f;
+}
+.dark .dark-border-b {
+    border-bottom: 1px solid #353f4f;
+}
+.dark .dark-border {
+    border: 1px solid #353f4f;
+}

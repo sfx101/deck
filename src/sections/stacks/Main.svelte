@@ -60,16 +60,7 @@
     <!-- stack details -->
     <section
         aria-labelledby="primary-heading"
-        class="
-            bg-csgray-100 dark:bg-darkgray-1000
-            min-w-0
-            flex-1
-            h-full
-            flex flex-col
-            relative
-            overflow-hidden
-        "
-    >
+        class="bg-csgray-100 dark:bg-chillgray-825 min-w-0 flex-1 h-full flex flex-col relative overflow-hidden">
         <!-- stack header -->
         <Header
             {projectName}

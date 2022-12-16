@@ -120,9 +120,9 @@
 {#if canShowExtensions === true}
     <div class="">
         <dl
-            class="bg-csgray-50 dark:bg-darkgray-950 shadow-sm rounded-lg p-4 inline-flex flex-col w-full h-fit-content gap-2 break-inside mb-6"
+            class="bg-csgray-50 dark:bg-chillgray-800 dark-border shadow-sm rounded-lg p-4 inline-flex flex-col w-full h-fit-content gap-2 break-inside mb-6"
         >
-            <div class="text-csgray-400 flex flex-wrap items-center">
+            <div class="text-csgray-400 dark:text-csgray-300 flex flex-wrap items-center">
                 <span class="mr-2">Manage PHP extensions</span>
                 <span>
                     <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-500" viewBox="0 0 20 20" fill="currentColor">
@@ -139,9 +139,7 @@
             {#if _.isArray(selectValue) && selectValue.length > 0}
                 <div class="flex flex-wrap gap-2 py-2">
                     {#each selectValue as ex}
-                        <span
-                            class="inline-flex items-center px-2 py-0.5 rounded-full text-sm font-medium bg-white dark:bg-darkgray-800 text-chillgray-500 dark:text-chillgray-400 border border-chillgray-300 dark:border-slate-50/[0.06]"
-                        >
+                        <span class="inline-flex items-center px-3 py-2 rounded-full text-xs font-medium bg-white dark:bg-chillgray-825 text-csgray-400 dark:text-csgray-300 border dark-border">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 class="mr-1.5 h-3 w-3 text-chillgray-400"
@@ -165,7 +163,7 @@
             {/if}
 
             <div class="flex flex-wrap gap-2 pt-2">
-                <label for="" class="block text-sm text-csgray-400">
+                <label for="" class="block text-sm text-csgray-400 dark:text-csgray-300">
                     Add / remove PHP extensions
                 </label>
                 <!-- bind:selected={selectValue} -->

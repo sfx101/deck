@@ -5,7 +5,7 @@
 <main class="flex flex-1  justify-center w-full">
     <!-- Primary column -->
     <!-- stack details -->
-    <div class="flex h-screen overflow-y-auto dark:bg-darkgray-1000">
+    <div class="flex h-screen overflow-y-auto">
         <div class="p-8 rounded-lg m-auto">
             <div class="my-8 text-center">
                 <h2 class="text-3xl font-medium text-csgray-600 dark:text-blue-600 mb-3 italic leading-loose">Hola!</h2>

@@ -12,17 +12,11 @@
 </script>
 
 {#if show === true}
-    <div class="p-4 bg-white dark:bg-darkgray-1000 rounded-lg flex flex-col justify-center">
+    <div class="p-4 bg-white dark:bg-chillgray-825 dark-border rounded-lg flex flex-col justify-center">
         <div class="flex-shrink-0 card rounded-none">
             <div class="form-control">
-                <label class="cursor-pointer label p-0 grid grid-cols-4">
-                    <span
-                        class="
-                              col-span-3
-                              label-text
-                              text-xs text-csgray-400
-                              "
-                    >
+                <label class="cursor-pointer items-center label p-0 grid grid-cols-4">
+                    <span class="col-span-3 label-text text-xs text-csgray-400 dark:text-csgray-200">
                         {inputObject.label}
                     </span>
                     <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-csgray-200" -->
@@ -31,7 +25,7 @@
                         type="button"
                         class="{value
                             ? 'bg-azure-600'
-                            : 'bg-csgray-400'} col-span-1 justify-self-end relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
+                            : 'bg-csgray-400 dark:bg-csgray-200'} col-span-1 justify-self-end relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-0"
                         role="switch"
                         aria-checked="false"
                     >
@@ -40,7 +34,7 @@
                         <span
                             class="{value
                                 ? 'translate-x-5'
-                                : 'translate-x-0'}  pointer-events-none relative inline-block h-5 w-5 rounded-full bg-white dark:bg-darkgray-800 shadow transform ring-0 transition ease-in-out duration-200"
+                                : 'translate-x-0'}  pointer-events-none relative inline-block h-5 w-5 rounded-full bg-white dark:bg-darkgray-200 shadow transform ring-0 transition ease-in-out duration-200"
                         >
                             <!-- Enabled: "opacity-0 ease-out duration-100", Not Enabled: "opacity-100 ease-in duration-200" -->
                             <span

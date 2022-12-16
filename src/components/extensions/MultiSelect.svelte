@@ -129,7 +129,7 @@
         type="button"
         class:showOptions
         on:click={handleTokenClick}
-        class="tokens flex flex-wrap items-center gap-2 relative w-full bg-white dark:bg-darkgray-1000 border border-csgray-200 dark:border-slate-50/[0.06] rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-0 sm:text-sm"
+        class="tokens flex flex-wrap items-center gap-2 relative w-full bg-white dark:bg-chillgray-825 border border-csgray-200 dark-border rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-0 sm:text-sm"
         aria-haspopup="listbox"
         aria-expanded="true"
         aria-labelledby="listbox-label"
@@ -167,7 +167,7 @@
         <div class="actions w-full">
             {#if !readonly}
                 <input
-                    class="w-full p-0 text-xs border-none focus:border-none outline-none focus:outline-none focus:ring-0 text-csgray-400 bg-inherit"
+                    class="w-full p-0 text-xs border-none focus:border-none outline-none focus:outline-none focus:ring-0 text-csgray-400 bg-inherit dark:bg-transparent"
                     {id}
                     autocomplete="off"
                     bind:value={inputValue}

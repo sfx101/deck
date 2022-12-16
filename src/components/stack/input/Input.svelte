@@ -42,11 +42,11 @@
     );
 </script>
 
-<div class="p-4 rounded-lg bg-white dark:bg-darkgray-1000 flex flex-col justify-center">
+<div class="p-4 rounded-lg bg-white dark:bg-chillgray-825 dark-border flex flex-col justify-center">
     <div class="flex-shrink-0 card overflow-visible rounded-none relative">
-        <div class="form-control grid grid-cols-5 ">
+        <div class="form-control items-center grid grid-cols-5 ">
             <label
-                class="col-span-2 label-text text-xs text-csgray-400 p-0"
+                class="col-span-2 label-text text-xs text-csgray-400 dark:text-csgray-200 p-0"
                 for={inputField}
                 class:text-coral-600={(!$validity.valid && startValidation) ||
                     error}
@@ -68,16 +68,7 @@
                 bind:value
                 type="text"
                 placeholder={inputObject.label}
-                class="
-                    col-span-3
-                    text-right text-sm
-                    border-none
-                    p-0
-                    text-csgray-500
-                    font-normal
-                    focus:outline-none 
-                    bg-inherit
-                "
+                class="col-span-3 text-right text-sm border-none p-0 text-csgray-500 dark:bg-transparent dark:text-csgray-300 font-normal focus:outline-none bg-inherit"
                 class:cursor-not-allowed={_.get(
                     inputObject,
                     "disabled",

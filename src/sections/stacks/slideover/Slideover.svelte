@@ -185,9 +185,7 @@
                     on:clickOutside={close}
                 >
                     <div class="w-screen max-w-sm {getWinTopBorderClass()}">
-                        <div
-                            class="h-full flex flex-col pt-6 pb-16 bg-white dark:bg-darkgray-1000 shadow-xl overflow-y-scroll"
-                        >
+                        <div class="h-full flex flex-col pt-6 pb-16 bg-white dark:bg-chillgray-800 dark-border-l shadow-xl overflow-y-scroll">
                             <div class="px-4">
                                 <div class="flex items-start justify-between">
                                     <h2
@@ -200,16 +198,9 @@
                                         <button
                                             on:click={close}
                                             type="button"
-                                            class="bg-white dark:bg-darkgray-1000 hover:bg-csgray-100 
-                                            rounded-md 
-                                            text-csgray-400 dark:text-csgray-500 hover:text-csgray-500 dark:hover:text-csgray-4 00
-                                            focus:outline-none 
-                                            p-1
-                                            ease-transition cursor-pointer"
+                                            class="bg-white dark:bg-chillgray-825 dark-border hover:bg-csgray-100 rounded-md text-csgray-200 dark:text-csgray-500 hover:text-csgray-500 dark:hover:text-csgray-100 focus:outline-none p-1 ease-transition cursor-pointer"
                                         >
-                                            <span class="sr-only"
-                                                >Close panel</span
-                                            >
+                                            <span class="sr-only">Close panel</span>
                                             <svg
                                                 class="h-6 w-6"
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -240,7 +231,7 @@
                                     {#if _.get(stack, "APP_CODE_PATH_HOST", false)}
                                         <button
                                             type="button"
-                                            class="sidebar-action-btn border-btn-azure ease-transition"
+                                            class="sidebar-action-btn border-btn-azure ease-transition dark:bg-chillgray-825 dark-border dark:hover:bg-azure-600"
                                             on:click={() => {
                                                 openCodePath(
                                                     stack.APP_CODE_PATH_HOST
@@ -267,7 +258,7 @@
 
                                         <button
                                             type="button"
-                                            class="sidebar-action-btn border-btn-azure ease-transition"
+                                            class="sidebar-action-btn border-btn-azure ease-transition dark:bg-chillgray-825 dark-border dark:hover:bg-azure-600"
                                             on:click={() => {
                                                 // open(stack.APP_CODE_PATH_HOST);
                                                 openEditor(
@@ -292,7 +283,7 @@
                                             );
                                         }}
                                         type="button"
-                                        class="sidebar-action-btn border-btn-island ease-transition"
+                                        class="sidebar-action-btn border-btn-island ease-transition dark:bg-chillgray-825 dark-border dark:hover:bg-island-600"
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -318,7 +309,7 @@
                                                 );
                                             }}
                                             type="button"
-                                            class="sidebar-action-btn border-btn-chillindigo ease-transition"
+                                            class="sidebar-action-btn border-btn-chillindigo ease-transition dark:bg-chillgray-825 dark-border dark:hover:bg-chillindigo-600"
                                         >
                                             <!-- <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -343,7 +334,7 @@
 
                                     <button
                                         type="button"
-                                        class="sidebar-action-btn border-btn-azure ease-transition"
+                                        class="sidebar-action-btn border-btn-azure ease-transition dark:bg-chillgray-825 dark-border dark:hover:bg-azure-600"
                                         on:click={() => {
                                             restart(projectName);
                                         }}
@@ -367,7 +358,7 @@
 
                                     <button
                                         type="button"
-                                        class="sidebar-action-btn border-btn-island ease-transition"
+                                        class="sidebar-action-btn border-btn-island ease-transition dark:bg-chillgray-825 dark-border dark:hover:bg-island-600"
                                         on:click={() => {
                                             openEditor(
                                                 getStackPath(projectName),
@@ -395,7 +386,7 @@
                                     <button
                                         on:click={askForDestory}
                                         type="button"
-                                        class="sidebar-action-btn border-btn-chillcerise ease-transition"
+                                        class="sidebar-action-btn border-btn-chillcerise ease-transition dark:bg-chillgray-825 dark-border hover:bg-chillcerise-600"
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"

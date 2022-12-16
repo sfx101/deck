@@ -181,12 +181,12 @@
     }
 </script>
 
-<div class="bg-csgray-50 dark:bg-darkgray-950 py-4 px-6">
+<div class="bg-csgray-50 dark:bg-chillgray-800 py-4 px-6 dark-border-b">
     <div class="w-full mx-auto flex items-center justify-between">
         <div class="flex items-center space-x-5">
             <div class="flex-shrink-0">
                 <span
-                    class="inline-block relative border bg-white dark:bg-darkgray-1000 border-csgray-200 dark:border-slate-100/[0.06] rounded-lg p-1.5 indicator"
+                    class="inline-block relative border bg-white dark:bg-chillgray-825 dark-border border-csgray-200 rounded-lg p-1.5 indicator"
                 >
                     {#if _.get(stackObject, "image['@Logo']", false)}
                         <img
