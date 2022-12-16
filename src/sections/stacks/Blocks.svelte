@@ -41,8 +41,8 @@
         <div
             data-href="/stacks/{stack.COMPOSE_PROJECT_NAME}"
             use:active
-            data-active-class="bg-chillgray-100 dark:dark:bg-chillgray-825"
-            class="select-none flex flex-1 items-center justify-center p-2 rounded-lg hover:bg-chillgray-100 dark:hover:bg-chillgray-825 ease-transition"
+            data-active-class="bg-chillgray-100"
+            class="select-none flex flex-1 items-center justify-center p-2 rounded-lg hover:bg-chillgray-100 hover:dark:bg-chillgray-825 ease-transition"
         >
             <span class="inline-block relative">
                 <!-- stack list status indicator -->
