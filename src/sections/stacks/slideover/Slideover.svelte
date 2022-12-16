@@ -185,7 +185,7 @@
                     on:clickOutside={close}
                 >
                     <div class="w-screen max-w-sm {getWinTopBorderClass()}">
-                        <div class="h-full flex flex-col pt-6 pb-16 bg-white dark:bg-chillgray-800 dark-border-l shadow-xl overflow-y-scroll">
+                        <div class="h-full flex flex-col pt-6 pb-16 bg-white dark:bg-slate-800 dark-border-l shadow-xl overflow-y-scroll">
                             <div class="px-4">
                                 <div class="flex items-start justify-between">
                                     <h2
