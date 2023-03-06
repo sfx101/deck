@@ -1,11 +1,11 @@
 {
   "stacks": [
     {
-      "@AppID": "APPSMITH-04032023",
+      "@AppID": "APPSMITH-06032023",
       "@AppName": "APPSMITH",
       "@Logo": "https://raw.githubusercontent.com/deck-app/appsmith/master/default.png",
-      "@Description": "Yii is an open source, object-oriented, component-based MVC PHP web application framework",
-      "@Tags": ["java", "mongodb", "ubuntu"],
+      "@Description": "Appsmith is an open source framework to build admin panels, CRUD apps and workflows.",
+      "@Tags": ["nginx", "ubuntu"],
       "@Website": "https://get-deck.com",
       "@Github": "deck-app/appsmith"
     },
