@@ -18,6 +18,9 @@ let mainWindow;
 let forceQuit = false;
 let proxy;
 
+let stacks = [];
+let host = 'localhost';
+
 function isDev() {
     return !app.isPackaged;
 }
@@ -206,7 +209,12 @@ ipcMain.on("register-proxy", async (event, data) => {
         let http = await isPortReachable(80, { host: "localhost" });
         let https = await isPortReachable(443, { host: "localhost" });
 
+        host = _.has(dockerEngine, "host")
+            ? dockerEngine.host
+            : "localhost";
+
         if (http === false && https === false) {
+            stacks = data.args.stacks;
             initialize(data.args.path);
             register(data.args.stacks);
             logger.log("Registering proxies");
@@ -248,11 +256,26 @@ ipcMain.on("dock-bounce", (event, data) => {
     }
 });
 
-
+function wildcardResolver(searchHost, path) {
+    for (const stack of stacks) {
+        if (searchHost.search(stack.COMPOSE_PROJECT_NAME + '.stacks.run')) {
+            console.log('Forwarding');
+            return {
+                url: [
+                    `http://${host}:${stack.STACK_HTTP_PORT}`
+                ]
+            }
+        }
+    }
+    return null;
+}
 async function initialize(path) {
     logger.log("Received path ", path);
     proxy = require("redbird")({
         port: 80,
+        resolvers: [
+            wildcardResolver
+        ],
         ssl: {
             port: 443,
             key: `${path}/storage/certs/dev-key.pem`,
