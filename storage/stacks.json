@@ -1,6 +1,15 @@
 {
   "stacks": [
     {
+      "@AppID": "APPSMITH-06032023",
+      "@AppName": "APPSMITH",
+      "@Logo": "https://raw.githubusercontent.com/deck-app/appsmith/master/default.png",
+      "@Description": "Appsmith is an open source framework to build admin panels, CRUD apps and workflows.",
+      "@Tags": ["nginx", "ubuntu"],
+      "@Website": "https://www.appsmith.com",
+      "@Github": "deck-app/appsmith"
+    },
+    {
       "@AppID": "Yii2-07122022",
       "@AppName": "YII2",
       "@Logo": "https://raw.githubusercontent.com/deck-app/yii/master/default.png",
